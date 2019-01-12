@@ -7,7 +7,7 @@ from torch import nn
 from torch import optim
 from torch.optim import lr_scheduler
 
-from opts import parse_opts
+from opts import parse_opts_offline
 from model import generate_model
 from mean import get_mean, get_std
 from spatial_transforms import *
@@ -36,7 +36,7 @@ def adjust_learning_rate(optimizer, epoch, lr_steps):
 best_prec1 = 0
 
 if __name__ == '__main__':
-    opt = parse_opts()
+    opt = parse_opts_offline()
     if opt.root_path != '':
         # Join some given paths with root path 
         if opt.result_path:
