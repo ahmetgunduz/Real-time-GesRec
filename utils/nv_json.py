@@ -61,22 +61,23 @@ def convert_nv_csv_to_activitynet_json(label_csv_path, train_csv_path,
 
 if __name__ == '__main__':
     csv_dir_path = sys.argv[1]
-    class_types = sys.argv[2]
-    if class_types == 'all':
-        class_ind_file = 'classIndAll.txt'
-    elif class_types == 'all_but_None':
-        class_ind_file = 'classIndAllbutNone.txt'
-    elif class_types == 'binary':
-        class_ind_file = 'classIndBinary.txt'
+    for class_type in ['all', 'all_but_None', 'binary']:
+
+        if class_type == 'all':
+            class_ind_file = 'classIndAll.txt'
+        elif class_type == 'all_but_None':
+            class_ind_file = 'classIndAllbutNone.txt'
+        elif class_type == 'binary':
+            class_ind_file = 'classIndBinary.txt'
 
 
-    label_csv_path = os.path.join(csv_dir_path, class_ind_file)
-    train_csv_path = os.path.join(csv_dir_path, 'trainlist'+ class_types + '.txt')
-    val_csv_path = os.path.join(csv_dir_path, 'vallist'+ class_types + '.txt')
-    dst_json_path = os.path.join(csv_dir_path, 'nv' + class_types + '.json')
+        label_csv_path = os.path.join(csv_dir_path, class_ind_file)
+        train_csv_path = os.path.join(csv_dir_path, 'trainlist'+ class_type + '.txt')
+        val_csv_path = os.path.join(csv_dir_path, 'vallist'+ class_type + '.txt')
+        dst_json_path = os.path.join(csv_dir_path, 'nv' + class_type + '.json')
 
-    convert_nv_csv_to_activitynet_json(label_csv_path, train_csv_path,
+        convert_nv_csv_to_activitynet_json(label_csv_path, train_csv_path,
                                                val_csv_path, dst_json_path)
-    print('Successfully wrote to json : ', dst_json_path)
+        print('Successfully wrote to json : ', dst_json_path)
     # HOW TO RUN:
-    # python man_json.py '/usr/home/kop/MyRes3D-Ahmet/annotation_MAN'
+    # python nv_json.py '../annotation_nvGesture'

@@ -4,10 +4,9 @@ import numpy as np
 import glob
 import sys
 
-os.chdir('/data2/nvGesture')
-
-
+dataset_path = "/data2/nvGesture"
 def load_split_nvgesture(file_with_split = './nvgesture_train_correct.lst',list_split = list()):
+    file_with_split = os.path.join(dataset_path,file_with_split)
     params_dictionary = dict()
     with open(file_with_split,'rb') as f:
           dict_name  = file_with_split[file_with_split.rfind('/')+1 :]
@@ -109,7 +108,7 @@ if __name__ == "__main__":
 
 
     print("Writing to the file ...")
-    file_path = os.path.join('/usr/home/kop/MyRes3D-Ahmet/annotation_nvGesture',file_name)
+    file_path = os.path.join('../annotation_nvGesture',file_name)
     with open(file_path, 'w') as myfile:
         for new_line in new_lines:
             myfile.write(new_line)

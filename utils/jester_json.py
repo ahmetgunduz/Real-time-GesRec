@@ -33,7 +33,7 @@ def load_labels(label_csv_path):
         labels.append(data.ix[i, 1])
     return labels
 
-def convert_ucf101_csv_to_activitynet_json(label_csv_path, train_csv_path, 
+def convert_jester_csv_to_activitynet_json(label_csv_path, train_csv_path, 
                                            val_csv_path, dst_json_path):
     labels = load_labels(label_csv_path)
     train_database = convert_csv_to_dict(train_csv_path, 'training', labels)
@@ -56,5 +56,5 @@ if __name__ == '__main__':
     val_csv_path = os.path.join(csv_dir_path, 'vallist01.txt')
     dst_json_path = os.path.join(csv_dir_path, 'jester.json')
 
-    convert_ucf101_csv_to_activitynet_json(label_csv_path, train_csv_path,
+    convert_jester_csv_to_activitynet_json(label_csv_path, train_csv_path,
                                                val_csv_path, dst_json_path)
