@@ -4,15 +4,14 @@ python main.py \
 	--video_path /data2/EgoGesture/images \
 	--annotation_path ~/Real-time-GesRec/annotation_EgoGesture/egogestureall_but_None.json\
 	--result_path ~/Real-time-GesRec/results \
-	--pretrain_path ~/MyRes3D-Ahmet/models/jester_c3d_10_RGB_32_9414.pth\
 	--dataset egogesture \
 	--sample_duration 32 \
-    --learning_rate 0.01 \
-    --model c3d \
+    	--learning_rate 0.01 \
+    	--model c3d \
 	--model_depth 10 \
 	--resnet_shortcut B \
 	--batch_size 8 \
-	--n_classes 27 \
+	--n_classes 83 \
 	--n_finetune_classes 83 \
 	--n_threads 16 \
 	--checkpoint 1 \
@@ -20,5 +19,5 @@ python main.py \
 	--train_crop random \
 	--n_val_samples 1 \
 	--test_subset test \
-    --n_epochs 100 \
-    
+     	--n_epochs 100 \
+

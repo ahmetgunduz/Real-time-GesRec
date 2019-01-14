@@ -1,12 +1,12 @@
 #!/bin/bash
 python real_time_test.py \
 	--root_path ~/\
-	--video_path Desktop/EgoGesture/images \
+	--video_path /data2/EgoGesture/images \
 	--whole_path Subject09/Scene6/Color/rgb1 \
 	--annotation_path MyRes3D-Ahmet/annotation_EgoGesture/egogestureall.json \
 	--resume_path_det MyRes3D-Ahmet/report/egogesture_resnetl_10_Depth_8_9939.pth \
 	--resume_path_clf MyRes3D-Ahmet/report/egogesture_resnext_101_Depth_32_9403.pth  \
-	--result_path Desktop/Real-time-GesRec/results \
+	--result_path MyRes3D-Ahmet/results \
 	--dataset egogesture    \
 	--sample_duration_det 8 \
 	--sample_duration_clf 32 \
@@ -34,6 +34,4 @@ python real_time_test.py \
 	--clf_threshold_pre 2 \
 	--clf_threshold_final 1 \
 	--stride_len 1 \
-	--no_cuda \
-	
 

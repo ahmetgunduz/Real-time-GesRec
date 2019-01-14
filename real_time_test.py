@@ -128,6 +128,7 @@ def load_models(opt):
     opt.model_depth = opt.model_depth_det
     opt.modality = opt.modality_det
     opt.resnet_shortcut = opt.resnet_shortcut_det
+    opt.resnext_cardinality = opt.resnext_cardinality_det
     opt.n_classes = opt.n_classes_det
     opt.n_finetune_classes = opt.n_finetune_classes_det
 
@@ -340,7 +341,7 @@ for comb in combinations_list:
         new_row.append(path)
         start_frame = int(16)
         new_row.append(start_frame)
-        max_i  = len(list(enumerate(test_loader))) -1
+        # max_i  = len(list(enumerate(test_loader))) -1
         for i, (inputs, targets) in enumerate(test_loader):
             if (i %100) == 0 :
                 print(i)
@@ -350,11 +351,11 @@ for comb in combinations_list:
             with torch.no_grad():
                 inputs = Variable(inputs)
                 targets = Variable(targets)
-                if opt.modality1 == 'RGB':
+                if opt.modality_det == 'RGB':
                     inputs_det = inputs[:,:-1,-opt.sample_duration_det:,:,:]
-                elif opt.modality1 == 'Depth':
+                elif opt.modality_det == 'Depth':
                     inputs_det = inputs[:,-1,-opt.sample_duration_det:,:,:].unsqueeze(1)
-                elif opt.modality1 =='RGB-D':
+                elif opt.modality_det =='RGB-D':
                     inputs_det = inputs[:,:,-opt.sample_duration_det:,:,:]
                 
                 outputs_det = detector(inputs_det)
@@ -383,6 +384,7 @@ for comb in combinations_list:
                 prob1 = det_selected_queue[prediction_det]
                 
                 if  prediction_det == 1:
+		    
                     if opt.modality_clf == 'RGB':
                         inputs_clf = inputs[:,:-1,:,:,:]
                     elif opt.modality_clf == 'Depth':
@@ -391,6 +393,7 @@ for comb in combinations_list:
                         inputs_clf = inputs[:,:,:,:,:]
 
                     outputs_clf = classifier(inputs_clf)
+		    
                     outputs_clf = F.softmax(outputs_clf,dim=1)
                     outputs_clf = outputs_clf.cpu().numpy()[0].reshape(-1,)
                     
@@ -442,7 +445,7 @@ for comb in combinations_list:
             
 
             #pdb.set_trace()
-            if passive_count >= opt.det_threshold  or i == max_i:
+            if passive_count >= opt.det_threshold:
                 active = False
             else:
                 active = True

@@ -297,7 +297,11 @@ def parse_opts_online():
     parser.add_argument('--sample_size', default=112, type=int, help='Height and width of inputs')
     parser.add_argument('--sample_duration_det', default=16, type=int, help='Temporal duration of inputs')
     parser.add_argument('--sample_duration_clf', default=16, type=int, help='Temporal duration of inputs')
-    
+    parser.add_argument(
+        '--n_val_samples',
+        default=3,
+        type=int,
+        help='Number of validation samples for each activity')
     parser.add_argument('--initial_scale', default=1.0, type=float, help='Initial scale for multiscale cropping')
     parser.add_argument('--n_scales', default=5, type=int, help='Number of scales for multiscale cropping')
     parser.add_argument('--scale_step', default=0.84089641525, type=float, help='Scale step for multiscale cropping')
