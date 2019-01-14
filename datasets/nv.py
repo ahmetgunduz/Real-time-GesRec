@@ -46,23 +46,6 @@ def get_default_image_loader():
 def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
     
     video = []
-    """
-    vid_duration = len(frame_indices)
-    rand_end = max(0, vid_duration - 32 - 1)
-    begin_index = random.randint(0, rand_end)
-    end_index = min(begin_index + 32, vid_duration)
-    out = frame_indices[begin_index:end_index]
- 
-    for index in out:
-        if len(out) >= 32:
-            break
-        out.append(index)
-    """
-    #inner_shift = randint(3)
-    #inner_shift = 0
-    #frame_indices = [out[i+inner_shift+1+3] for i in range(0, 32-1, 8)]
-    #frame_indices = out
-    #print(frame_indices)
     if modality == 'RGB':
         for i in frame_indices:
             image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
@@ -92,59 +75,13 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
             image = image_loader(image_path, 'RGB')
             image_depth = image_loader(image_path_depth, 'Depth')
 
-            #r,g,b = image.split()
-            #d, = image_depth.split()
-
-            #stacked_image = Image.merge ('RGBA', (r,g,b,d))
-
-
-            # np_image_depth = np.array(image_depth)
-            # np_image_depth = np.reshape(np_image_depth, np_image_depth.shape + (1,))
-
-            # stacked_image = np.concatenate([np.array(image), np_image_depth], axis = 2)
-
             if os.path.exists(image_path):
                 video.append(image)
                 video.append(image_depth)
             else:
+                print(image_path, "------- Does not exist")
                 return video
-    elif modality == 'RGBDiff':
-        for i in frame_indices: # index 35 is used to change img to flow
-            image_path_first  = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
-            image_path_second = os.path.join(video_dir_path, '{:06d}.jpg'.format(i-1))
-
-            if not os.path.exists(image_path_second):
-                image_path_second = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
-
-            image_first  = image_loader(image_path_first, 'RGB')
-            image_second = image_loader(image_path_second, 'RGB')
-
-            if os.path.exists(image_path_first):
-                video.append(image_first)
-                video.append( Image.fromarray(np.asarray(image_first) - np.asarray(image_second)) ) 
-            else:
-                return video    
-    elif modality == 'RGBStack':
-        for i in frame_indices: # index 35 is used to change img to flow
-            image_path_first  = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
-            image_path_second = os.path.join(video_dir_path, '{:06d}.jpg'.format(max(1,i-4)))
-            #image_path_third = os.path.join(video_dir_path, '{:06d}.jpg'.format(max(1,i-2)))
-            #image_path_fourth = os.path.join(video_dir_path, '{:06d}.jpg'.format(max(1,i-3)))
-
-            image_first  = image_loader(image_path_first, 'RGB')
-            image_second = image_loader(image_path_second, 'RGB')
-            #image_third  = image_loader(image_path_third, 'RGB')
-            #image_fourth = image_loader(image_path_fourth, 'RGB')
-
-
-            if os.path.exists(image_path_first):
-                video.append(image_first)
-                video.append(image_second)
-                #video.append(image_third)
-                #video.append(image_fourth)
-
-            else:
-                return video
+    
     return video
 
 def get_default_video_loader():
@@ -236,15 +173,6 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
 
     return dataset, idx_to_class
 
-# root_path = opt.video_path
-# annotation_path = opt.annotation_path
-# subset = 'training'
-# spatial_transform=spatial_transform
-# temporal_transform=temporal_transform
-# target_transform=target_transform
-# sample_duration=opt.sample_duration
-# modality='RGB'
-
 
 class NV(data.Dataset):
     """
@@ -310,12 +238,10 @@ class NV(data.Dataset):
         clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
         
      
-        #clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-        #return oversample_clip, target
         return clip, target
 
     def __len__(self):

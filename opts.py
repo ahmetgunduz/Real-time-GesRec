@@ -307,11 +307,11 @@ def parse_opts_online():
     # parser.add_argument('--momentum', default=0.9, type=float, help='Momentum')
     # parser.add_argument('--dampening', default=0.9, type=float, help='dampening of SGD')
     # parser.add_argument('--weight_decay', default=1e-3, type=float, help='Weight Decay')
-    # parser.add_argument('--mean_dataset', default='activitynet', type=str, help='dataset for mean values of mean subtraction (activitynet | kinetics)')
-    # parser.add_argument('--no_mean_norm', action='store_true', help='If true, inputs are not normalized by mean.')
-    # parser.set_defaults(no_mean_norm=False)
-    # parser.add_argument('--std_norm', action='store_true', help='If true, inputs are normalized by standard deviation.')
-    # parser.set_defaults(std_norm=False)
+    parser.add_argument('--mean_dataset', default='activitynet', type=str, help='dataset for mean values of mean subtraction (activitynet | kinetics)')
+    parser.add_argument('--no_mean_norm', action='store_true', help='If true, inputs are not normalized by mean.')
+    parser.set_defaults(no_mean_norm=False)
+    parser.add_argument('--std_norm', action='store_true', help='If true, inputs are normalized by standard deviation.')
+    parser.set_defaults(std_norm=False)
     # parser.add_argument('--nesterov', action='store_true', help='Nesterov momentum')
     # parser.set_defaults(nesterov=False)
     # parser.add_argument('--optimizer', default='sgd', type=str, help='Currently only support SGD')
@@ -324,9 +324,13 @@ def parse_opts_online():
     parser.add_argument('--resume_path_clf', default='', type=str, help='Save data (.pth) of previous training')
     # parser.add_argument('--pretrain_path_det', default='', type=str, help='Pretrained model (.pth)')
     # parser.add_argument('--pretrain_path_clf', default='', type=str, help='Pretrained model (.pth)')
-    
+    parser.add_argument(
+        '--pretrain_path', 
+        default='', 
+        type=str, 
+        help='Pretrained model (.pth)')
 
-    # parser.add_argument('--ft_begin_index', default=0, type=int, help='Begin block index of fine-tuning')
+    parser.add_argument('--ft_begin_index', default=0, type=int, help='Begin block index of fine-tuning')
     # parser.add_argument('--no_train', action='store_true', help='If true, training is not performed.')
     # parser.set_defaults(no_train=False)
     # parser.add_argument('--no_val', action='store_true', help='If true, validation is not performed.')
@@ -360,10 +364,10 @@ def parse_opts_online():
     parser.add_argument('--manual_seed', default=1, type=int, help='Manually set random seed')
 
 
-    parser.add_argument('--det_strategy', default='raw', type=str, help='Detector filter')
+    parser.add_argument('--det_strategy', default='raw', type=str, help='Detector filter (raw | median | ma | ewma)')
     parser.add_argument('--det_queue_size', default=1, type=int, help='Detector queue size')
     parser.add_argument('--det_threshold', default=1, type=int, help='Number of consequtive detection')
-    parser.add_argument('--det_strategy', default='raw', type=str, help='Detector filter')
+    parser.add_argument('--clf_strategy', default='raw', type=str, help='Classifier filter (raw | median | ma | ewma)')
     parser.add_argument('--clf_queue_size', default=1, type=int, help='Classifier queue size')
     parser.add_argument('--clf_threshold_pre', default=1, type=int, help='Cumulative sum threshold to prepredict')
     parser.add_argument('--clf_threshold_final', default=1, type=int, help='Cumulative sum threshold to predict at the end')

@@ -12,7 +12,6 @@ import numpy as np
 import random
 import glob
 
-from utils import load_value_file
 import pdb
 
 
@@ -49,23 +48,6 @@ def get_default_image_loader():
 def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
     
     video = []
-    """
-    vid_duration = len(frame_indices)
-    rand_end = max(0, vid_duration - 32 - 1)
-    begin_index = random.randint(0, rand_end)
-    end_index = min(begin_index + 32, vid_duration)
-    out = frame_indices[begin_index:end_index]
- 
-    for index in out:
-        if len(out) >= 32:
-            break
-        out.append(index)
-    """
-    #inner_shift = randint(3)
-    #inner_shift = 0
-    #frame_indices = [out[i+inner_shift+1+3] for i in range(0, 32-1, 8)]
-    #frame_indices = out
-    #print(frame_indices)
     if modality == 'RGB':
         for i in frame_indices:
             image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
@@ -190,15 +172,6 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
                 dataset.append(sample_j)
     return dataset, idx_to_class
 
-# root_path = opt.video_path
-# annotation_path = opt.annotation_path
-# subset = 'training'
-# spatial_transform=spatial_transform
-# temporal_transform=temporal_transform
-# target_transform=target_transform
-# sample_duration=opt.sample_duration
-# modality='RGB'
-
 
 class EgoGesture(data.Dataset):
     """
@@ -263,12 +236,11 @@ class EgoGesture(data.Dataset):
         clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
         
      
-        # clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-        #return oversample_clip, target
+        
         return clip, target
 
     def __len__(self):

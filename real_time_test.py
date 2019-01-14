@@ -22,17 +22,15 @@ from spatial_transforms import *
 from temporal_transforms import *
 from target_transforms import ClassLabel, VideoID
 from target_transforms import Compose as TargetCompose
-from dataset import get_video_data ,get_training_set
-from utils import Logger
+from dataset import get_online_data ,get_training_set
+from utils import Logger, AverageMeter
 from train import train_epoch
 from validation import val_epoch
 import test
-from utils import AverageMeter, calculate_precision, calculate_recall
+
 import pdb
-import ctcdecode
 
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation 
 from matplotlib.pyplot import figure
 # figure(num=None, figsize=(9, 3), dpi=180, facecolor='w', edgecolor='k')
 
@@ -48,12 +46,8 @@ def rolling_window(a, window, step_size):
     return np.lib.stride_tricks.as_strided(a, shape=shape, strides=strides)
 
 
-def sigmoidlike(x):
+def weighting_func(x):
     return (1 / (1 + np.exp(-0.2*(x-9))))
-
-
-
-
 
 
 def levenshtein(a,b):
@@ -125,26 +119,10 @@ class Queue:
         return average.reshape(average.shape[1],)
 
 
-def calculate_accuracy(outputs, targets, topk=(1,)):
-    # Helper function to calculate top k accuracy (top1 in binary case)
-    maxk = max(topk)
-    batch_size = targets.size(0)
-    _, pred = outputs.topk(maxk, 1, True, True)
-    pred = pred.t()
-    correct = pred.eq(targets.view(1, -1).expand_as(pred))
-    ret = []
-    for k in topk:
-        correct_k = correct[:k].float().sum().item()
-        ret.append(correct_k / batch_size)
-
-    return ret
-
-
 opt = parse_opts_online()
 
 def load_models(opt):
     opt.resume_path = opt.resume_path_det
-    opt.pretrain_path = opt.pretrain_path_det
     opt.sample_duration = opt.sample_duration_det
     opt.model = opt.model_det
     opt.model_depth = opt.model_depth_det
@@ -159,9 +137,7 @@ def load_models(opt):
         opt.result_path = os.path.join(opt.root_path, opt.result_path)
         if opt.resume_path:
             opt.resume_path = os.path.join(opt.root_path, opt.resume_path)
-        if opt.pretrain_path:
-            opt.pretrain_path = os.path.join(opt.root_path, opt.pretrain_path)
-
+        
 
 
 
@@ -169,11 +145,11 @@ def load_models(opt):
     for i in range(1, opt.n_scales):
         opt.scales.append(opt.scales[-1] * opt.scale_step)
     opt.arch = '{}-{}'.format(opt.model, opt.model_depth)
-    opt.mean = get_mean(opt.norm_value, dataset=opt.mean_dataset)
+    opt.mean = get_mean(opt.norm_value)
     opt.std = get_std(opt.norm_value)
 
     print(opt)
-    with open(os.path.join(opt.result_path, 'opts_det.json'), 'w') as opt_file:
+    with open(os.path.join(opt.result_path, 'opts.json'), 'w') as opt_file:
         json.dump(vars(opt), opt_file)
 
     torch.manual_seed(opt.manual_seed)
@@ -195,7 +171,6 @@ def load_models(opt):
 
 
     opt.resume_path = opt.resume_path_clf
-    opt.pretrain_path = opt.pretrain_path_clf
     opt.sample_duration = opt.sample_duration_clf
     opt.model = opt.model_clf
     opt.model_depth = opt.model_depth_clf
@@ -209,18 +184,16 @@ def load_models(opt):
         opt.result_path = os.path.join(opt.root_path, opt.result_path)
         if opt.resume_path:
             opt.resume_path = os.path.join(opt.root_path, opt.resume_path)
-        if opt.pretrain_path:
-            opt.pretrain_path = os.path.join(opt.root_path, opt.pretrain_path)
-
+        
     opt.scales = [opt.initial_scale]
     for i in range(1, opt.n_scales):
         opt.scales.append(opt.scales[-1] * opt.scale_step)
     opt.arch = '{}-{}'.format(opt.model, opt.model_depth)
-    opt.mean = get_mean(opt.norm_value, dataset=opt.mean_dataset)
+    opt.mean = get_mean(opt.norm_value)
     opt.std = get_std(opt.norm_value)
 
     print(opt)
-    with open(os.path.join(opt.result_path, 'opts_clf.json'), 'w') as opt_file:
+    with open(os.path.join(opt.result_path, 'opts.json'), 'w') as opt_file:
         json.dump(vars(opt), opt_file)
 
     torch.manual_seed(opt.manual_seed)
@@ -350,7 +323,7 @@ for comb in combinations_list:
 
         print('[{}/{}]----------------'.format(videoidx,len(test_paths)))
         print(path)
-        test_data = get_video_data(
+        test_data = get_online_data(
             opt, spatial_transform, None, target_transform)
 
         test_loader = torch.utils.data.DataLoader(
@@ -479,7 +452,7 @@ for comb in combinations_list:
             if active:
                 recorder_state.append(1)
                 x += 1
-                cum_sum = ((cum_sum * (x-1)) + (sigmoidlike(x) * clf_selected_queue))/x
+                cum_sum = ((cum_sum * (x-1)) + (weighting_func(x) * clf_selected_queue))/x
                 #cum_sum = ((cum_sum * (x-1)) + (1.0 * clf_selected_queue))/x
 
                 best2, best1 = tuple(cum_sum.argsort()[-2:][::1])
