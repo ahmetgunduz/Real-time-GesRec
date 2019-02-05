@@ -100,7 +100,7 @@ python utils/egogesture_json.py 'annotation_EgoGesture' all_but_None
 python utils/egogesture_json.py 'annotation_EgoGesture' binary
 ```
 
-### nvGesture
+### Jester
 
 * Download videos by following [the official site](https://20bn.com/datasets/jester).
 
@@ -125,3 +125,5 @@ run offline_test.sh
 ```bash
 run online_test.sh
 ```
+## Acknowledgement
+We thank Kensho Hara for releasing [3D-ResNets-PyTorch Repo](https://github.com/kenshohara/3D-ResNets-PyTorch), which we build our work on top. 
