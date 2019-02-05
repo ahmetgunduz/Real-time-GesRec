@@ -225,32 +225,5 @@ test_logger.log({
         'recall':recalls.avg
     })
 
-"""
-video_pred = [np.argmax(np.mean(x, axis=0)) for x in recorder]
-print(video_pred)
-
-with open('annotation_Jester/categories.txt') as f:
-    lines = f.readlines()
-    categories = [item.rstrip() for item in lines]
-
-name_list = [x.strip().split()[0] for x in open('annotation_Jester/testlist01.txt')]
-order_dict = {e:i for i, e in enumerate(sorted(name_list))}
-reorder_output = [None] * len(recorder)
-reorder_pred = [None] * len(recorder)
-output_csv = []
-for i in range(len(recorder)):
-    idx = order_dict[name_list[i]]
-    reorder_output[idx] = recorder[i]
-    reorder_pred[idx] = video_pred[i]
-    output_csv.append('%s;%s'%(name_list[i],
-                               categories[video_pred[i]]))
-
-    with open('output_predictions.csv','w') as f:
-        f.write('\n'.join(output_csv))
-"""
-
-# cm = confusion_matrix(y_true, y_pred)
-# plot_cm(cm,  np.unique(y_true).tolist())
-# plt.savefig(opt.dataset + '_confusion_matrix2.png', dpi = 180)
 print('-----Evaluation is finished------')
 print('Overall Prec@1 {:.05f}% Prec@5 {:.05f}%'.format(top1.avg, top5.avg))
