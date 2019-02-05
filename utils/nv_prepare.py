@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
 
     print("Writing to the file ...")
-    file_path = os.path.join('../annotation_nvGesture',file_name)
+    file_path = os.path.join('annotation_nvGesture',file_name)
     with open(file_path, 'w') as myfile:
         for new_line in new_lines:
             myfile.write(new_line)

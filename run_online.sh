@@ -1,5 +1,5 @@
 #!/bin/bash
-python online_test.py \
+python online_main.py \
 	--root_path ~/\
 	--video_path /data2/EgoGesture/images \
 	--annotation_path Real-time-GesRec/annotation_EgoGesture/egogestureall.json \

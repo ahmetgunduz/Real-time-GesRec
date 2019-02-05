@@ -79,7 +79,7 @@ def create_trainlist( subset ,file_name, class_types = 'all'):
 			continue
 
 	print("Writing to the file ...")
-	file_path = os.path.join('../annotation_EgoGesture',file_name)
+	file_path = os.path.join('annotation_EgoGesture',file_name)
 	with open(file_path, 'w') as myfile:
 	    for new_line in new_lines:
 	    	myfile.write(new_line)
