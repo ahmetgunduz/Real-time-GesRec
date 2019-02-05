@@ -232,7 +232,12 @@ class EgoGestureOnline(data.Dataset):
             clip = [self.spatial_transform(img) for img in clip]
 
         im_dim = clip[0].size()[-2:]
-        clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
+        try:
+            clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
+        except Exception as e:
+            pdb.set_trace()
+            raise e
+        
         
         # clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
         target = self.data[index]

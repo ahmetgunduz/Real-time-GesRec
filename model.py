@@ -118,9 +118,9 @@ def generate_model(opt):
         elif opt.modality == 'Depth':
             print("[INFO]: Converting the pretrained model to Depth init model")
             model = _construct_depth_model(model)
-            print("[INFO]: Done. Flow model ready.")
+            print("[INFO]: Deoth model ready.")
         elif opt.modality == 'RGB-D':
-            print("[INFO]: Converting the pretrained model to RGB+D init model")
+            print("[INFO]: Converting the pretrained model to RGB-D init model")
             model = _construct_rgbdepth_model(model)
             print("[INFO]: Done. RGB-D model ready.")
 
