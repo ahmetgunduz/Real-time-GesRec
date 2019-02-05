@@ -2,7 +2,7 @@
 PyTorch implementation of the article [Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks](https://arxiv.org/abs/1901.10323), codes and pretrained models.
 
 <p align="center">
-<img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" title="this slowpoke moves" />
+<img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width = 500 />
 </p>
 This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
 Note that the code only includes ResNet-10, ResNetL-10, ResneXt-101, C3D v1, whose other versions can be easily added.
@@ -33,13 +33,6 @@ we obtain considerable early detections while achieving performances close to of
 conda install pytorch torchvision cuda80 -c soumith
 ```
 
-* FFmpeg, FFprobe
-
-```bash
-wget http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
-tar xvf ffmpeg-release-64bit-static.tar.xz
-cd ./ffmpeg-3.3.3-64bit-static/; sudo cp ffmpeg ffprobe /usr/local/bin;
-```
 * Python 3
 
 ## Preparation
