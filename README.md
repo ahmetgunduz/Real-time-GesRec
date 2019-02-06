@@ -109,12 +109,12 @@ python utils/jester_json.py 'annotation_Jester'
 
 
 ## Running the code
-* Offline testing and training
+* Offline testing (offline_test.py) and training (main.py)
 ```bash
 run offline_test.sh
 ```
 
-* Offline testing and training
+* Online testing
 ```bash
 run online_test.sh
 ```
