@@ -35,6 +35,9 @@ conda install pytorch torchvision cuda80 -c soumith
 
 * Python 3
 
+### Pretrained models
+[Google Drive link](https://drive.google.com/drive/folders/1ECUkNqH8-maCh3Afy3hQWucLmhd1Ek7I?usp=sharing)
+
 ## Preparation
 
 ### EgoGesture
