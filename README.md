@@ -114,12 +114,12 @@ python utils/jester_json.py 'annotation_Jester'
 ## Running the code
 * Offline testing (offline_test.py) and training (main.py)
 ```bash
-bash offline_test.sh
+bash run_offline.sh
 ```
 
 * Online testing
 ```bash
-bash online_test.sh
+bash run_online.sh
 ```
 ## Acknowledgement
 We thank Kensho Hara for releasing [3D-ResNets-PyTorch Repo](https://github.com/kenshohara/3D-ResNets-PyTorch), which we build our work on top. 
