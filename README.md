@@ -91,9 +91,9 @@ python utils/nv_prepare.py validation vallistbinary.txt binary
 * Generate annotation file in json format similar to ActivityNet using ```utils/nv_json.py```
 
 ```bash
-python utils/egogesture_json.py 'annotation_EgoGesture' all
-python utils/egogesture_json.py 'annotation_EgoGesture' all_but_None
-python utils/egogesture_json.py 'annotation_EgoGesture' binary
+python utils/nv_json.py 'annotation_nvGesture' all
+python utils/nv_json.py 'annotation_nvGesture' all_but_None
+python utils/nv_json.py 'annotation_nvGesture' binary
 ```
 
 ### Jester
