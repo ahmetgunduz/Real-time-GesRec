@@ -135,4 +135,4 @@ if __name__ == "__main__":
             myfile.write('\n')
     print("Scuccesfully wrote file to:",file_path)
     
-    exctract_frames(sensors=sensors)
+    extract_frames(sensors=sensors)
