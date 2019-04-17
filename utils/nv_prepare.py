@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import glob
 import sys
+from subprocess import call
 
 dataset_path = "/data2/nvGesture"
 def load_split_nvgesture(file_with_split = './nvgesture_train_correct.lst',list_split = list()):
@@ -82,9 +83,28 @@ def create_list(example_config, sensor,  class_types = 'all'):
         elif class_types == 'binary':
             new_lines.append(folder_path + ' ' + '1' + ' ' + str(start)+ ' ' + str(n_images))
 
-
+def extract_frames(sensors=["color", "depth"])
+    """Extract frames of .avi files.
+    
+    Parameters
+    ----------
+    modalities: list of str, ["color", "depth", "duo_left", "duo_right", "duo_disparity"]
+    """
+    for vt in sensors:
+        files = glob.glob(os.path.join(dataset_path, 
+                                       "Video_data",
+                                       "*", "*", 
+                                       "sk_" + vt + ".avi")) # this line should be updated according to the full path 
+        for file in files:
+            print("Extracting frames for ", file)
+            directory = file.split(".")[0] + "_all"
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            call(["ffmpeg", "-i",  file, os.path.join(directory, "%05d.jpg"), "-hide_banner"]) 
+       
+    
 if __name__ == "__main__":
-    # sensors = ["color", "depth", "duo_left", "duo_right", "duo_disparity"]
+    sensors = ["color", "depth"]
     subset = sys.argv[1]
     file_name = sys.argv[2]
     class_types = sys.argv[3]
@@ -114,3 +134,5 @@ if __name__ == "__main__":
             myfile.write(new_line)
             myfile.write('\n')
     print("Scuccesfully wrote file to:",file_path)
+    
+    exctract_frames(sensors=sensors)
