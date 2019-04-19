@@ -10,6 +10,7 @@ import copy
 from numpy.random import randint
 import numpy as np
 import random
+import glob
 
 from utils import load_value_file
 
@@ -111,8 +112,10 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
         if not os.path.exists(video_path):
             continue
 
-        n_frames_file_path = os.path.join(video_path, 'n_frames')
-        n_frames = int(load_value_file(n_frames_file_path))
+        n_frames_file_path = os.path.join(video_path, 'n_frames') # reads number of farames under each video path
+        n_frames = int(load_value_file(n_frames_file_path)) 
+#         n_frames = len(glob.glob(os.path.join(video_path, '*.jpg'))) # in case there is no n_frames file uncomment this line
+
         if n_frames <= 0:
             continue
 
