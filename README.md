@@ -1,9 +1,14 @@
 # Real-time Hand Gesture Recognition with 3D CNNs
 PyTorch implementation of the article [Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks](https://arxiv.org/abs/1901.10323), codes and pretrained models.
 
-<p align="center">
-<img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width = 500 />
-</p>
+
+<div align="center" style="width:image width px;">
+  <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="profile picture"/>
+</div>
+
+Figure: The input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side), ehere each is annotated with different color. 
+
+
 This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
 Note that the code only includes ResNet-10, ResNetL-10, ResneXt-101, C3D v1, whose other versions can be easily added.
 
