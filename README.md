@@ -3,7 +3,7 @@ PyTorch implementation of the article [Real-time Hand Gesture Detection and Clas
 
 
 <div align="center" style="width:image width px;">
-  <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="profile picture"/>
+  <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="simulation results">
 </div>
 
 Figure: The input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side), ehere each is annotated with different color. 
