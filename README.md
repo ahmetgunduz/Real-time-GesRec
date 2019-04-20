@@ -6,7 +6,7 @@ PyTorch implementation of the article [Real-time Hand Gesture Detection and Clas
   <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="simulation results">
 </div>
 
-Figure: The input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side), ehere each is annotated with different color. 
+Figure: A real-time simulation of the architecture with input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side) are shown, where each class is annotated with different color. 
 
 
 This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
