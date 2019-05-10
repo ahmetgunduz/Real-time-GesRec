@@ -133,7 +133,7 @@ Please cite the following article if you use this code or pre-trained models:
 
 ```bibtex
 @article{kopuklu_real-time_2019,
-	title = {Real-time {Hand} {Gesture} {Detection} and {Classification} {Using} {Convolutional} {Neural} {Networks}},
+	title = {Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks},
 	url = {http://arxiv.org/abs/1901.10323},
 	author = {Köpüklü, Okan and Gunduz, Ahmet and Kose, Neslihan and Rigoll, Gerhard},
   year={2019}
