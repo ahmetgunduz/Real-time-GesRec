@@ -83,7 +83,7 @@ def create_list(example_config, sensor,  class_types = 'all'):
         elif class_types == 'binary':
             new_lines.append(folder_path + ' ' + '1' + ' ' + str(start)+ ' ' + str(n_images))
 
-def extract_frames(sensors=["color", "depth"])
+def extract_frames(sensors=["color", "depth"]):
     """Extract frames of .avi files.
     
     Parameters
