@@ -21,7 +21,7 @@ from spatial_transforms import *
 from temporal_transforms import *
 from target_transforms import ClassLabel
 from dataset import get_online_data 
-from utils import Logger, AverageMeter, LevenshteinDistance, Queue
+from utils import *
 
 import pdb
 import numpy as np
@@ -174,8 +174,12 @@ print('Start Evaluation')
 detector.eval()
 classifier.eval()
 
-levenshtein_accuracies = AverageMeter()
-videoidx = 0
+cnt_total = 0
+cnt_dis   = 0
+cnt_del   = 0
+cnt_ins   = 0
+cnt_sub   = 0
+videoidx  = 0
 for path in test_paths[4:]:
     if opt.dataset == 'egogesture':
         opt.whole_path = path.split(os.sep, 4)[-1]
@@ -216,7 +220,7 @@ for path in test_paths[4:]:
 
     for i, (inputs, targets) in enumerate(test_loader):
         if not opt.no_cuda:
-            targets = targets.cuda(async=True)
+            targets = targets.cuda()
         ground_truth_array = np.zeros(opt.n_classes_clf +1,)
         with torch.no_grad():
             inputs = Variable(inputs)
@@ -339,9 +343,8 @@ for path in test_paths[4:]:
         prev_active = active
 
     if opt.dataset == 'egogesture':
-        target_csv_path = os.path.join(opt.video_path.rsplit(os.sep, 1)[0], 
-                                'labels-final-revised1',
-                                opt.whole_path.rsplit(os.sep,2)[0],
+        target_csv_path = os.path.join(opt.video_path, 'labels-final-revised1',
+                                opt.whole_path.split(os.sep)[2], opt.whole_path.split(os.sep)[3],
                                 'Group'+opt.whole_path[-1] + '.csv').replace('Subject', 'subject')
         true_classes = []
         with open(target_csv_path) as csvfile:
@@ -356,22 +359,35 @@ for path in test_paths[4:]:
                 if row[0] == opt.whole_path:
                     if row[1] != '26' :
                         true_classes.append(int(row[1])-1)
-    
-    predicted = np.array(results)[:,1]
-    
-    true_classes = np.array(true_classes)
-    levenshtein_distance = LevenshteinDistance(true_classes, predicted)
-    levenshtein_accuracy = 1-(levenshtein_distance/len(true_classes))
-    if levenshtein_distance <0: # Distance cannot be less than 0
-        levenshtein_accuracies.update(0, len(true_classes))
-    else:
-        levenshtein_accuracies.update(levenshtein_accuracy, len(true_classes))
 
-    
-    print('predicted classes: \t',predicted)
+
+
+
+    if len(results) == 0:
+        num_dis, num_del, num_ins, num_sub = len(true_classes), 0, len(true_classes), 0
+        predicted = np.array(results)
+        true_classes = np.array(true_classes)
+    else:
+        predicted = np.array(results)[:,1]
+        true_classes = np.array(true_classes)
+        num_dis, num_del, num_ins, num_sub = LevenshteinDistance(predicted, true_classes)
+
+    cnt_total += len(true_classes)
+    cnt_dis   += num_dis
+    cnt_del   += num_del
+    cnt_ins   += num_ins
+    cnt_sub   += num_sub
+    print('Predicted classes: \t',predicted)
     print('True classes :\t\t',true_classes)
-    print('Levenshtein Accuracy = {} ({})'.format(levenshtein_accuracies.val, levenshtein_accuracies.avg))
-    
-print('Average Levenshtein Accuracy= {}'.format(levenshtein_accuracies.avg))
+    print('Levenshtein Accuracy = {} ({})'.format((len(true_classes) - num_dis)/len(true_classes), (cnt_total - cnt_dis)/cnt_total))
+    print('Total gesture: {} ({}), distance: {} ({}), del: {} ({}), ins: {} ({}), sub: {} ({})'.format(
+        len(true_classes), cnt_total,
+        num_dis, cnt_dis,
+        num_del, cnt_del,
+        num_ins, cnt_ins,
+        num_sub, cnt_sub,
+        ))
+
+print('Average Levenshtein Accuracy= {}'.format((cnt_total - cnt_dis)/cnt_total))
 
 print('-----Evaluation is finished------')

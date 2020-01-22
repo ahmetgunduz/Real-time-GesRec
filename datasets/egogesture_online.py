@@ -116,15 +116,16 @@ def get_annotation(data, whole_path):
 def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_samples_for_each_video, stride_len):
     
     data = load_annotation_data(annotation_path)
-    whole_video_path = os.path.join(video_path, whole_path)
-    annotation = get_annotation(data, whole_path)
+    whole_video_path = os.path.join(video_path, whole_path.split(os.sep, 2)[2])
+    annotation = get_annotation(data, whole_path.split(os.sep, 2)[2])
+
     class_to_idx = get_class_labels(data)
     idx_to_class = {}
     for name, label in class_to_idx.items():
         idx_to_class[label] = name
 
     dataset = []
-    print("[INFO]: Videot  is loading...")
+    print("[INFO]: Video is loading...")
     import glob
 
     n_frames = len(glob.glob(whole_video_path + '/*.jpg'))
@@ -147,6 +148,7 @@ def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_sa
                 'video_id' : _ 
 
             }
+
         counts = np.bincount(label_list[np.array(list(range(_    - int(sample_duration/8), _   )))])
         sample['label'] = np.argmax(counts)
         if n_samples_for_each_video == 1:

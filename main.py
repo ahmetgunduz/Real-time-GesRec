@@ -201,7 +201,7 @@ if __name__ == '__main__':
         temporal_transform = Compose([
             TemporalCenterCrop(opt.sample_duration)
             ])
-        target_transform = VideoID()
+        target_transform = ClassLabel()
 
         test_data = get_test_set(opt, spatial_transform, temporal_transform,
                                  target_transform)

@@ -64,8 +64,15 @@ def generate_model(opt):
             print('loading pretrained model {}'.format(opt.pretrain_path))
             pretrain = torch.load(opt.pretrain_path)
             assert opt.arch == pretrain['arch']
-
             model.load_state_dict(pretrain['state_dict'])
+
+            if opt.model == 'c3d':# CHECK HERE
+                model.module.fc = nn.Linear(model.module.fc[0].in_features, 
+                                            opt.n_finetune_classes)
+            else:
+                model.module.fc = nn.Linear(model.module.fc.in_features,
+                                            opt.n_finetune_classes)
+            model.module.fc = model.module.fc.cuda()
 
         if opt.modality == 'RGB' and opt.model != 'c3d':
             print("[INFO]: RGB model is used for init model")
@@ -79,27 +86,12 @@ def generate_model(opt):
             model = _construct_rgbdepth_model(model)
             print("[INFO]: Done. RGB-D model ready.")
 
-
-
-        # Check first kernel size 
         modules = list(model.modules())
         first_conv_idx = list(filter(lambda x: isinstance(modules[x], nn.Conv3d),
                                                    list(range(len(modules)))))[0]
-
         conv_layer = modules[first_conv_idx]
         if conv_layer.kernel_size[0]> opt.sample_duration:
-            print("[INFO]: RGB model is used for init model")
             model = _modify_first_conv_layer(model,int(opt.sample_duration/2),1) 
-
-
-        if opt.model == 'c3d':# CHECK HERE
-            model.module.fc = nn.Linear(
-                model.module.fc[0].in_features, model.module.fc[0].out_features)
-            model.module.fc = model.module.fc.cuda()
-        else:
-            model.module.fc = nn.Linear(model.module.fc.in_features,
-                                        opt.n_finetune_classes)
-            model.module.fc = model.module.fc.cuda()
 
         parameters = get_fine_tuning_parameters(model, opt.ft_begin_index)
         return model, parameters
@@ -109,7 +101,6 @@ def generate_model(opt):
             print('loading pretrained model {}'.format(opt.pretrain_path))
             pretrain = torch.load(opt.pretrain_path)
             assert opt.arch == pretrain['arch']
-
             model.load_state_dict(pretrain['state_dict'])
 
         if opt.modality == 'RGB' and opt.model != 'c3d':
@@ -124,16 +115,13 @@ def generate_model(opt):
             model = _construct_rgbdepth_model(model)
             print("[INFO]: Done. RGB-D model ready.")
 
-        # Check first kernel size 
         modules = list(model.modules())
         first_conv_idx = list(filter(lambda x: isinstance(modules[x], nn.Conv3d),
                                                    list(range(len(modules)))))[0]
-
         conv_layer = modules[first_conv_idx]
         if conv_layer.kernel_size[0]> opt.sample_duration:
             print("[INFO]: RGB model is used for init model")
             model = _modify_first_conv_layer(model,int(opt.sample_duration/2),1) 
-
 
         if opt.model == 'c3d':# CHECK HERE
             model.fc = nn.Linear(
@@ -145,7 +133,6 @@ def generate_model(opt):
         parameters = get_fine_tuning_parameters(model, opt.ft_begin_index)
         return model, parameters
 
-    return model, model.parameters()
 
 def _construct_depth_model(base_model):
     # modify the first convolution kernels for Depth input
@@ -162,9 +149,6 @@ def _construct_depth_model(base_model):
     kernel_size = params[0].size()
     new_kernel_size = kernel_size[:1] + (1*motion_length,  ) + kernel_size[2:]
     new_kernels = params[0].data.mean(dim=1, keepdim=True).expand(new_kernel_size).contiguous()
-
-
-
 
     new_conv = nn.Conv3d(1, conv_layer.out_channels, conv_layer.kernel_size, conv_layer.stride,
                          conv_layer.padding, bias=True if len(params) == 2 else False)
@@ -217,5 +201,3 @@ def _modify_first_conv_layer(base_model, new_kernel_size1, new_filter_num):
 
     setattr(container, layer_name, new_conv)
     return base_model
-
-

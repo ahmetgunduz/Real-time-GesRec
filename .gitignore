@@ -11,6 +11,12 @@ __pycache__/
 # C extensions
 *.so
 
+# model weights
+*.pth
+
+# opts file
+opts.json
+
 # Distribution / packaging
 .Python
 env/

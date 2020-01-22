@@ -240,7 +240,6 @@ class EgoGesture(data.Dataset):
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-        
         return clip, target
 
     def __len__(self):
