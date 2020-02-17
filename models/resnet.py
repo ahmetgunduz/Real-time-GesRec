@@ -6,7 +6,8 @@ import math
 from functools import partial
 
 __all__ = [
-    'ResNet', 'resnet10'
+    'ResNet', 'resnet10', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
+    'resnet152', 'resnet200'
 ]
 
 
@@ -141,7 +142,7 @@ class ResNet(nn.Module):
 
         for m in self.modules():
             if isinstance(m, nn.Conv3d):
-                m.weight = nn.init.kaiming_normal_(m.weight, mode='fan_out')
+                m.weight = nn.init.kaiming_normal(m.weight, mode='fan_out')
             elif isinstance(m, nn.BatchNorm3d):
                 m.weight.data.fill_(1)
                 m.bias.data.zero_()
@@ -190,32 +191,72 @@ class ResNet(nn.Module):
         return x
 
 
-def get_fine_tuning_parameters(model, ft_begin_index):
-    if ft_begin_index == 0:
+def get_fine_tuning_parameters(model, ft_portion):
+    if ft_portion == "complete":
         return model.parameters()
 
-    ft_module_names = []
-    for i in range(ft_begin_index, 5):
-        ft_module_names.append('layer{}'.format(i))
-    ft_module_names.append('fc')
+    elif ft_portion == "last_layer":
+        ft_module_names = []
+        ft_module_names.append('classifier')
 
-    parameters = []
-    for k, v in model.named_parameters():
-        for ft_module in ft_module_names:
-            if ft_module in k:
-                parameters.append({'params': v})
-                break
-        else:
-            parameters.append({'params': v, 'lr': 0.0})
+        parameters = []
+        for k, v in model.named_parameters():
+            for ft_module in ft_module_names:
+                if ft_module in k:
+                    parameters.append({'params': v})
+                    break
+            else:
+                parameters.append({'params': v, 'lr': 0.0})
+        return parameters
 
-    return parameters
-    
-
+    else:
+        raise ValueError("Unsupported ft_portion: 'complete' or 'last_layer' expected")
 
 
 def resnet10(**kwargs):
-    """Constructs a ResNet-10 model.
+    """Constructs a ResNet-18 model.
     """
     model = ResNet(BasicBlock, [1, 1, 1, 1], **kwargs)
     return model
 
+
+def resnet18(**kwargs):
+    """Constructs a ResNet-18 model.
+    """
+    model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
+    return model
+
+
+def resnet34(**kwargs):
+    """Constructs a ResNet-34 model.
+    """
+    model = ResNet(BasicBlock, [3, 4, 6, 3], **kwargs)
+    return model
+
+
+def resnet50(**kwargs):
+    """Constructs a ResNet-50 model.
+    """
+    model = ResNet(Bottleneck, [3, 4, 6, 3], **kwargs)
+    return model
+
+
+def resnet101(**kwargs):
+    """Constructs a ResNet-101 model.
+    """
+    model = ResNet(Bottleneck, [3, 4, 23, 3], **kwargs)
+    return model
+
+
+def resnet152(**kwargs):
+    """Constructs a ResNet-101 model.
+    """
+    model = ResNet(Bottleneck, [3, 8, 36, 3], **kwargs)
+    return model
+
+
+def resnet200(**kwargs):
+    """Constructs a ResNet-101 model.
+    """
+    model = ResNet(Bottleneck, [3, 24, 36, 3], **kwargs)
+    return model

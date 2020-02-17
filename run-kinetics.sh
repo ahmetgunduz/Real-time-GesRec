@@ -1,7 +1,7 @@
 python main.py --root_path ~/ \
  	--video_path ~/datasets/Kinetics \
- 	--annotation_path Efficient-3DCNNs/annotation_Kinetics/kinetics.json \
- 	--result_path Efficient-3DCNNs/results \
+ 	--annotation_path Real-time-GesRec/annotation_Kinetics/kinetics.json \
+ 	--result_path Real-time-GesRec/results \
  	--dataset kinetics \
  	--n_classes 600 \
  	--sample_size 224 \
@@ -16,17 +16,17 @@ python main.py --root_path ~/ \
  #	--no_train \
  #	--no_val \
  #	--test
- # 	--resume_path Efficient-3DCNNs/results/kinetics_resnet_1.0x_RGB_16_checkpoint.pth \
+ # 	--resume_path Real-time-GesRec/results/kinetics_resnet_1.0x_RGB_16_checkpoint.pth \
 
 
 
 
  # python main.py --root_path ~/ \
  # 	--video_path ~/datasets/Kinetics \
- # 	--annotation_path Efficient-3DCNNs/annotation_Kinetics/kinetics.json \
- # 	--result_path Efficient-3DCNNs/results \
- # 	--pretrain_path Efficient-3DCNNs/results/resnet-18-kinetics.pth \
- # 	--resume_path Efficient-3DCNNs/results/kinetics_resnet_1.0x_RGB_16_checkpoint.pth \
+ # 	--annotation_path Real-time-GesRec/annotation_Kinetics/kinetics.json \
+ # 	--result_path Real-time-GesRec/results \
+ # 	--pretrain_path Real-time-GesRec/results/resnet-18-kinetics.pth \
+ # 	--resume_path Real-time-GesRec/results/kinetics_resnet_1.0x_RGB_16_checkpoint.pth \
  #  --dataset kinetics \
  #  --n_classes 400 \
  #  --n_finetune_classes 600 \
@@ -44,4 +44,4 @@ python main.py --root_path ~/ \
  # 	--no_train \
  # 	--no_val \
  # 	--test
- # 	# --resume_path Efficient-3DCNNs/results/kinetics_resnext_1.0x_RGB_16_checkpoint_fnl.pth \
+ # 	# --resume_path Real-time-GesRec/results/kinetics_resnext_1.0x_RGB_16_checkpoint_fnl.pth \

@@ -1,7 +1,6 @@
 import torch
 import torch.utils.data as data
 from PIL import Image
-from spatial_transforms import *
 import os
 import math
 import functools
@@ -10,23 +9,18 @@ import copy
 from numpy.random import randint
 import numpy as np
 import random
-import glob
 
 from utils import load_value_file
 
 
-def pil_loader(path, modality):
+def pil_loader(path):
     # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, 'rb') as f:
-        #print(path)
         with Image.open(f) as img:
-            if modality == 'RGB':
-                return img.convert('RGB')
-            elif modality == 'Flow':
-                return img.convert('L')
+            return img.convert('RGB')
 
 
-def accimage_loader(path, modality):
+def accimage_loader(path):
     try:
         import accimage
         return accimage.Image(path)
@@ -43,18 +37,15 @@ def get_default_image_loader():
         return pil_loader
 
 
-def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
-    
+def video_loader(video_dir_path, frame_indices, sample_duration, image_loader):
     video = []
+    for i in frame_indices:
+        image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
+        if os.path.exists(image_path):
+            video.append(image_loader(image_path))
+        else:
+            return video
 
-    if modality == 'RGB':
-        for i in frame_indices:
-            image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
-            if os.path.exists(image_path):
-                video.append(image_loader(image_path, modality))
-            else:
-                print(image_path, "------- Does not exist")
-                return video
     return video
 
 
@@ -102,20 +93,17 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
         idx_to_class[label] = name
 
     dataset = []
-    print("[INFO]: Jester Dataset - " + subset + " is loading...")
     for i in range(len(video_names)):
         if i % 1000 == 0:
             print('dataset loading [{}/{}]'.format(i, len(video_names)))
 
         video_path = os.path.join(root_path, video_names[i])
-        
         if not os.path.exists(video_path):
+            print(video_path)
             continue
 
-        n_frames_file_path = os.path.join(video_path, 'n_frames') # reads number of farames under each video path
-        n_frames = int(load_value_file(n_frames_file_path)) 
-#         n_frames = len(glob.glob(os.path.join(video_path, '*.jpg'))) # in case there is no n_frames file uncomment this line
-
+        n_frames_file_path = os.path.join(video_path, 'n_frames')
+        n_frames = int(load_value_file(n_frames_file_path))
         if n_frames <= 0:
             continue
 
@@ -152,8 +140,6 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
     return dataset, idx_to_class
 
 
-
-
 class Jester(data.Dataset):
     """
     Args:
@@ -180,7 +166,6 @@ class Jester(data.Dataset):
                  temporal_transform=None,
                  target_transform=None,
                  sample_duration=16,
-                 modality='RGB',
                  get_loader=get_default_video_loader):
         self.data, self.class_names = make_dataset(
             root_path, annotation_path, subset, n_samples_for_each_video,
@@ -189,7 +174,6 @@ class Jester(data.Dataset):
         self.spatial_transform = spatial_transform
         self.temporal_transform = temporal_transform
         self.target_transform = target_transform
-        self.modality = modality
         self.sample_duration = sample_duration
         self.loader = get_loader()
 
@@ -201,29 +185,21 @@ class Jester(data.Dataset):
             tuple: (image, target) where target is class_index of the target class.
         """
         path = self.data[index]['video']
-
         frame_indices = self.data[index]['frame_indices']
         if self.temporal_transform is not None:
-            frame_indices = self.temporal_transform(frame_indices)
-        clip = self.loader(path, frame_indices, self.modality, self.sample_duration)
-
-        oversample_clip =[]
+           frame_indices = self.temporal_transform(frame_indices)
+        clip = self.loader(path, frame_indices, self.sample_duration)
         if self.spatial_transform is not None:
             self.spatial_transform.randomize_parameters()
             clip = [self.spatial_transform(img) for img in clip]
-        
         im_dim = clip[0].size()[-2:]
-        clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
-        
+        clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
 
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-        
         return clip, target
 
     def __len__(self):
         return len(self.data)
-
-

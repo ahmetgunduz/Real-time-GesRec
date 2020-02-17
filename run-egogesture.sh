@@ -2,10 +2,10 @@
 # "$2" model
 # "$3" width_mult
 
-python main.py --root_path ~/ \
+python main.py --root_path ~/Desktop/git/ \
 	--video_path ~/datasets/EgoGesture \
-	--annotation_path Efficient-3DCNNs/annotation_EgoGesture/egogestureall.json \
-	--result_path Efficient-3DCNNs/results/EgoGesture_RGB_all \
+	--annotation_path Real-time-GesRec/annotation_EgoGesture/egogestureall.json \
+	--result_path Real-time-GesRec/results/EgoGesture_RGB_all \
 	--pretrain_path "$1" \
 	--dataset egogesture \
 	--n_classes 27 \
@@ -26,9 +26,9 @@ python main.py --root_path ~/ \
     --n_epochs 20 \
     --train_validate \
     --test_subset test \
-    --ft_portion last_layer 
+    --ft_portion last_layer  \
 	# --no_train \
  	# --no_val \
  	# --test
- 	# --resume_path Efficient-3DCNNs/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
- 		# --pretrain_path Efficient-3DCNNs/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \
+ 	# --resume_path Real-time-GesRec/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
+ 		# --pretrain_path Real-time-GesRec/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \

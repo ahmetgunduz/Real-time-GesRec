@@ -18,14 +18,15 @@ import pdb
 def pil_loader(path, modality):
     # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, 'rb') as f:
-        #print(path)
+        # print(path)
         with Image.open(f) as img:
             if modality == 'RGB':
                 return img.convert('RGB')
             elif modality == 'Flow':
                 return img.convert('L')
             elif modality == 'Depth':
-                return img.convert('L') # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
+                return img.convert(
+                    'L')  # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
 
 
 def accimage_loader(path, modality):
@@ -46,7 +47,6 @@ def get_default_image_loader():
 
 
 def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
-    
     video = []
     if modality == 'RGB':
         for i in frame_indices:
@@ -59,17 +59,19 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
     elif modality == 'Depth':
 
         for i in frame_indices:
-            image_path = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
+            image_path = os.path.join(video_dir_path.rsplit(os.sep, 2)[0], 'Depth', 'depth' + video_dir_path[-1],
+                                      '{:06d}.jpg'.format(i))
             if os.path.exists(image_path):
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
                 return video
     elif modality == 'RGB-D':
-        for i in frame_indices: # index 35 is used to change img to flow
+        for i in frame_indices:  # index 35 is used to change img to flow
             image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
-            image_path_depth = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
-    
+            image_path_depth = os.path.join(video_dir_path.rsplit(os.sep, 2)[0], 'Depth', 'depth' + video_dir_path[-1],
+                                            '{:06d}.jpg'.format(i))
+
             image = image_loader(image_path, 'RGB')
             image_depth = image_loader(image_path_depth, 'Depth')
             if os.path.exists(image_path):
@@ -79,6 +81,7 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
                 print(image_path, "------- Does not exist")
                 return video
     return video
+
 
 def get_default_video_loader():
     image_loader = get_default_image_loader()
@@ -115,10 +118,10 @@ def get_video_names_and_annotations(data, subset):
 
 def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
                  sample_duration):
-    if type(subset)==list:
+    if type(subset) == list:
         subset = subset
     else:
-        subset =  [subset]
+        subset = [subset]
     data = load_annotation_data(annotation_path)
     video_names, annotations = get_video_names_and_annotations(data, subset)
     class_to_idx = get_class_labels(data)
@@ -129,18 +132,19 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
     dataset = []
     list_subset = ''
     for x in subset:
-        list_subset += x+',' 
+        list_subset += x + ','
     print("[INFO]: EgoGesture Dataset - " + list_subset + " is loading...")
     for i in range(len(video_names)):
         if i % 1000 == 0:
             print('dataset loading [{}/{}]'.format(i, len(video_names)))
 
         video_path = os.path.join(root_path, video_names[i])
-        
+
         if not os.path.exists(video_path):
+            print(video_path)
             continue
 
-        #### Add more frames from start end end 
+        #### Add more frames from start end end
         begin_t = int(annotations[i]['start_frame'])
         end_t = int(annotations[i]['end_frame'])
         n_frames = end_t - begin_t + 1
@@ -226,16 +230,16 @@ class EgoGesture(data.Dataset):
 
         if self.temporal_transform is not None:
             frame_indices = self.temporal_transform(frame_indices)
+
         clip = self.loader(path, frame_indices, self.modality, self.sample_duration)
-        oversample_clip =[]
+        oversample_clip = []
         if self.spatial_transform is not None:
             self.spatial_transform.randomize_parameters()
             clip = [self.spatial_transform(img) for img in clip]
-        
+
         im_dim = clip[0].size()[-2:]
         clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
-        
-     
+
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)

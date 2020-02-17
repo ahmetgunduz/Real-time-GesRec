@@ -18,14 +18,15 @@ import pdb
 def pil_loader(path, modality):
     # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, 'rb') as f:
-        #print(path)
+        # print(path)
         with Image.open(f) as img:
             if modality == 'RGB':
                 return img.convert('RGB')
             elif modality == 'Flow':
                 return img.convert('L')
             elif modality == 'Depth':
-                return img.convert('L') # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
+                return img.convert(
+                    'L')  # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
 
 
 def accimage_loader(path, modality):
@@ -46,13 +47,12 @@ def get_default_image_loader():
 
 
 def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
-    
     video = []
     if modality == 'RGB':
         for i in frame_indices:
             image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
             if os.path.exists(image_path):
-                
+
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
@@ -60,17 +60,18 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
     elif modality == 'Depth':
 
         for i in frame_indices:
-            image_path = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
+            image_path = os.path.join(video_dir_path.rsplit(os.sep, 2)[0], 'Depth', 'depth' + video_dir_path[-1],
+                                      '{:06d}.jpg'.format(i))
             if os.path.exists(image_path):
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
                 return video
     elif modality == 'RGB-D':
-        for i in frame_indices: # index 35 is used to change img to flow
+        for i in frame_indices:  # index 35 is used to change img to flow
             image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
-            image_path_depth = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
-            
+            image_path_depth = os.path.join(video_dir_path.rsplit(os.sep, 2)[0], 'Depth', 'depth' + video_dir_path[-1],
+                                            '{:06d}.jpg'.format(i))
 
             image = image_loader(image_path, 'RGB')
             image_depth = image_loader(image_path_depth, 'Depth')
@@ -81,8 +82,9 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
             else:
                 print(image_path, "------- Does not exist")
                 return video
-    
+
     return video
+
 
 def get_default_video_loader():
     image_loader = get_default_image_loader()
@@ -110,55 +112,52 @@ def get_annotation(data, whole_path):
         if key.split('_')[0] == whole_path:
             annotation.append(value['annotations'])
 
-    return  annotation
+    return annotation
 
 
-def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_samples_for_each_video, stride_len):
-    
+def make_dataset(annotation_path, video_path, whole_path, sample_duration, n_samples_for_each_video, stride_len):
     data = load_annotation_data(annotation_path)
-    whole_video_path = os.path.join(video_path, whole_path.split(os.sep, 2)[2])
-    annotation = get_annotation(data, whole_path.split(os.sep, 2)[2])
-
+    whole_video_path = os.path.join(video_path, whole_path)
+    annotation = get_annotation(data, whole_path)
     class_to_idx = get_class_labels(data)
     idx_to_class = {}
     for name, label in class_to_idx.items():
         idx_to_class[label] = name
 
     dataset = []
-    print("[INFO]: Video is loading...")
+    print("[INFO]: Videot  is loading...")
     import glob
 
     n_frames = len(glob.glob(whole_video_path + '/*.jpg'))
-    
+
     if not os.path.exists(whole_video_path):
-        print(whole_video_path , " does not exist")
+        print(whole_video_path, " does not exist")
     label_list = []
     for i in range(len(annotation)):
         begin_t = int(annotation[i]['start_frame'])
         end_t = int(annotation[i]['end_frame'])
-        for j in range(begin_t,end_t+1):
+        for j in range(begin_t, end_t + 1):
             label_list.append(class_to_idx[annotation[i]['label']])
 
     label_list = np.array(label_list)
-    for _ in range(1,n_frames+1 - sample_duration,stride_len):
-        
+    for _ in range(1, n_frames + 1 - sample_duration, stride_len):
+
         sample = {
-                'video': whole_video_path,
-                'index': _ ,
-                'video_id' : _ 
+            'video': whole_video_path,
+            'index': _,
+            'video_id': _
 
-            }
-
-        counts = np.bincount(label_list[np.array(list(range(_    - int(sample_duration/8), _   )))])
+        }
+        counts = np.bincount(label_list[np.array(list(range(_ - int(sample_duration / 8), _)))])
         sample['label'] = np.argmax(counts)
         if n_samples_for_each_video == 1:
-            sample['frame_indices'] = list(range(_ , _ + sample_duration))
+            sample['frame_indices'] = list(range(_, _ + sample_duration))
             dataset.append(sample)
         else:
             if n_samples_for_each_video > 1:
                 step = max(1,
-                            math.ceil((n_frames - 1 - sample_duration) /
-                                    (n_samples_for_each_video - 1)))
+                           math.ceil((n_frames - 1 - sample_duration) /
+                                     (n_samples_for_each_video - 1)))
             else:
                 step = sample_duration
             for j in range(sample_duration, n_frames, step):
@@ -168,8 +167,6 @@ def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_sa
                 dataset.append(sample_j)
 
     return dataset, idx_to_class
-
-
 
 
 class EgoGestureOnline(data.Dataset):
@@ -199,11 +196,11 @@ class EgoGestureOnline(data.Dataset):
                  target_transform=None,
                  sample_duration=16,
                  modality='RGB',
-                 stride_len = None,
+                 stride_len=None,
                  get_loader=get_default_video_loader):
         self.data, self.class_names = make_dataset(
-         annotation_path, video_path, whole_path, sample_duration,n_samples_for_each_video, stride_len)
-        
+            annotation_path, video_path, whole_path, sample_duration, n_samples_for_each_video, stride_len)
+
         self.spatial_transform = spatial_transform
         self.temporal_transform = temporal_transform
         self.target_transform = target_transform
@@ -223,12 +220,11 @@ class EgoGestureOnline(data.Dataset):
 
         frame_indices = self.data[index]['frame_indices']
 
-
         if self.temporal_transform is not None:
             frame_indices = self.temporal_transform(frame_indices)
-        
+
         clip = self.loader(path, frame_indices, self.modality, self.sample_duration)
-        oversample_clip =[]
+        oversample_clip = []
         if self.spatial_transform is not None:
             self.spatial_transform.randomize_parameters()
             clip = [self.spatial_transform(img) for img in clip]
@@ -239,18 +235,16 @@ class EgoGestureOnline(data.Dataset):
         except Exception as e:
             pdb.set_trace()
             raise e
-        
-        
+
         # clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)
-        
+
         return clip, target
 
     def __len__(self):
         return len(self.data)
-
 
 # from target_transforms import ClassLabel, VideoID
 # from target_transforms import Compose as TargetCompose

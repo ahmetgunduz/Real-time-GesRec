@@ -5,7 +5,7 @@ from torch.autograd import Variable
 import math
 from functools import partial
 
-__all__ = ['ResNeXt', 'resnet101']
+__all__ = ['ResNeXt', 'resnet50', 'resnet101']
 
 
 def conv3x3x3(in_planes, out_planes, stride=1):
@@ -99,6 +99,13 @@ class ResNeXt(nn.Module):
             stride=(1, 2, 2),
             padding=(3, 3, 3),
             bias=False)
+        #self.conv1 = nn.Conv3d(
+        #    3,
+        #    64,
+        #    kernel_size=(3,7,7),
+        #    stride=(1, 2, 2),
+        #    padding=(1, 3, 3),
+        #    bias=False)
         self.bn1 = nn.BatchNorm3d(64)
         self.relu = nn.ReLU(inplace=True)
         self.maxpool = nn.MaxPool3d(kernel_size=(3, 3, 3), stride=2, padding=1)
@@ -111,6 +118,7 @@ class ResNeXt(nn.Module):
         self.layer4 = self._make_layer(
             block, 1024, layers[3], shortcut_type, cardinality, stride=2)
         last_duration = int(math.ceil(sample_duration / 16))
+        #last_duration = 1
         last_size = int(math.ceil(sample_size / 32))
         self.avgpool = nn.AvgPool3d(
             (last_duration, last_size, last_size), stride=1)
@@ -174,29 +182,44 @@ class ResNeXt(nn.Module):
         return x
 
 
-def get_fine_tuning_parameters(model, ft_begin_index):
-    if ft_begin_index == 0:
+def get_fine_tuning_parameters(model, ft_portion):
+    if ft_portion == "complete":
         return model.parameters()
 
-    ft_module_names = []
-    for i in range(ft_begin_index, 5):
-        ft_module_names.append('layer{}'.format(i))
-    ft_module_names.append('fc')
+    elif ft_portion == "last_layer":
+        ft_module_names = []
+        ft_module_names.append('classifier')
 
-    parameters = []
-    for k, v in model.named_parameters():
-        for ft_module in ft_module_names:
-            if ft_module in k:
-                parameters.append({'params': v})
-                break
-        else:
-            parameters.append({'params': v, 'lr': 0.0})
+        parameters = []
+        for k, v in model.named_parameters():
+            for ft_module in ft_module_names:
+                if ft_module in k:
+                    parameters.append({'params': v})
+                    break
+            else:
+                parameters.append({'params': v, 'lr': 0.0})
+        return parameters
 
-    return parameters
+    else:
+        raise ValueError("Unsupported ft_portion: 'complete' or 'last_layer' expected")
+
+
+def resnet50(**kwargs):
+    """Constructs a ResNet-50 model.
+    """
+    model = ResNeXt(ResNeXtBottleneck, [3, 4, 6, 3], **kwargs)
+    return model
 
 
 def resnet101(**kwargs):
     """Constructs a ResNet-101 model.
     """
     model = ResNeXt(ResNeXtBottleneck, [3, 4, 23, 3], **kwargs)
+    return model
+
+
+def resnet152(**kwargs):
+    """Constructs a ResNet-101 model.
+    """
+    model = ResNeXt(ResNeXtBottleneck, [3, 8, 36, 3], **kwargs)
     return model
