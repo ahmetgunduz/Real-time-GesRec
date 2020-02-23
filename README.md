@@ -41,8 +41,9 @@ conda install pytorch torchvision cuda80 -c soumith
 * Python 3
 
 ### Pretrained models
-[Google Drive link](https://drive.google.com/drive/folders/1ECUkNqH8-maCh3Afy3hQWucLmhd1Ek7I?usp=sharing)
+[Pretrained_models_v1 (1.08GB)](s3://real-time-gesture-models/shared_models_v1.zip): The best performing models in [paper](https://arxiv.org/abs/1901.10323)
 
+[Pretrained_models_v2 (15.2GB)](s3://real-time-gesture-models/shared_models_v1.zip): All models in [paper](https://ieeexplore.ieee.org/document/8982092) with efficient 3D-CNN Models
 ## Preparation
 
 ### EgoGesture
