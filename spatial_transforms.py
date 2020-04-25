@@ -223,23 +223,23 @@ class CornerCrop(object):
         elif self.crop_position == 'tl':
             x1 = 0
             y1 = 0
-            x2 = x1 + self.size
-            y2 = y1 + self.size
+            x2 = self.size
+            y2 = self.size
         elif self.crop_position == 'tr':
             x1 = image_width - self.size
             y1 = 0
-            x2 = x1 + self.size
-            y2 = y1 + self.size
+            x2 = image_width
+            y2 = self.size
         elif self.crop_position == 'bl':
-            x1 = int(round((image_width - self.size) / 4.))
-            y1 = 0
-            x2 = x1 + self.size
-            y2 = y1 + self.size
+            x1 = 0
+            y1 = image_height - self.size
+            x2 = self.size
+            y2 = image_height
         elif self.crop_position == 'br':
-            x1 = (image_width - self.size) - int(round((image_width - self.size) / 4.))
-            y1 = 0
-            x2 = x1 + self.size
-            y2 = y1 + self.size
+            x1 = image_width - self.size
+            y1 = image_height - self.size
+            x2 = image_width
+            y2 = image_height
 
         img = img.crop((x1, y1, x2, y2))
 
@@ -250,8 +250,6 @@ class CornerCrop(object):
             self.crop_position = self.crop_positions[random.randint(
                 0,
                 len(self.crop_positions) - 1)]
-        else:
-            pass
 
 
 class RandomHorizontalFlip(object):
@@ -366,11 +364,20 @@ class MultiScaleRandomCrop(object):
 
     def randomize_parameters(self):
         self.scale = self.scales[random.randint(0, len(self.scales) - 1)]
+        #self.scale = 1
         self.tl_x = random.random()
         self.tl_y = random.random()
+
+
+
+
+
+
+
+
 class SpatialElasticDisplacement(object):
 
-    def __init__(self, sigma=2.0, alpha=1.0, order=0, cval=0, mode="constant"):
+    def __init__(self, sigma=3.0, alpha=1.0, order=3, cval=0, mode="constant"):
         self.alpha = alpha
         self.sigma = sigma
         self.order = order
@@ -378,15 +385,10 @@ class SpatialElasticDisplacement(object):
         self.mode = mode
 
     def __call__(self, img):
-        if self.p < 0.50:
-            is_L = False
+        if self.p < 0.65:
             is_PIL = isinstance(img, Image.Image)
-            
             if is_PIL:
-                img = np.asarray(img, dtype=np.uint8)
-            if len(img.shape) == 2:
-                is_L = True
-                img = np.reshape(img, img.shape + (1,))  
+                img = np.asarray(img)
 
             image = img
             image_first_channel = np.squeeze(image[..., 0])
@@ -399,11 +401,8 @@ class SpatialElasticDisplacement(object):
                 cval=self.cval,
                 mode=self.mode))
 
-            if  is_PIL:
-                if is_L:
-                    return Image.fromarray(ret_image.reshape(ret_image.shape[:2]), mode= 'L')
-                else:
-                    return Image.fromarray(ret_image)
+            if is_PIL:
+                return Image.fromarray(ret_image)
             else:
                 return ret_image
         else:
@@ -452,13 +451,30 @@ class RandomRotate(object):
         self.rotate_angle = random.randint(-10, 10)
 
 
+class RandomResize(object):
+
+    def __init__(self):
+        self.interpolation = Image.BILINEAR
+
+    def __call__(self, img):
+        im_size = img.size
+        ret_img = img.resize((int(im_size[0]*self.resize_const),
+                              int(im_size[1]*self.resize_const)))
+
+        return ret_img
+
+    def randomize_parameters(self):
+        self.resize_const = random.uniform(0.9, 1.1)
+
+
+
 class Gaussian_blur(object):
 
     def __init__(self, radius=0.0):
         self.radius = radius
 
     def __call__(self, img):
-        if self.p < 0.4:
+        if self.p < 0.2:
             blurred = ndimage.gaussian_filter(img, sigma=(5, 5, 0), order=0)
             return blurred
         else:
@@ -466,7 +482,7 @@ class Gaussian_blur(object):
 
     def randomize_parameters(self):
         self.p = random.random()
-        self.radius = random.uniform(0.0, 1.0)
+        self.radius = random.uniform(0.0, 0.1)
 
 
 class SaltImage(object):
@@ -478,7 +494,7 @@ class SaltImage(object):
         if is_PIL:
             img = np.asarray(img)
 
-        if self.p < 0.30:
+        if self.p < 0.10:
             data_final = []
             img = img.astype(np.float)
             img_shape = img.shape
@@ -494,7 +510,7 @@ class SaltImage(object):
 
     def randomize_parameters(self):
         self.p = random.random()
-        self.ratio = random.randint(40, 100)
+        self.ratio = random.randint(80, 120)
 
 
 class Dropout(object):
@@ -507,7 +523,7 @@ class Dropout(object):
         if is_PIL:
             img = np.asarray(img)
 
-        if self.p < 0.30:
+        if self.p < 0.10:
             data_final = []
             img = img.astype(np.float)
             img_shape = img.shape
@@ -522,7 +538,7 @@ class Dropout(object):
 
     def randomize_parameters(self):
         self.p = random.random()
-        self.ratio = random.randint(10, 25)
+        self.ratio = random.randint(30, 50)
 
 
 class MultiplyValues():
@@ -549,4 +565,3 @@ class MultiplyValues():
 
     def randomize_parameters(self):
         self.sample = random.uniform(1.0 - self.value, 1.0 + self.value)
-

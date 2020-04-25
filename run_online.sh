@@ -1,11 +1,11 @@
 #!/bin/bash
-python online_test.py \
-	--root_path ~/\
-	--video_path /usr/home/kop/datasets/EgoGesture \
-	--annotation_path Real-time-GesRec/annotation_EgoGesture/egogestureall.json \
-	--resume_path_det Real-time-GesRec/models/egogesture_resnetl_10_Depth_8.pth \
-	--resume_path_clf Real-time-GesRec/models/egogesture_resnext_101_Depth_32.pth \
-	--result_path Real-time-GesRec/results \
+python3 online_test.py \
+	--root_path /Users/A.Gunduz/Desktop/git/Real-time-GesRec/\
+	--video_path /data2/EgoGesture/images \
+	--annotation_path annotation_EgoGesture/egogestureall.json \
+	--resume_path_det report/egogesture_resnetl_10_Depth_8_9939.pth \
+	--resume_path_clf report/egogesture_resnext_101_Depth_32_9403.pth  \
+	--result_path results \
 	--dataset egogesture    \
 	--sample_duration_det 8 \
 	--sample_duration_clf 32 \
@@ -17,7 +17,9 @@ python online_test.py \
 	--resnet_shortcut_clf B \
 	--batch_size 1 \
 	--n_classes_det 2 \
+	--n_finetune_classes_det 2 \
 	--n_classes_clf 83 \
+	--n_finetune_classes_clf 83 \
 	--n_threads 16 \
 	--checkpoint 1 \
 	--modality_det Depth \
@@ -29,7 +31,8 @@ python online_test.py \
 	--det_queue_size 4 \
 	--det_counter 2 \
 	--clf_strategy median \
-	--clf_queue_size 32 \
-	--clf_threshold_pre 1.0 \
-	--clf_threshold_final 0.05 \
+	--clf_queue_size 16 \
+	--clf_threshold_pre 0.6 \
+	--clf_threshold_final 0.15 \
 	--stride_len 1 \
+	--no_cuda \
