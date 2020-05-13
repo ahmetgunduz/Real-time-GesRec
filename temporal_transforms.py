@@ -63,7 +63,7 @@ class TemporalCenterCrop(object):
         size (int): Desired output size of the crop.
     """
 
-    def __init__(self, size, downsample):
+    def __init__(self, size, downsample=1):
         self.size = size
         self.downsample = downsample
 
