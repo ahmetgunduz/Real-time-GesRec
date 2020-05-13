@@ -159,12 +159,27 @@ def generate_model(opt):
             else:
                 model.module.fc = nn.Linear(model.module.fc.in_features, opt.n_finetune_classes)
                 model.module.fc = model.module.fc.cuda()
+        if opt.modality == 'RGB' and opt.model != 'c3d':
+            print("[INFO]: RGB model is used for init model")
+            model = _modify_first_conv_layer(model,3,3) ##### Check models trained (3,7,7) or (7,7,7)
+        elif opt.modality == 'Depth':
+            print("[INFO]: Converting the pretrained model to Depth init model")
+            model = _construct_depth_model(model)
+            print("[INFO]: Done. Flow model ready.")
+        elif opt.modality == 'RGB-D':
+            print("[INFO]: Converting the pretrained model to RGB+D init model")
+            model = _construct_rgbdepth_model(model)
+            print("[INFO]: Done. RGB-D model ready.")
 
-            # model = _modify_first_conv_layer(model)
-            # model = model.cuda()
+        modules = list(model.modules())
+        first_conv_idx = list(filter(lambda x: isinstance(modules[x], nn.Conv3d),
+                                                   list(range(len(modules)))))[0]
+        conv_layer = modules[first_conv_idx]
+        if conv_layer.kernel_size[0]> opt.sample_duration:
+            model = _modify_first_conv_layer(model,int(opt.sample_duration/2),1) 
 
-            parameters = get_fine_tuning_parameters(model, opt.ft_portion)
-            return model, parameters
+        parameters = get_fine_tuning_parameters(model, opt.ft_portion)
+        return model, parameters
     else:
         if opt.pretrain_path:
             print('loading pretrained model {}'.format(opt.pretrain_path))
@@ -186,8 +201,36 @@ def generate_model(opt):
             else:
                 model.module.fc = nn.Linear(model.module.fc.in_features, opt.n_finetune_classes)
 
-            parameters = get_fine_tuning_parameters(model, opt.ft_begin_index)
-            return model, parameters
+        if opt.modality == 'RGB' and opt.model != 'c3d':
+            print("[INFO]: RGB model is used for init model")
+            model = _modify_first_conv_layer(model,3,3)
+        elif opt.modality == 'Depth':
+            print("[INFO]: Converting the pretrained model to Depth init model")
+            model = _construct_depth_model(model)
+            print("[INFO]: Deoth model ready.")
+        elif opt.modality == 'RGB-D':
+            print("[INFO]: Converting the pretrained model to RGB-D init model")
+            model = _construct_rgbdepth_model(model)
+            print("[INFO]: Done. RGB-D model ready.")
+
+        modules = list(model.modules())
+        first_conv_idx = list(filter(lambda x: isinstance(modules[x], nn.Conv3d),
+                                                   list(range(len(modules)))))[0]
+        conv_layer = modules[first_conv_idx]
+        if conv_layer.kernel_size[0]> opt.sample_duration:
+            print("[INFO]: RGB model is used for init model")
+            model = _modify_first_conv_layer(model,int(opt.sample_duration/2),1) 
+
+        if opt.model == 'c3d':# CHECK HERE
+            model.fc = nn.Linear(
+                model.fc[0].in_features, model.fc[0].out_features)
+        else:
+            model.fc = nn.Linear(model.fc.in_features,
+                                        opt.n_finetune_classes)
+        
+        parameters = get_fine_tuning_parameters(model, opt.ft_begin_index)
+        return model, parameters
+        
 
     return model, model.parameters()
 
