@@ -21,6 +21,7 @@ class C3D(nn.Module):
                  sample_size,
                  sample_duration,
                  num_classes=600):
+
         super(C3D, self).__init__()
         self.group1 = nn.Sequential(
             nn.Conv3d(3, 64, kernel_size=3, padding=1),
@@ -60,7 +61,7 @@ class C3D(nn.Module):
         last_duration = int(math.floor(sample_duration / 16))
         last_size = int(math.ceil(sample_size / 32))
         self.fc1 = nn.Sequential(
-            nn.Linear((512 * last_duration * last_size * last_size), 2048),
+            nn.Linear((512 * last_duration * last_size * last_size) , 2048),
             nn.ReLU(),
             nn.Dropout(0.5))
         self.fc2 = nn.Sequential(
@@ -68,7 +69,9 @@ class C3D(nn.Module):
             nn.ReLU(),
             nn.Dropout(0.5))
         self.fc = nn.Sequential(
-            nn.Linear(2048, num_classes))
+            nn.Linear(2048, num_classes))         
+
+        
 
     def forward(self, x):
         out = self.group1(x)
@@ -114,7 +117,7 @@ def get_model(**kwargs):
 
 
 if __name__ == '__main__':
-    model = get_model(sample_size=112, sample_duration=16, num_classes=600)
+    model = get_model(sample_size = 112, sample_duration = 16, num_classes=600)
     model = model.cuda()
     model = nn.DataParallel(model, device_ids=None)
     print(model)

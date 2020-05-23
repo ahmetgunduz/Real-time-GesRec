@@ -18,13 +18,12 @@ import pdb
 def pil_loader(path, modality):
     # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, 'rb') as f:
-        # print(path)
+        #print(path)
         with Image.open(f) as img:
             if modality == 'RGB':
                 return img.convert('RGB')
             elif modality == 'Depth':
-                return img.convert(
-                    'L')  # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
+                return img.convert('L') # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
 
 
 def accimage_loader(path, modality):
@@ -45,12 +44,13 @@ def get_default_image_loader():
 
 
 def video_loader(video_dir_path, frame_indices, modality, sample_duration, image_loader):
+    
     video = []
     if modality == 'RGB':
         for i in frame_indices:
             image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
             if os.path.exists(image_path):
-
+                
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
@@ -58,18 +58,20 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
     elif modality == 'Depth':
 
         for i in frame_indices:
-            image_path = os.path.join(video_dir_path.replace('color', 'depth'), '{:05d}.jpg'.format(i))
+            image_path = os.path.join(video_dir_path.replace('color','depth'), '{:05d}.jpg'.format(i) )
             if os.path.exists(image_path):
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
                 return video
     elif modality == 'RGB-D':
-        for i in frame_indices:  # index 35 is used to change img to flow
+        for i in frame_indices: # index 35 is used to change img to flow
             image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
 
-            image_path_depth = os.path.join(video_dir_path.replace('color', 'depth'), '{:05d}.jpg'.format(i))
+            
+            image_path_depth = os.path.join(video_dir_path.replace('color','depth'), '{:05d}.jpg'.format(i) )
 
+            
             image = image_loader(image_path, 'RGB')
             image_depth = image_loader(image_path_depth, 'Depth')
 
@@ -79,9 +81,8 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
             else:
                 print(image_path, "------- Does not exist")
                 return video
-
+    
     return video
-
 
 def get_default_video_loader():
     image_loader = get_default_image_loader()
@@ -110,7 +111,7 @@ def get_video_names_and_annotations(data, subset):
         this_subset = value['subset']
         if this_subset == subset:
             label = value['annotations']['label']
-            # video_names.append('{}/{}'.format(label, key))
+            #video_names.append('{}/{}'.format(label, key))
             video_names.append(key.split('^')[0])
             annotations.append(value['annotations'])
 
@@ -133,9 +134,11 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
             print('dataset loading [{}/{}]'.format(i, len(video_names)))
 
         video_path = os.path.join(root_path, video_names[i])
-
+        
         if not os.path.exists(video_path):
             continue
+
+        
 
         begin_t = int(annotations[i]['start_frame'])
         end_t = int(annotations[i]['end_frame'])
@@ -144,7 +147,7 @@ def make_dataset(root_path, annotation_path, subset, n_samples_for_each_video,
             'video': video_path,
             'segment': [begin_t, end_t],
             'n_frames': n_frames,
-            # 'video_id': video_names[i].split('/')[1]
+            #'video_id': video_names[i].split('/')[1]
             'video_id': i
         }
         if len(annotations) != 0:
@@ -225,14 +228,15 @@ class NV(data.Dataset):
         if self.temporal_transform is not None:
             frame_indices = self.temporal_transform(frame_indices)
         clip = self.loader(path, frame_indices, self.modality, self.sample_duration)
-        oversample_clip = []
+        oversample_clip =[]
         if self.spatial_transform is not None:
             self.spatial_transform.randomize_parameters()
             clip = [self.spatial_transform(img) for img in clip]
-
+    
         im_dim = clip[0].size()[-2:]
         clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
-
+        
+     
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)

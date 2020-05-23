@@ -20,7 +20,6 @@ Subject01/Scene1/Color/rgb1 84 1028 1096
 Subject01/Scene1/Color/rgb1 10 1097 1168
 Subject01/Scene1/Color/rgb1 84 1169 1200
 Subject01/Scene1/Color/rgb1 11 1201 1276
-Subject01/Scene1/Color/rgb1 84 1277 1316
 Subject01/Scene1/Color/rgb2 84 1 107
 Subject01/Scene1/Color/rgb2 12 108 154
 Subject01/Scene1/Color/rgb2 84 155 208
@@ -39,7 +38,6 @@ Subject01/Scene1/Color/rgb2 84 885 981
 Subject01/Scene1/Color/rgb2 20 982 1025
 Subject01/Scene1/Color/rgb2 84 1026 1084
 Subject01/Scene1/Color/rgb2 19 1085 1133
-Subject01/Scene1/Color/rgb2 84 1134 1222
 Subject01/Scene1/Color/rgb3 84 1 81
 Subject01/Scene1/Color/rgb3 21 82 123
 Subject01/Scene1/Color/rgb3 84 124 188
@@ -88,7 +86,6 @@ Subject01/Scene1/Color/rgb4 84 954 1091
 Subject01/Scene1/Color/rgb4 43 1092 1145
 Subject01/Scene1/Color/rgb4 84 1146 1245
 Subject01/Scene1/Color/rgb4 44 1246 1299
-Subject01/Scene1/Color/rgb4 84 1300 1313
 Subject01/Scene1/Color/rgb5 84 1 74
 Subject01/Scene1/Color/rgb5 45 75 119
 Subject01/Scene1/Color/rgb5 84 120 189
@@ -107,7 +104,6 @@ Subject01/Scene1/Color/rgb5 84 820 883
 Subject01/Scene1/Color/rgb5 52 884 944
 Subject01/Scene1/Color/rgb5 84 945 992
 Subject01/Scene1/Color/rgb5 53 993 1046
-Subject01/Scene1/Color/rgb5 84 1047 1095
 Subject01/Scene1/Color/rgb6 84 1 120
 Subject01/Scene1/Color/rgb6 54 121 171
 Subject01/Scene1/Color/rgb6 84 172 216
@@ -128,7 +124,6 @@ Subject01/Scene1/Color/rgb6 84 961 1042
 Subject01/Scene1/Color/rgb6 62 1043 1103
 Subject01/Scene1/Color/rgb6 84 1104 1173
 Subject01/Scene1/Color/rgb6 63 1174 1211
-Subject01/Scene1/Color/rgb6 84 1212 1289
 Subject01/Scene1/Color/rgb7 64 6 58
 Subject01/Scene1/Color/rgb7 84 59 125
 Subject01/Scene1/Color/rgb7 66 126 162
@@ -146,7 +141,6 @@ Subject01/Scene1/Color/rgb7 84 734 763
 Subject01/Scene1/Color/rgb7 71 764 819
 Subject01/Scene1/Color/rgb7 84 820 840
 Subject01/Scene1/Color/rgb7 72 841 892
-Subject01/Scene1/Color/rgb7 84 893 913
 Subject01/Scene1/Color/rgb8 84 1 72
 Subject01/Scene1/Color/rgb8 73 73 149
 Subject01/Scene1/Color/rgb8 84 150 212
@@ -169,7 +163,6 @@ Subject01/Scene1/Color/rgb8 84 1074 1125
 Subject01/Scene1/Color/rgb8 82 1126 1180
 Subject01/Scene1/Color/rgb8 84 1181 1251
 Subject01/Scene1/Color/rgb8 83 1252 1306
-Subject01/Scene1/Color/rgb8 84 1307 1360
 Subject01/Scene2/Color/rgb1 84 1 89
 Subject01/Scene2/Color/rgb1 11 90 133
 Subject01/Scene2/Color/rgb1 84 134 159
@@ -192,7 +185,6 @@ Subject01/Scene2/Color/rgb1 84 646 660
 Subject01/Scene2/Color/rgb1 5 661 682
 Subject01/Scene2/Color/rgb1 84 683 699
 Subject01/Scene2/Color/rgb1 6 700 722
-Subject01/Scene2/Color/rgb1 84 723 738
 Subject01/Scene2/Color/rgb2 84 1 67
 Subject01/Scene2/Color/rgb2 12 68 112
 Subject01/Scene2/Color/rgb2 84 113 176
@@ -211,7 +203,6 @@ Subject01/Scene2/Color/rgb2 84 616 661
 Subject01/Scene2/Color/rgb2 19 662 697
 Subject01/Scene2/Color/rgb2 84 698 711
 Subject01/Scene2/Color/rgb2 20 712 737
-Subject01/Scene2/Color/rgb2 84 738 753
 Subject01/Scene2/Color/rgb3 84 1 36
 Subject01/Scene2/Color/rgb3 21 37 62
 Subject01/Scene2/Color/rgb3 84 63 102
@@ -238,7 +229,6 @@ Subject01/Scene2/Color/rgb3 84 541 565
 Subject01/Scene2/Color/rgb3 33 566 586
 Subject01/Scene2/Color/rgb3 84 587 628
 Subject01/Scene2/Color/rgb3 29 629 651
-Subject01/Scene2/Color/rgb3 84 652 700
 Subject01/Scene2/Color/rgb4 84 1 36
 Subject01/Scene2/Color/rgb4 34 37 58
 Subject01/Scene2/Color/rgb4 84 59 85
@@ -263,7 +253,6 @@ Subject01/Scene2/Color/rgb4 84 632 660
 Subject01/Scene2/Color/rgb4 41 661 695
 Subject01/Scene2/Color/rgb4 84 696 754
 Subject01/Scene2/Color/rgb4 46 755 793
-Subject01/Scene2/Color/rgb4 84 794 855
 Subject01/Scene2/Color/rgb5 84 1 32
 Subject01/Scene2/Color/rgb5 45 33 59
 Subject01/Scene2/Color/rgb5 84 60 75
@@ -288,7 +277,6 @@ Subject01/Scene2/Color/rgb5 84 611 642
 Subject01/Scene2/Color/rgb5 56 643 679
 Subject01/Scene2/Color/rgb5 84 680 705
 Subject01/Scene2/Color/rgb5 57 706 739
-Subject01/Scene2/Color/rgb5 84 740 780
 Subject01/Scene2/Color/rgb6 84 1 35
 Subject01/Scene2/Color/rgb6 58 36 66
 Subject01/Scene2/Color/rgb6 84 67 90
@@ -303,7 +291,6 @@ Subject01/Scene2/Color/rgb6 84 287 316
 Subject01/Scene2/Color/rgb6 62 317 353
 Subject01/Scene2/Color/rgb6 84 354 381
 Subject01/Scene2/Color/rgb6 65 382 405
-Subject01/Scene2/Color/rgb6 84 406 444
 Subject01/Scene2/Color/rgb7 64 1 8
 Subject01/Scene2/Color/rgb7 84 9 49
 Subject01/Scene2/Color/rgb7 66 50 70
@@ -341,7 +328,6 @@ Subject01/Scene2/Color/rgb8 84 1150 1322
 Subject01/Scene2/Color/rgb8 80 1323 1378
 Subject01/Scene2/Color/rgb8 84 1379 1509
 Subject01/Scene2/Color/rgb8 82 1510 1564
-Subject01/Scene2/Color/rgb8 84 1565 1636
 Subject01/Scene3/Color/rgb1 84 1 135
 Subject01/Scene3/Color/rgb1 4 136 176
 Subject01/Scene3/Color/rgb1 84 177 218
@@ -360,7 +346,6 @@ Subject01/Scene3/Color/rgb1 84 744 775
 Subject01/Scene3/Color/rgb1 9 776 846
 Subject01/Scene3/Color/rgb1 84 847 881
 Subject01/Scene3/Color/rgb1 6 882 920
-Subject01/Scene3/Color/rgb1 84 921 964
 Subject01/Scene3/Color/rgb2 84 1 197
 Subject01/Scene3/Color/rgb2 12 198 248
 Subject01/Scene3/Color/rgb2 84 249 417
@@ -379,7 +364,6 @@ Subject01/Scene3/Color/rgb2 84 1130 1198
 Subject01/Scene3/Color/rgb2 15 1199 1244
 Subject01/Scene3/Color/rgb2 84 1245 1291
 Subject01/Scene3/Color/rgb2 11 1292 1359
-Subject01/Scene3/Color/rgb2 84 1360 1413
 Subject01/Scene3/Color/rgb3 84 1 75
 Subject01/Scene3/Color/rgb3 33 76 105
 Subject01/Scene3/Color/rgb3 84 106 144
@@ -398,7 +382,6 @@ Subject01/Scene3/Color/rgb3 84 504 550
 Subject01/Scene3/Color/rgb3 36 551 603
 Subject01/Scene3/Color/rgb3 84 604 680
 Subject01/Scene3/Color/rgb3 35 681 716
-Subject01/Scene3/Color/rgb3 84 717 770
 Subject01/Scene3/Color/rgb4 84 1 86
 Subject01/Scene3/Color/rgb4 38 87 135
 Subject01/Scene3/Color/rgb4 84 136 184
@@ -411,7 +394,6 @@ Subject01/Scene3/Color/rgb4 84 429 523
 Subject01/Scene3/Color/rgb4 40 524 577
 Subject01/Scene3/Color/rgb4 84 578 597
 Subject01/Scene3/Color/rgb4 42 598 646
-Subject01/Scene3/Color/rgb4 84 647 679
 Subject01/Scene3/Color/rgb5 84 1 80
 Subject01/Scene3/Color/rgb5 43 81 128
 Subject01/Scene3/Color/rgb5 84 129 410
@@ -422,7 +404,6 @@ Subject01/Scene3/Color/rgb5 84 633 761
 Subject01/Scene3/Color/rgb5 44 762 803
 Subject01/Scene3/Color/rgb5 84 804 989
 Subject01/Scene3/Color/rgb5 47 990 1029
-Subject01/Scene3/Color/rgb5 84 1030 1080
 Subject01/Scene3/Color/rgb6 84 1 53
 Subject01/Scene3/Color/rgb6 48 54 110
 Subject01/Scene3/Color/rgb6 84 111 141
@@ -439,7 +420,6 @@ Subject01/Scene3/Color/rgb6 84 551 585
 Subject01/Scene3/Color/rgb6 53 586 626
 Subject01/Scene3/Color/rgb6 84 627 709
 Subject01/Scene3/Color/rgb6 55 710 749
-Subject01/Scene3/Color/rgb6 84 750 845
 Subject01/Scene3/Color/rgb7 84 1 73
 Subject01/Scene3/Color/rgb7 56 74 116
 Subject01/Scene3/Color/rgb7 84 117 181
@@ -496,7 +476,6 @@ Subject01/Scene3/Color/rgb8 84 1110 1163
 Subject01/Scene3/Color/rgb8 75 1164 1213
 Subject01/Scene3/Color/rgb8 84 1214 1274
 Subject01/Scene3/Color/rgb8 73 1275 1341
-Subject01/Scene3/Color/rgb8 84 1342 1367
 Subject01/Scene4/Color/rgb1 84 1 118
 Subject01/Scene4/Color/rgb1 1 119 152
 Subject01/Scene4/Color/rgb1 84 153 174
@@ -511,7 +490,6 @@ Subject01/Scene4/Color/rgb1 84 473 505
 Subject01/Scene4/Color/rgb1 3 506 536
 Subject01/Scene4/Color/rgb1 84 537 563
 Subject01/Scene4/Color/rgb1 4 564 584
-Subject01/Scene4/Color/rgb1 84 585 639
 Subject01/Scene4/Color/rgb2 84 1 109
 Subject01/Scene4/Color/rgb2 10 110 172
 Subject01/Scene4/Color/rgb2 84 173 224
@@ -530,7 +508,6 @@ Subject01/Scene4/Color/rgb2 84 923 965
 Subject01/Scene4/Color/rgb2 5 966 995
 Subject01/Scene4/Color/rgb2 84 996 1059
 Subject01/Scene4/Color/rgb2 9 1060 1104
-Subject01/Scene4/Color/rgb2 84 1105 1156
 Subject01/Scene4/Color/rgb3 84 1 62
 Subject01/Scene4/Color/rgb3 16 63 105
 Subject01/Scene4/Color/rgb3 84 106 167
@@ -547,7 +524,6 @@ Subject01/Scene4/Color/rgb3 84 662 709
 Subject01/Scene4/Color/rgb3 23 710 749
 Subject01/Scene4/Color/rgb3 84 750 840
 Subject01/Scene4/Color/rgb3 19 841 879
-Subject01/Scene4/Color/rgb3 84 880 914
 Subject01/Scene4/Color/rgb4 84 1 227
 Subject01/Scene4/Color/rgb4 24 228 259
 Subject01/Scene4/Color/rgb4 84 260 312
@@ -568,7 +544,6 @@ Subject01/Scene4/Color/rgb4 84 916 957
 Subject01/Scene4/Color/rgb4 30 958 988
 Subject01/Scene4/Color/rgb4 84 989 1023
 Subject01/Scene4/Color/rgb4 33 1024 1059
-Subject01/Scene4/Color/rgb4 84 1060 1077
 Subject01/Scene4/Color/rgb5 84 1 340
 Subject01/Scene4/Color/rgb5 34 341 372
 Subject01/Scene4/Color/rgb5 84 373 420
@@ -587,7 +562,6 @@ Subject01/Scene4/Color/rgb5 84 1102 1183
 Subject01/Scene4/Color/rgb5 41 1184 1234
 Subject01/Scene4/Color/rgb5 84 1235 1281
 Subject01/Scene4/Color/rgb5 40 1282 1338
-Subject01/Scene4/Color/rgb5 84 1339 1372
 Subject01/Scene4/Color/rgb6 84 1 186
 Subject01/Scene4/Color/rgb6 43 187 236
 Subject01/Scene4/Color/rgb6 84 237 302
@@ -606,7 +580,6 @@ Subject01/Scene4/Color/rgb6 84 946 1042
 Subject01/Scene4/Color/rgb6 46 1043 1087
 Subject01/Scene4/Color/rgb6 84 1088 1200
 Subject01/Scene4/Color/rgb6 44 1201 1245
-Subject01/Scene4/Color/rgb6 84 1246 1345
 Subject01/Scene4/Color/rgb7 52 2 34
 Subject01/Scene4/Color/rgb7 84 35 143
 Subject01/Scene4/Color/rgb7 54 144 187
@@ -628,7 +601,6 @@ Subject01/Scene4/Color/rgb7 84 1027 1100
 Subject01/Scene4/Color/rgb7 61 1101 1155
 Subject01/Scene4/Color/rgb7 84 1156 1224
 Subject01/Scene4/Color/rgb7 62 1225 1274
-Subject01/Scene4/Color/rgb7 84 1275 1310
 Subject01/Scene4/Color/rgb8 84 1 81
 Subject01/Scene4/Color/rgb8 63 82 115
 Subject01/Scene4/Color/rgb8 84 116 213
@@ -649,7 +621,6 @@ Subject01/Scene4/Color/rgb8 84 906 972
 Subject01/Scene4/Color/rgb8 65 973 1009
 Subject01/Scene4/Color/rgb8 84 1010 1080
 Subject01/Scene4/Color/rgb8 67 1081 1119
-Subject01/Scene4/Color/rgb8 84 1120 1227
 Subject01/Scene4/Color/rgb9 84 1 115
 Subject01/Scene4/Color/rgb9 83 116 172
 Subject01/Scene4/Color/rgb9 84 173 227
@@ -672,7 +643,6 @@ Subject01/Scene4/Color/rgb9 84 964 1019
 Subject01/Scene4/Color/rgb9 80 1020 1068
 Subject01/Scene4/Color/rgb9 84 1069 1123
 Subject01/Scene4/Color/rgb9 82 1124 1173
-Subject01/Scene4/Color/rgb9 84 1174 1188
 Subject01/Scene5/Color/rgb1 84 1 104
 Subject01/Scene5/Color/rgb1 81 105 162
 Subject01/Scene5/Color/rgb1 84 163 342
@@ -697,7 +667,6 @@ Subject01/Scene5/Color/rgb1 84 1143 1240
 Subject01/Scene5/Color/rgb1 69 1241 1284
 Subject01/Scene5/Color/rgb1 84 1285 1318
 Subject01/Scene5/Color/rgb1 49 1319 1362
-Subject01/Scene5/Color/rgb1 84 1363 1400
 Subject01/Scene5/Color/rgb2 84 1 63
 Subject01/Scene5/Color/rgb2 23 64 107
 Subject01/Scene5/Color/rgb2 84 108 155
@@ -722,7 +691,6 @@ Subject01/Scene5/Color/rgb2 84 1322 1391
 Subject01/Scene5/Color/rgb2 7 1392 1430
 Subject01/Scene5/Color/rgb2 84 1431 1500
 Subject01/Scene5/Color/rgb2 58 1501 1548
-Subject01/Scene5/Color/rgb2 84 1549 1613
 Subject01/Scene5/Color/rgb3 84 1 18
 Subject01/Scene5/Color/rgb3 60 19 45
 Subject01/Scene5/Color/rgb3 84 46 83
@@ -747,7 +715,6 @@ Subject01/Scene5/Color/rgb3 84 781 815
 Subject01/Scene5/Color/rgb3 50 816 851
 Subject01/Scene5/Color/rgb3 84 852 911
 Subject01/Scene5/Color/rgb3 67 912 942
-Subject01/Scene5/Color/rgb3 84 943 1006
 Subject01/Scene5/Color/rgb4 84 1 13
 Subject01/Scene5/Color/rgb4 8 14 62
 Subject01/Scene5/Color/rgb4 84 63 239
@@ -772,7 +739,6 @@ Subject01/Scene5/Color/rgb4 84 1192 1288
 Subject01/Scene5/Color/rgb4 79 1289 1342
 Subject01/Scene5/Color/rgb4 84 1343 1418
 Subject01/Scene5/Color/rgb4 59 1419 1465
-Subject01/Scene5/Color/rgb4 84 1466 1505
 Subject01/Scene5/Color/rgb5 84 1 95
 Subject01/Scene5/Color/rgb5 12 96 145
 Subject01/Scene5/Color/rgb5 84 146 194
@@ -797,7 +763,6 @@ Subject01/Scene5/Color/rgb5 84 1293 1354
 Subject01/Scene5/Color/rgb5 45 1355 1400
 Subject01/Scene5/Color/rgb5 84 1401 1447
 Subject01/Scene5/Color/rgb5 30 1448 1479
-Subject01/Scene5/Color/rgb5 84 1480 1517
 Subject01/Scene5/Color/rgb6 84 1 85
 Subject01/Scene5/Color/rgb6 22 86 123
 Subject01/Scene5/Color/rgb6 84 124 164
@@ -822,7 +787,6 @@ Subject01/Scene5/Color/rgb6 84 1013 1064
 Subject01/Scene5/Color/rgb6 36 1065 1106
 Subject01/Scene5/Color/rgb6 84 1107 1174
 Subject01/Scene5/Color/rgb6 64 1175 1207
-Subject01/Scene5/Color/rgb6 84 1208 1312
 Subject01/Scene5/Color/rgb7 84 1 78
 Subject01/Scene5/Color/rgb7 33 79 108
 Subject01/Scene5/Color/rgb7 84 109 280
@@ -845,7 +809,6 @@ Subject01/Scene5/Color/rgb7 84 1017 1073
 Subject01/Scene5/Color/rgb7 48 1074 1114
 Subject01/Scene5/Color/rgb7 84 1115 1189
 Subject01/Scene5/Color/rgb7 78 1190 1226
-Subject01/Scene5/Color/rgb7 84 1227 1293
 Subject01/Scene6/Color/rgb1 84 1 317
 Subject01/Scene6/Color/rgb1 81 318 359
 Subject01/Scene6/Color/rgb1 84 360 410
@@ -870,7 +833,6 @@ Subject01/Scene6/Color/rgb1 84 1255 1307
 Subject01/Scene6/Color/rgb1 77 1308 1342
 Subject01/Scene6/Color/rgb1 84 1343 1387
 Subject01/Scene6/Color/rgb1 34 1388 1415
-Subject01/Scene6/Color/rgb1 84 1416 1476
 Subject01/Scene6/Color/rgb2 31 1 91
 Subject01/Scene6/Color/rgb2 84 92 521
 Subject01/Scene6/Color/rgb2 17 522 548
@@ -894,7 +856,6 @@ Subject01/Scene6/Color/rgb2 84 1355 1494
 Subject01/Scene6/Color/rgb2 15 1495 1541
 Subject01/Scene6/Color/rgb2 84 1542 1572
 Subject01/Scene6/Color/rgb2 42 1573 1618
-Subject01/Scene6/Color/rgb2 84 1619 1688
 Subject01/Scene6/Color/rgb3 84 1 40
 Subject01/Scene6/Color/rgb3 30 41 68
 Subject01/Scene6/Color/rgb3 84 69 110
@@ -919,7 +880,6 @@ Subject01/Scene6/Color/rgb3 84 987 1033
 Subject01/Scene6/Color/rgb3 24 1034 1068
 Subject01/Scene6/Color/rgb3 84 1069 1113
 Subject01/Scene6/Color/rgb3 45 1114 1149
-Subject01/Scene6/Color/rgb3 84 1150 1187
 Subject01/Scene6/Color/rgb4 84 1 97
 Subject01/Scene6/Color/rgb4 9 98 135
 Subject01/Scene6/Color/rgb4 84 136 177
@@ -944,7 +904,6 @@ Subject01/Scene6/Color/rgb4 84 921 994
 Subject01/Scene6/Color/rgb4 70 995 1041
 Subject01/Scene6/Color/rgb4 84 1042 1104
 Subject01/Scene6/Color/rgb4 82 1105 1146
-Subject01/Scene6/Color/rgb4 84 1147 1184
 Subject01/Scene6/Color/rgb5 84 1 48
 Subject01/Scene6/Color/rgb5 61 49 97
 Subject01/Scene6/Color/rgb5 84 98 139
@@ -969,7 +928,6 @@ Subject01/Scene6/Color/rgb5 84 997 1026
 Subject01/Scene6/Color/rgb5 29 1027 1059
 Subject01/Scene6/Color/rgb5 84 1060 1138
 Subject01/Scene6/Color/rgb5 54 1139 1177
-Subject01/Scene6/Color/rgb5 84 1178 1255
 Subject01/Scene6/Color/rgb6 84 1 89
 Subject01/Scene6/Color/rgb6 37 90 122
 Subject01/Scene6/Color/rgb6 84 123 205
@@ -994,7 +952,6 @@ Subject01/Scene6/Color/rgb6 84 1190 1281
 Subject01/Scene6/Color/rgb6 71 1282 1302
 Subject01/Scene6/Color/rgb6 84 1303 1390
 Subject01/Scene6/Color/rgb6 78 1391 1425
-Subject01/Scene6/Color/rgb6 84 1426 1461
 Subject01/Scene6/Color/rgb7 84 1 99
 Subject01/Scene6/Color/rgb7 22 100 144
 Subject01/Scene6/Color/rgb7 84 145 215
@@ -1017,7 +974,6 @@ Subject01/Scene6/Color/rgb7 84 1072 1170
 Subject01/Scene6/Color/rgb7 26 1171 1198
 Subject01/Scene6/Color/rgb7 84 1199 1277
 Subject01/Scene6/Color/rgb7 56 1278 1317
-Subject01/Scene6/Color/rgb7 84 1318 1388
 Subject07/Scene1/Color/rgb1 84 1 124
 Subject07/Scene1/Color/rgb1 4 125 166
 Subject07/Scene1/Color/rgb1 84 167 236
@@ -1060,7 +1016,6 @@ Subject07/Scene1/Color/rgb2 84 1187 1309
 Subject07/Scene1/Color/rgb2 23 1310 1376
 Subject07/Scene1/Color/rgb2 84 1377 1483
 Subject07/Scene1/Color/rgb2 22 1484 1551
-Subject07/Scene1/Color/rgb2 84 1552 1568
 Subject07/Scene1/Color/rgb3 84 1 130
 Subject07/Scene1/Color/rgb3 18 131 212
 Subject07/Scene1/Color/rgb3 84 213 265
@@ -1081,7 +1036,6 @@ Subject07/Scene1/Color/rgb3 84 1273 1339
 Subject07/Scene1/Color/rgb3 33 1340 1381
 Subject07/Scene1/Color/rgb3 84 1382 1432
 Subject07/Scene1/Color/rgb3 34 1433 1486
-Subject07/Scene1/Color/rgb3 84 1487 1609
 Subject07/Scene1/Color/rgb4 84 1 38
 Subject07/Scene1/Color/rgb4 32 39 82
 Subject07/Scene1/Color/rgb4 84 83 175
@@ -1108,7 +1062,6 @@ Subject07/Scene1/Color/rgb4 84 1445 1556
 Subject07/Scene1/Color/rgb4 36 1557 1616
 Subject07/Scene1/Color/rgb4 84 1617 1671
 Subject07/Scene1/Color/rgb4 37 1672 1722
-Subject07/Scene1/Color/rgb4 84 1723 1828
 Subject07/Scene1/Color/rgb5 84 1 176
 Subject07/Scene1/Color/rgb5 43 177 226
 Subject07/Scene1/Color/rgb5 84 227 293
@@ -1133,7 +1086,6 @@ Subject07/Scene1/Color/rgb5 84 1325 1396
 Subject07/Scene1/Color/rgb5 49 1397 1473
 Subject07/Scene1/Color/rgb5 84 1474 1553
 Subject07/Scene1/Color/rgb5 45 1554 1599
-Subject07/Scene1/Color/rgb5 84 1600 1774
 Subject07/Scene1/Color/rgb6 84 1 97
 Subject07/Scene1/Color/rgb6 46 98 151
 Subject07/Scene1/Color/rgb6 84 152 229
@@ -1152,7 +1104,6 @@ Subject07/Scene1/Color/rgb6 84 896 988
 Subject07/Scene1/Color/rgb6 54 989 1039
 Subject07/Scene1/Color/rgb6 84 1040 1208
 Subject07/Scene1/Color/rgb6 63 1209 1252
-Subject07/Scene1/Color/rgb6 84 1253 1407
 Subject07/Scene1/Color/rgb7 84 1 67
 Subject07/Scene1/Color/rgb7 64 68 116
 Subject07/Scene1/Color/rgb7 84 117 210
@@ -1171,7 +1122,6 @@ Subject07/Scene1/Color/rgb7 84 994 1064
 Subject07/Scene1/Color/rgb7 70 1065 1127
 Subject07/Scene1/Color/rgb7 84 1128 1220
 Subject07/Scene1/Color/rgb7 66 1221 1266
-Subject07/Scene1/Color/rgb7 84 1267 1362
 Subject07/Scene2/Color/rgb1 84 1 139
 Subject07/Scene2/Color/rgb1 62 140 178
 Subject07/Scene2/Color/rgb1 84 179 229
@@ -1192,7 +1142,6 @@ Subject07/Scene2/Color/rgb1 84 1163 1301
 Subject07/Scene2/Color/rgb1 72 1302 1364
 Subject07/Scene2/Color/rgb1 84 1365 1770
 Subject07/Scene2/Color/rgb1 71 1771 1830
-Subject07/Scene2/Color/rgb1 84 1831 1843
 Subject07/Scene2/Color/rgb2 84 1 70
 Subject07/Scene2/Color/rgb2 53 71 133
 Subject07/Scene2/Color/rgb2 84 134 218
@@ -1221,7 +1170,6 @@ Subject07/Scene2/Color/rgb2 84 1647 1752
 Subject07/Scene2/Color/rgb2 64 1753 1801
 Subject07/Scene2/Color/rgb2 84 1802 1892
 Subject07/Scene2/Color/rgb2 68 1893 1948
-Subject07/Scene2/Color/rgb2 84 1949 2027
 Subject07/Scene2/Color/rgb3 84 1 135
 Subject07/Scene2/Color/rgb3 44 136 188
 Subject07/Scene2/Color/rgb3 84 189 256
@@ -1246,7 +1194,6 @@ Subject07/Scene2/Color/rgb3 84 1562 1598
 Subject07/Scene2/Color/rgb3 36 1599 1666
 Subject07/Scene2/Color/rgb3 84 1667 1719
 Subject07/Scene2/Color/rgb3 39 1720 1807
-Subject07/Scene2/Color/rgb3 84 1808 1882
 Subject07/Scene2/Color/rgb4 84 1 134
 Subject07/Scene2/Color/rgb4 35 135 189
 Subject07/Scene2/Color/rgb4 84 190 285
@@ -1271,7 +1218,6 @@ Subject07/Scene2/Color/rgb4 84 1364 1422
 Subject07/Scene2/Color/rgb4 29 1423 1480
 Subject07/Scene2/Color/rgb4 84 1481 1524
 Subject07/Scene2/Color/rgb4 30 1525 1591
-Subject07/Scene2/Color/rgb4 84 1592 1683
 Subject07/Scene2/Color/rgb5 84 1 44
 Subject07/Scene2/Color/rgb5 24 45 104
 Subject07/Scene2/Color/rgb5 84 105 149
@@ -1288,7 +1234,6 @@ Subject07/Scene2/Color/rgb5 84 727 770
 Subject07/Scene2/Color/rgb5 23 771 856
 Subject07/Scene2/Color/rgb5 84 857 938
 Subject07/Scene2/Color/rgb5 4 939 978
-Subject07/Scene2/Color/rgb5 84 979 1117
 Subject07/Scene2/Color/rgb6 84 1 73
 Subject07/Scene2/Color/rgb6 22 74 127
 Subject07/Scene2/Color/rgb6 84 128 365
@@ -1305,7 +1250,6 @@ Subject07/Scene2/Color/rgb6 84 1041 1143
 Subject07/Scene2/Color/rgb6 4 1144 1190
 Subject07/Scene2/Color/rgb6 84 1191 1469
 Subject07/Scene2/Color/rgb6 12 1470 1516
-Subject07/Scene2/Color/rgb6 84 1517 1659
 Subject07/Scene2/Color/rgb7 84 1 114
 Subject07/Scene2/Color/rgb7 13 115 168
 Subject07/Scene2/Color/rgb7 84 169 256
@@ -1324,7 +1268,6 @@ Subject07/Scene2/Color/rgb7 84 1016 1099
 Subject07/Scene2/Color/rgb7 9 1100 1162
 Subject07/Scene2/Color/rgb7 84 1163 1236
 Subject07/Scene2/Color/rgb7 3 1237 1289
-Subject07/Scene2/Color/rgb7 84 1290 1414
 Subject07/Scene3/Color/rgb1 84 1 98
 Subject07/Scene3/Color/rgb1 2 99 155
 Subject07/Scene3/Color/rgb1 84 156 236
@@ -1347,7 +1290,6 @@ Subject07/Scene3/Color/rgb1 84 1580 1657
 Subject07/Scene3/Color/rgb1 71 1658 1712
 Subject07/Scene3/Color/rgb1 84 1713 1845
 Subject07/Scene3/Color/rgb1 69 1846 1906
-Subject07/Scene3/Color/rgb1 84 1907 2005
 Subject07/Scene3/Color/rgb2 84 1 66
 Subject07/Scene3/Color/rgb2 6 67 120
 Subject07/Scene3/Color/rgb2 84 121 345
@@ -1372,7 +1314,6 @@ Subject07/Scene3/Color/rgb2 84 1664 1790
 Subject07/Scene3/Color/rgb2 65 1791 1838
 Subject07/Scene3/Color/rgb2 84 1839 1969
 Subject07/Scene3/Color/rgb2 61 1970 2037
-Subject07/Scene3/Color/rgb2 84 2038 2211
 Subject07/Scene3/Color/rgb3 84 1 119
 Subject07/Scene3/Color/rgb3 59 120 177
 Subject07/Scene3/Color/rgb3 84 178 316
@@ -1395,7 +1336,6 @@ Subject07/Scene3/Color/rgb3 84 1366 1444
 Subject07/Scene3/Color/rgb3 51 1445 1497
 Subject07/Scene3/Color/rgb3 84 1498 1558
 Subject07/Scene3/Color/rgb3 49 1559 1631
-Subject07/Scene3/Color/rgb3 84 1632 1744
 Subject07/Scene3/Color/rgb4 84 1 71
 Subject07/Scene3/Color/rgb4 46 72 124
 Subject07/Scene3/Color/rgb4 84 125 216
@@ -1416,7 +1356,6 @@ Subject07/Scene3/Color/rgb4 84 1117 1242
 Subject07/Scene3/Color/rgb4 20 1243 1291
 Subject07/Scene3/Color/rgb4 84 1292 1353
 Subject07/Scene3/Color/rgb4 19 1354 1406
-Subject07/Scene3/Color/rgb4 84 1407 1492
 Subject07/Scene3/Color/rgb5 84 1 115
 Subject07/Scene3/Color/rgb5 12 116 162
 Subject07/Scene3/Color/rgb5 84 163 267
@@ -1437,7 +1376,6 @@ Subject07/Scene3/Color/rgb5 84 1115 1170
 Subject07/Scene3/Color/rgb5 22 1171 1224
 Subject07/Scene3/Color/rgb5 84 1225 1318
 Subject07/Scene3/Color/rgb5 26 1319 1368
-Subject07/Scene3/Color/rgb5 84 1369 1456
 Subject07/Scene3/Color/rgb6 84 1 83
 Subject07/Scene3/Color/rgb6 52 84 159
 Subject07/Scene3/Color/rgb6 84 160 264
@@ -1460,7 +1398,6 @@ Subject07/Scene3/Color/rgb6 84 1312 1366
 Subject07/Scene3/Color/rgb6 39 1367 1454
 Subject07/Scene3/Color/rgb6 84 1455 1541
 Subject07/Scene3/Color/rgb6 31 1542 1594
-Subject07/Scene3/Color/rgb6 84 1595 1741
 Subject07/Scene3/Color/rgb7 84 1 116
 Subject07/Scene3/Color/rgb7 42 117 204
 Subject07/Scene3/Color/rgb7 84 205 285
@@ -1479,7 +1416,6 @@ Subject07/Scene3/Color/rgb7 84 1109 1176
 Subject07/Scene3/Color/rgb7 30 1177 1229
 Subject07/Scene3/Color/rgb7 84 1230 1274
 Subject07/Scene3/Color/rgb7 32 1275 1321
-Subject07/Scene3/Color/rgb7 84 1322 1537
 Subject07/Scene4/Color/rgb1 84 1 114
 Subject07/Scene4/Color/rgb1 2 115 148
 Subject07/Scene4/Color/rgb1 84 149 226
@@ -1500,7 +1436,6 @@ Subject07/Scene4/Color/rgb1 84 1005 1082
 Subject07/Scene4/Color/rgb1 5 1083 1137
 Subject07/Scene4/Color/rgb1 84 1138 1195
 Subject07/Scene4/Color/rgb1 10 1196 1270
-Subject07/Scene4/Color/rgb1 84 1271 1290
 Subject07/Scene4/Color/rgb2 84 1 157
 Subject07/Scene4/Color/rgb2 10 158 240
 Subject07/Scene4/Color/rgb2 84 241 281
@@ -1523,7 +1458,6 @@ Subject07/Scene4/Color/rgb2 84 1339 1405
 Subject07/Scene4/Color/rgb2 21 1406 1477
 Subject07/Scene4/Color/rgb2 84 1478 1533
 Subject07/Scene4/Color/rgb2 19 1534 1573
-Subject07/Scene4/Color/rgb2 84 1574 1628
 Subject07/Scene4/Color/rgb3 84 1 75
 Subject07/Scene4/Color/rgb3 20 76 117
 Subject07/Scene4/Color/rgb3 84 118 251
@@ -1546,7 +1480,6 @@ Subject07/Scene4/Color/rgb3 84 1172 1217
 Subject07/Scene4/Color/rgb3 33 1218 1277
 Subject07/Scene4/Color/rgb3 84 1278 1321
 Subject07/Scene4/Color/rgb3 34 1322 1381
-Subject07/Scene4/Color/rgb3 84 1382 1448
 Subject07/Scene4/Color/rgb4 84 1 102
 Subject07/Scene4/Color/rgb4 27 103 149
 Subject07/Scene4/Color/rgb4 84 150 227
@@ -1571,7 +1504,6 @@ Subject07/Scene4/Color/rgb4 84 1283 1310
 Subject07/Scene4/Color/rgb4 42 1311 1397
 Subject07/Scene4/Color/rgb4 84 1398 1435
 Subject07/Scene4/Color/rgb4 37 1436 1500
-Subject07/Scene4/Color/rgb4 84 1501 1557
 Subject07/Scene4/Color/rgb5 84 1 141
 Subject07/Scene4/Color/rgb5 47 142 185
 Subject07/Scene4/Color/rgb5 84 186 221
@@ -1592,7 +1524,6 @@ Subject07/Scene4/Color/rgb5 84 1145 1212
 Subject07/Scene4/Color/rgb5 52 1213 1291
 Subject07/Scene4/Color/rgb5 84 1292 1338
 Subject07/Scene4/Color/rgb5 53 1339 1399
-Subject07/Scene4/Color/rgb5 84 1400 1506
 Subject07/Scene4/Color/rgb6 84 1 72
 Subject07/Scene4/Color/rgb6 51 73 110
 Subject07/Scene4/Color/rgb6 84 111 176
@@ -1613,7 +1544,6 @@ Subject07/Scene4/Color/rgb6 84 1031 1097
 Subject07/Scene4/Color/rgb6 59 1098 1153
 Subject07/Scene4/Color/rgb6 84 1154 1317
 Subject07/Scene4/Color/rgb6 55 1318 1365
-Subject07/Scene4/Color/rgb6 84 1366 1441
 Subject07/Scene4/Color/rgb7 84 1 133
 Subject07/Scene4/Color/rgb7 54 134 183
 Subject07/Scene4/Color/rgb7 84 184 359
@@ -1638,7 +1568,6 @@ Subject07/Scene4/Color/rgb7 84 1412 1478
 Subject07/Scene4/Color/rgb7 66 1479 1521
 Subject07/Scene4/Color/rgb7 84 1522 1551
 Subject07/Scene4/Color/rgb7 65 1552 1592
-Subject07/Scene4/Color/rgb7 84 1593 1665
 Subject12/Scene1/Color/rgb1 84 1 126
 Subject12/Scene1/Color/rgb1 32 127 179
 Subject12/Scene1/Color/rgb1 84 180 282
@@ -1663,7 +1592,6 @@ Subject12/Scene1/Color/rgb1 84 1212 1265
 Subject12/Scene1/Color/rgb1 69 1266 1337
 Subject12/Scene1/Color/rgb1 84 1338 1384
 Subject12/Scene1/Color/rgb1 11 1385 1503
-Subject12/Scene1/Color/rgb1 84 1504 1530
 Subject12/Scene1/Color/rgb2 84 1 126
 Subject12/Scene1/Color/rgb2 54 127 208
 Subject12/Scene1/Color/rgb2 84 209 437
@@ -1712,7 +1640,6 @@ Subject12/Scene1/Color/rgb3 84 1327 1402
 Subject12/Scene1/Color/rgb3 80 1403 1470
 Subject12/Scene1/Color/rgb3 84 1471 1520
 Subject12/Scene1/Color/rgb3 14 1521 1616
-Subject12/Scene1/Color/rgb3 84 1617 1634
 Subject12/Scene1/Color/rgb4 84 1 104
 Subject12/Scene1/Color/rgb4 46 105 168
 Subject12/Scene1/Color/rgb4 84 169 218
@@ -1737,7 +1664,6 @@ Subject12/Scene1/Color/rgb4 84 1298 1394
 Subject12/Scene1/Color/rgb4 53 1395 1493
 Subject12/Scene1/Color/rgb4 84 1494 1526
 Subject12/Scene1/Color/rgb4 29 1527 1570
-Subject12/Scene1/Color/rgb4 84 1571 1584
 Subject12/Scene1/Color/rgb5 84 1 75
 Subject12/Scene1/Color/rgb5 21 76 149
 Subject12/Scene1/Color/rgb5 84 150 179
@@ -1762,7 +1688,6 @@ Subject12/Scene1/Color/rgb5 84 1262 1288
 Subject12/Scene1/Color/rgb5 26 1289 1350
 Subject12/Scene1/Color/rgb5 84 1351 1429
 Subject12/Scene1/Color/rgb5 43 1430 1514
-Subject12/Scene1/Color/rgb5 84 1515 1541
 Subject12/Scene1/Color/rgb6 84 1 77
 Subject12/Scene1/Color/rgb6 19 78 161
 Subject12/Scene1/Color/rgb6 84 162 261
@@ -1787,7 +1712,6 @@ Subject12/Scene1/Color/rgb6 84 1576 1596
 Subject12/Scene1/Color/rgb6 2 1597 1686
 Subject12/Scene1/Color/rgb6 84 1687 1784
 Subject12/Scene1/Color/rgb6 4 1785 1941
-Subject12/Scene1/Color/rgb6 84 1942 2024
 Subject12/Scene1/Color/rgb7 84 1 79
 Subject12/Scene1/Color/rgb7 18 80 184
 Subject12/Scene1/Color/rgb7 84 185 261
@@ -1810,7 +1734,6 @@ Subject12/Scene1/Color/rgb7 84 1381 1457
 Subject12/Scene1/Color/rgb7 10 1458 1590
 Subject12/Scene1/Color/rgb7 84 1591 1643
 Subject12/Scene1/Color/rgb7 12 1644 1737
-Subject12/Scene1/Color/rgb7 84 1738 1794
 Subject12/Scene2/Color/rgb1 84 1 95
 Subject12/Scene2/Color/rgb1 40 96 218
 Subject12/Scene2/Color/rgb1 84 219 254
@@ -1835,7 +1758,6 @@ Subject12/Scene2/Color/rgb1 84 1737 1780
 Subject12/Scene2/Color/rgb1 38 1781 1848
 Subject12/Scene2/Color/rgb1 84 1849 1895
 Subject12/Scene2/Color/rgb1 77 1896 1981
-Subject12/Scene2/Color/rgb1 84 1982 2039
 Subject12/Scene2/Color/rgb2 84 1 138
 Subject12/Scene2/Color/rgb2 65 139 219
 Subject12/Scene2/Color/rgb2 84 220 388
@@ -1860,7 +1782,6 @@ Subject12/Scene2/Color/rgb2 84 2070 2163
 Subject12/Scene2/Color/rgb2 66 2164 2249
 Subject12/Scene2/Color/rgb2 84 2250 2280
 Subject12/Scene2/Color/rgb2 30 2281 2362
-Subject12/Scene2/Color/rgb2 84 2363 2372
 Subject12/Scene2/Color/rgb3 84 1 83
 Subject12/Scene2/Color/rgb3 64 84 167
 Subject12/Scene2/Color/rgb3 84 168 211
@@ -1885,7 +1806,6 @@ Subject12/Scene2/Color/rgb3 84 1650 1725
 Subject12/Scene2/Color/rgb3 60 1726 1806
 Subject12/Scene2/Color/rgb3 84 1807 1881
 Subject12/Scene2/Color/rgb3 76 1882 1954
-Subject12/Scene2/Color/rgb3 84 1955 1992
 Subject12/Scene2/Color/rgb4 84 1 108
 Subject12/Scene2/Color/rgb4 6 109 213
 Subject12/Scene2/Color/rgb4 84 214 287
@@ -1910,7 +1830,6 @@ Subject12/Scene2/Color/rgb4 84 1672 2091
 Subject12/Scene2/Color/rgb4 73 2092 2231
 Subject12/Scene2/Color/rgb4 84 2232 2307
 Subject12/Scene2/Color/rgb4 72 2308 2396
-Subject12/Scene2/Color/rgb4 84 2397 2456
 Subject12/Scene2/Color/rgb5 84 1 169
 Subject12/Scene2/Color/rgb5 61 170 256
 Subject12/Scene2/Color/rgb5 84 257 352
@@ -1935,7 +1854,6 @@ Subject12/Scene2/Color/rgb5 84 1833 1903
 Subject12/Scene2/Color/rgb5 59 1904 1978
 Subject12/Scene2/Color/rgb5 84 1979 2028
 Subject12/Scene2/Color/rgb5 25 2029 2085
-Subject12/Scene2/Color/rgb5 84 2086 2099
 Subject12/Scene2/Color/rgb6 84 1 93
 Subject12/Scene2/Color/rgb6 26 94 156
 Subject12/Scene2/Color/rgb6 84 157 240
@@ -1960,7 +1878,6 @@ Subject12/Scene2/Color/rgb6 84 1495 1534
 Subject12/Scene2/Color/rgb6 33 1535 1602
 Subject12/Scene2/Color/rgb6 84 1603 1627
 Subject12/Scene2/Color/rgb6 58 1628 1715
-Subject12/Scene2/Color/rgb6 84 1716 1743
 Subject12/Scene2/Color/rgb7 84 1 113
 Subject12/Scene2/Color/rgb7 43 114 200
 Subject12/Scene2/Color/rgb7 84 201 271
@@ -1985,7 +1902,6 @@ Subject12/Scene2/Color/rgb7 84 1425 1450
 Subject12/Scene2/Color/rgb7 35 1451 1511
 Subject12/Scene2/Color/rgb7 84 1512 1572
 Subject12/Scene2/Color/rgb7 58 1573 1632
-Subject12/Scene2/Color/rgb7 84 1633 1675
 Subject12/Scene3/Color/rgb1 84 1 98
 Subject12/Scene3/Color/rgb1 8 99 176
 Subject12/Scene3/Color/rgb1 84 177 335
@@ -2010,7 +1926,6 @@ Subject12/Scene3/Color/rgb1 84 1513 1565
 Subject12/Scene3/Color/rgb1 20 1566 1628
 Subject12/Scene3/Color/rgb1 84 1629 1675
 Subject12/Scene3/Color/rgb1 58 1676 1740
-Subject12/Scene3/Color/rgb1 84 1741 1830
 Subject12/Scene3/Color/rgb2 84 1 91
 Subject12/Scene3/Color/rgb2 18 92 175
 Subject12/Scene3/Color/rgb2 84 176 226
@@ -2035,7 +1950,6 @@ Subject12/Scene3/Color/rgb2 84 1512 1567
 Subject12/Scene3/Color/rgb2 66 1568 1644
 Subject12/Scene3/Color/rgb2 84 1645 1747
 Subject12/Scene3/Color/rgb2 76 1748 1809
-Subject12/Scene3/Color/rgb2 84 1810 1960
 Subject12/Scene3/Color/rgb3 84 1 177
 Subject12/Scene3/Color/rgb3 16 178 253
 Subject12/Scene3/Color/rgb3 84 254 418
@@ -2060,7 +1974,6 @@ Subject12/Scene3/Color/rgb3 84 1624 1682
 Subject12/Scene3/Color/rgb3 64 1683 1756
 Subject12/Scene3/Color/rgb3 84 1757 1844
 Subject12/Scene3/Color/rgb3 73 1845 1953
-Subject12/Scene3/Color/rgb3 84 1954 1980
 Subject12/Scene3/Color/rgb4 84 1 167
 Subject12/Scene3/Color/rgb4 57 168 260
 Subject12/Scene3/Color/rgb4 84 261 367
@@ -2085,7 +1998,6 @@ Subject12/Scene3/Color/rgb4 84 1560 1587
 Subject12/Scene3/Color/rgb4 31 1588 1684
 Subject12/Scene3/Color/rgb4 84 1685 1709
 Subject12/Scene3/Color/rgb4 32 1710 1762
-Subject12/Scene3/Color/rgb4 84 1763 1817
 Subject12/Scene3/Color/rgb5 84 1 58
 Subject12/Scene3/Color/rgb5 38 59 128
 Subject12/Scene3/Color/rgb5 84 129 223
@@ -2110,7 +2022,6 @@ Subject12/Scene3/Color/rgb5 84 1376 1429
 Subject12/Scene3/Color/rgb5 35 1430 1510
 Subject12/Scene3/Color/rgb5 84 1511 1555
 Subject12/Scene3/Color/rgb5 13 1556 1675
-Subject12/Scene3/Color/rgb5 84 1676 1842
 Subject12/Scene3/Color/rgb6 84 1 121
 Subject12/Scene3/Color/rgb6 11 122 225
 Subject12/Scene3/Color/rgb6 84 226 255
@@ -2135,7 +2046,6 @@ Subject12/Scene3/Color/rgb6 84 1298 1346
 Subject12/Scene3/Color/rgb6 37 1347 1420
 Subject12/Scene3/Color/rgb6 84 1421 1457
 Subject12/Scene3/Color/rgb6 33 1458 1524
-Subject12/Scene3/Color/rgb6 84 1525 1549
 Subject12/Scene3/Color/rgb7 84 1 112
 Subject12/Scene3/Color/rgb7 7 113 213
 Subject12/Scene3/Color/rgb7 49 221 304
@@ -2157,7 +2067,6 @@ Subject12/Scene3/Color/rgb7 84 1192 1211
 Subject12/Scene3/Color/rgb7 2 1212 1296
 Subject12/Scene3/Color/rgb7 84 1297 1343
 Subject12/Scene3/Color/rgb7 60 1344 1437
-Subject12/Scene3/Color/rgb7 84 1438 1461
 Subject12/Scene4/Color/rgb1 84 1 88
 Subject12/Scene4/Color/rgb1 45 89 199
 Subject12/Scene4/Color/rgb1 84 200 232
@@ -2182,7 +2091,6 @@ Subject12/Scene4/Color/rgb1 84 1444 1501
 Subject12/Scene4/Color/rgb1 22 1502 1560
 Subject12/Scene4/Color/rgb1 84 1561 1624
 Subject12/Scene4/Color/rgb1 71 1625 1695
-Subject12/Scene4/Color/rgb1 84 1696 1748
 Subject12/Scene4/Color/rgb2 84 1 133
 Subject12/Scene4/Color/rgb2 20 134 208
 Subject12/Scene4/Color/rgb2 84 209 276
@@ -2207,7 +2115,6 @@ Subject12/Scene4/Color/rgb2 84 1395 1420
 Subject12/Scene4/Color/rgb2 29 1421 1480
 Subject12/Scene4/Color/rgb2 84 1481 1526
 Subject12/Scene4/Color/rgb2 18 1527 1616
-Subject12/Scene4/Color/rgb2 84 1617 1640
 Subject12/Scene4/Color/rgb3 84 1 177
 Subject12/Scene4/Color/rgb3 10 178 267
 Subject12/Scene4/Color/rgb3 84 268 474
@@ -2232,7 +2139,6 @@ Subject12/Scene4/Color/rgb3 84 1666 1744
 Subject12/Scene4/Color/rgb3 35 1745 1815
 Subject12/Scene4/Color/rgb3 84 1816 1891
 Subject12/Scene4/Color/rgb3 6 1892 1956
-Subject12/Scene4/Color/rgb3 84 1957 1977
 Subject12/Scene4/Color/rgb4 84 1 97
 Subject12/Scene4/Color/rgb4 46 98 175
 Subject12/Scene4/Color/rgb4 84 176 226
@@ -2257,7 +2163,6 @@ Subject12/Scene4/Color/rgb4 84 1146 1182
 Subject12/Scene4/Color/rgb4 37 1183 1232
 Subject12/Scene4/Color/rgb4 84 1233 1274
 Subject12/Scene4/Color/rgb4 38 1275 1330
-Subject12/Scene4/Color/rgb4 84 1331 1370
 Subject12/Scene4/Color/rgb5 84 1 108
 Subject12/Scene4/Color/rgb5 7 109 168
 Subject12/Scene4/Color/rgb5 84 169 234
@@ -2282,7 +2187,6 @@ Subject12/Scene4/Color/rgb5 84 1235 1297
 Subject12/Scene4/Color/rgb5 49 1298 1337
 Subject12/Scene4/Color/rgb5 84 1338 1399
 Subject12/Scene4/Color/rgb5 26 1400 1438
-Subject12/Scene4/Color/rgb5 84 1439 1562
 Subject12/Scene4/Color/rgb6 84 1 91
 Subject12/Scene4/Color/rgb6 21 92 153
 Subject12/Scene4/Color/rgb6 84 154 244
@@ -2307,7 +2211,6 @@ Subject12/Scene4/Color/rgb6 84 1288 1326
 Subject12/Scene4/Color/rgb6 69 1327 1391
 Subject12/Scene4/Color/rgb6 84 1392 1413
 Subject12/Scene4/Color/rgb6 74 1414 1476
-Subject12/Scene4/Color/rgb6 84 1477 1517
 Subject12/Scene4/Color/rgb7 84 1 74
 Subject12/Scene4/Color/rgb7 39 75 135
 Subject12/Scene4/Color/rgb7 84 136 271
@@ -2330,7 +2233,6 @@ Subject12/Scene4/Color/rgb7 84 1390 1431
 Subject12/Scene4/Color/rgb7 48 1432 1480
 Subject12/Scene4/Color/rgb7 84 1481 1540
 Subject12/Scene4/Color/rgb7 11 1541 1721
-Subject12/Scene4/Color/rgb7 84 1722 1792
 Subject12/Scene5/Color/rgb1 84 1 238
 Subject12/Scene5/Color/rgb1 1 239 359
 Subject12/Scene5/Color/rgb1 84 360 433
@@ -2355,7 +2257,6 @@ Subject12/Scene5/Color/rgb1 84 2313 2492
 Subject12/Scene5/Color/rgb1 26 2493 2533
 Subject12/Scene5/Color/rgb1 84 2534 2607
 Subject12/Scene5/Color/rgb1 37 2608 2647
-Subject12/Scene5/Color/rgb1 84 2648 2827
 Subject12/Scene5/Color/rgb2 84 1 156
 Subject12/Scene5/Color/rgb2 67 157 189
 Subject12/Scene5/Color/rgb2 84 190 272
@@ -2380,7 +2281,6 @@ Subject12/Scene5/Color/rgb2 84 1159 1242
 Subject12/Scene5/Color/rgb2 62 1243 1287
 Subject12/Scene5/Color/rgb2 84 1288 1388
 Subject12/Scene5/Color/rgb2 52 1389 1434
-Subject12/Scene5/Color/rgb2 84 1435 1608
 Subject12/Scene5/Color/rgb3 84 1 533
 Subject12/Scene5/Color/rgb3 13 534 600
 Subject12/Scene5/Color/rgb3 84 601 695
@@ -2405,7 +2305,6 @@ Subject12/Scene5/Color/rgb3 84 2219 2368
 Subject12/Scene5/Color/rgb3 47 2369 2401
 Subject12/Scene5/Color/rgb3 84 2402 2530
 Subject12/Scene5/Color/rgb3 81 2531 2578
-Subject12/Scene5/Color/rgb3 84 2579 2607
 Subject12/Scene5/Color/rgb4 84 1 101
 Subject12/Scene5/Color/rgb4 17 102 130
 Subject12/Scene5/Color/rgb4 84 131 568
@@ -2430,7 +2329,6 @@ Subject12/Scene5/Color/rgb4 84 2570 2660
 Subject12/Scene5/Color/rgb4 22 2661 2694
 Subject12/Scene5/Color/rgb4 84 2695 2978
 Subject12/Scene5/Color/rgb4 15 2979 3036
-Subject12/Scene5/Color/rgb4 84 3037 3102
 Subject12/Scene5/Color/rgb5 84 1 103
 Subject12/Scene5/Color/rgb5 30 104 130
 Subject12/Scene5/Color/rgb5 84 131 202
@@ -2455,7 +2353,6 @@ Subject12/Scene5/Color/rgb5 84 1807 1922
 Subject12/Scene5/Color/rgb5 21 1923 1965
 Subject12/Scene5/Color/rgb5 84 1966 2046
 Subject12/Scene5/Color/rgb5 24 2047 2088
-Subject12/Scene5/Color/rgb5 84 2089 2169
 Subject12/Scene5/Color/rgb6 84 1 289
 Subject12/Scene5/Color/rgb6 32 290 331
 Subject12/Scene5/Color/rgb6 84 332 386
@@ -2478,7 +2375,6 @@ Subject12/Scene5/Color/rgb6 84 2006 2193
 Subject12/Scene5/Color/rgb6 53 2194 2289
 Subject12/Scene5/Color/rgb6 84 2290 2373
 Subject12/Scene5/Color/rgb6 38 2374 2414
-Subject12/Scene5/Color/rgb6 84 2415 2469
 Subject12/Scene5/Color/rgb7 84 1 169
 Subject12/Scene5/Color/rgb7 60 170 208
 Subject12/Scene5/Color/rgb7 84 209 309
@@ -2501,7 +2397,6 @@ Subject12/Scene5/Color/rgb7 84 1713 1817
 Subject12/Scene5/Color/rgb7 2 1818 1875
 Subject12/Scene5/Color/rgb7 84 1876 2092
 Subject12/Scene5/Color/rgb7 27 2093 2154
-Subject12/Scene5/Color/rgb7 84 2155 2255
 Subject12/Scene6/Color/rgb1 84 1 169
 Subject12/Scene6/Color/rgb1 37 170 260
 Subject12/Scene6/Color/rgb1 84 261 336
@@ -2526,7 +2421,6 @@ Subject12/Scene6/Color/rgb1 84 1862 1973
 Subject12/Scene6/Color/rgb1 46 1974 2038
 Subject12/Scene6/Color/rgb1 84 2039 2160
 Subject12/Scene6/Color/rgb1 58 2161 2223
-Subject12/Scene6/Color/rgb1 84 2224 2270
 Subject12/Scene6/Color/rgb2 84 1 324
 Subject12/Scene6/Color/rgb2 52 325 374
 Subject12/Scene6/Color/rgb2 84 375 412
@@ -2551,7 +2445,6 @@ Subject12/Scene6/Color/rgb2 84 2193 2297
 Subject12/Scene6/Color/rgb2 59 2298 2343
 Subject12/Scene6/Color/rgb2 84 2344 2397
 Subject12/Scene6/Color/rgb2 22 2398 2447
-Subject12/Scene6/Color/rgb2 84 2448 2495
 Subject12/Scene6/Color/rgb3 84 1 82
 Subject12/Scene6/Color/rgb3 42 83 127
 Subject12/Scene6/Color/rgb3 84 128 231
@@ -2576,7 +2469,6 @@ Subject12/Scene6/Color/rgb3 84 1481 1641
 Subject12/Scene6/Color/rgb3 12 1642 1692
 Subject12/Scene6/Color/rgb3 84 1693 1813
 Subject12/Scene6/Color/rgb3 75 1814 1865
-Subject12/Scene6/Color/rgb3 84 1866 1911
 Subject12/Scene6/Color/rgb4 84 1 330
 Subject12/Scene6/Color/rgb4 14 331 394
 Subject12/Scene6/Color/rgb4 84 395 626
@@ -2601,7 +2493,6 @@ Subject12/Scene6/Color/rgb4 84 1821 1928
 Subject12/Scene6/Color/rgb4 61 1929 1969
 Subject12/Scene6/Color/rgb4 84 1970 2075
 Subject12/Scene6/Color/rgb4 34 2076 2115
-Subject12/Scene6/Color/rgb4 84 2116 2176
 Subject12/Scene6/Color/rgb5 84 1 74
 Subject12/Scene6/Color/rgb5 74 75 120
 Subject12/Scene6/Color/rgb5 84 121 164
@@ -2626,7 +2517,6 @@ Subject12/Scene6/Color/rgb5 84 1494 1553
 Subject12/Scene6/Color/rgb5 23 1554 1597
 Subject12/Scene6/Color/rgb5 84 1598 1632
 Subject12/Scene6/Color/rgb5 32 1633 1674
-Subject12/Scene6/Color/rgb5 84 1675 1732
 Subject12/Scene6/Color/rgb6 84 1 104
 Subject12/Scene6/Color/rgb6 21 105 160
 Subject12/Scene6/Color/rgb6 84 161 235
@@ -2651,7 +2541,6 @@ Subject12/Scene6/Color/rgb6 84 1476 1631
 Subject12/Scene6/Color/rgb6 6 1632 1685
 Subject12/Scene6/Color/rgb6 84 1686 1865
 Subject12/Scene6/Color/rgb6 31 1866 1910
-Subject12/Scene6/Color/rgb6 84 1911 1963
 Subject12/Scene6/Color/rgb7 84 1 161
 Subject12/Scene6/Color/rgb7 43 162 211
 Subject12/Scene6/Color/rgb7 84 212 327
@@ -2674,7 +2563,6 @@ Subject12/Scene6/Color/rgb7 84 1802 1868
 Subject12/Scene6/Color/rgb7 19 1869 1908
 Subject12/Scene6/Color/rgb7 84 1909 1997
 Subject12/Scene6/Color/rgb7 1 1998 2048
-Subject12/Scene6/Color/rgb7 84 2049 2076
 Subject13/Scene1/Color/rgb1 84 1 148
 Subject13/Scene1/Color/rgb1 58 149 240
 Subject13/Scene1/Color/rgb1 84 241 300
@@ -2699,7 +2587,6 @@ Subject13/Scene1/Color/rgb1 84 1378 1438
 Subject13/Scene1/Color/rgb1 31 1439 1501
 Subject13/Scene1/Color/rgb1 84 1502 1546
 Subject13/Scene1/Color/rgb1 62 1547 1607
-Subject13/Scene1/Color/rgb1 84 1608 1696
 Subject13/Scene1/Color/rgb2 84 1 102
 Subject13/Scene1/Color/rgb2 72 103 166
 Subject13/Scene1/Color/rgb2 84 167 201
@@ -2724,7 +2611,6 @@ Subject13/Scene1/Color/rgb2 84 1191 1265
 Subject13/Scene1/Color/rgb2 43 1266 1333
 Subject13/Scene1/Color/rgb2 84 1334 1369
 Subject13/Scene1/Color/rgb2 52 1370 1397
-Subject13/Scene1/Color/rgb2 84 1398 1464
 Subject13/Scene1/Color/rgb3 84 1 53
 Subject13/Scene1/Color/rgb3 25 54 94
 Subject13/Scene1/Color/rgb3 84 95 146
@@ -2749,7 +2635,6 @@ Subject13/Scene1/Color/rgb3 84 1122 1200
 Subject13/Scene1/Color/rgb3 57 1201 1268
 Subject13/Scene1/Color/rgb3 84 1269 1303
 Subject13/Scene1/Color/rgb3 50 1304 1372
-Subject13/Scene1/Color/rgb3 84 1373 1397
 Subject13/Scene1/Color/rgb4 84 1 65
 Subject13/Scene1/Color/rgb4 24 66 166
 Subject13/Scene1/Color/rgb4 84 167 230
@@ -2774,7 +2659,6 @@ Subject13/Scene1/Color/rgb4 84 1190 1249
 Subject13/Scene1/Color/rgb4 13 1250 1306
 Subject13/Scene1/Color/rgb4 84 1307 1357
 Subject13/Scene1/Color/rgb4 3 1358 1404
-Subject13/Scene1/Color/rgb4 84 1405 1486
 Subject13/Scene1/Color/rgb5 84 1 71
 Subject13/Scene1/Color/rgb5 45 72 127
 Subject13/Scene1/Color/rgb5 84 128 166
@@ -2799,7 +2683,6 @@ Subject13/Scene1/Color/rgb5 84 1282 1326
 Subject13/Scene1/Color/rgb5 33 1327 1375
 Subject13/Scene1/Color/rgb5 84 1376 1424
 Subject13/Scene1/Color/rgb5 56 1425 1500
-Subject13/Scene1/Color/rgb5 84 1501 1558
 Subject13/Scene1/Color/rgb6 84 1 75
 Subject13/Scene1/Color/rgb6 16 76 115
 Subject13/Scene1/Color/rgb6 84 116 174
@@ -2824,7 +2707,6 @@ Subject13/Scene1/Color/rgb6 84 1164 1209
 Subject13/Scene1/Color/rgb6 69 1210 1270
 Subject13/Scene1/Color/rgb6 84 1271 1304
 Subject13/Scene1/Color/rgb6 63 1305 1349
-Subject13/Scene1/Color/rgb6 84 1350 1411
 Subject13/Scene1/Color/rgb7 84 1 115
 Subject13/Scene1/Color/rgb7 78 116 160
 Subject13/Scene1/Color/rgb7 84 161 204
@@ -2847,7 +2729,6 @@ Subject13/Scene1/Color/rgb7 84 986 1051
 Subject13/Scene1/Color/rgb7 82 1052 1120
 Subject13/Scene1/Color/rgb7 84 1121 1175
 Subject13/Scene1/Color/rgb7 18 1176 1238
-Subject13/Scene1/Color/rgb7 84 1239 1335
 Subject13/Scene2/Color/rgb1 84 1 115
 Subject13/Scene2/Color/rgb1 28 116 166
 Subject13/Scene2/Color/rgb1 84 167 297
@@ -2872,7 +2753,6 @@ Subject13/Scene2/Color/rgb1 84 1561 1630
 Subject13/Scene2/Color/rgb1 68 1631 1692
 Subject13/Scene2/Color/rgb1 84 1693 1840
 Subject13/Scene2/Color/rgb1 80 1841 1897
-Subject13/Scene2/Color/rgb1 84 1898 1973
 Subject13/Scene2/Color/rgb2 84 1 102
 Subject13/Scene2/Color/rgb2 13 103 148
 Subject13/Scene2/Color/rgb2 84 149 213
@@ -2897,7 +2777,6 @@ Subject13/Scene2/Color/rgb2 84 963 1051
 Subject13/Scene2/Color/rgb2 35 1052 1097
 Subject13/Scene2/Color/rgb2 84 1098 1144
 Subject13/Scene2/Color/rgb2 42 1145 1183
-Subject13/Scene2/Color/rgb2 84 1184 1230
 Subject13/Scene2/Color/rgb3 84 1 93
 Subject13/Scene2/Color/rgb3 74 94 144
 Subject13/Scene2/Color/rgb3 84 145 204
@@ -2922,7 +2801,6 @@ Subject13/Scene2/Color/rgb3 84 1067 1155
 Subject13/Scene2/Color/rgb3 15 1156 1220
 Subject13/Scene2/Color/rgb3 84 1221 1273
 Subject13/Scene2/Color/rgb3 36 1274 1323
-Subject13/Scene2/Color/rgb3 84 1324 1382
 Subject13/Scene2/Color/rgb4 84 1 170
 Subject13/Scene2/Color/rgb4 77 171 207
 Subject13/Scene2/Color/rgb4 84 208 271
@@ -2947,7 +2825,6 @@ Subject13/Scene2/Color/rgb4 84 1190 1240
 Subject13/Scene2/Color/rgb4 24 1241 1284
 Subject13/Scene2/Color/rgb4 84 1285 1316
 Subject13/Scene2/Color/rgb4 41 1317 1361
-Subject13/Scene2/Color/rgb4 84 1362 1424
 Subject13/Scene2/Color/rgb5 84 1 109
 Subject13/Scene2/Color/rgb5 2 110 158
 Subject13/Scene2/Color/rgb5 84 159 211
@@ -2972,7 +2849,6 @@ Subject13/Scene2/Color/rgb5 84 1415 1479
 Subject13/Scene2/Color/rgb5 23 1480 1554
 Subject13/Scene2/Color/rgb5 84 1555 1619
 Subject13/Scene2/Color/rgb5 47 1620 1672
-Subject13/Scene2/Color/rgb5 84 1673 1694
 Subject13/Scene2/Color/rgb6 84 1 94
 Subject13/Scene2/Color/rgb6 40 95 151
 Subject13/Scene2/Color/rgb6 84 152 261
@@ -2997,7 +2873,6 @@ Subject13/Scene2/Color/rgb6 84 1288 1351
 Subject13/Scene2/Color/rgb6 82 1352 1411
 Subject13/Scene2/Color/rgb6 84 1412 1453
 Subject13/Scene2/Color/rgb6 56 1454 1508
-Subject13/Scene2/Color/rgb6 84 1509 1532
 Subject13/Scene2/Color/rgb7 84 1 62
 Subject13/Scene2/Color/rgb7 29 63 95
 Subject13/Scene2/Color/rgb7 84 96 136
@@ -3020,7 +2895,6 @@ Subject13/Scene2/Color/rgb7 84 724 786
 Subject13/Scene2/Color/rgb7 27 787 829
 Subject13/Scene2/Color/rgb7 84 830 872
 Subject13/Scene2/Color/rgb7 31 873 931
-Subject13/Scene2/Color/rgb7 84 932 966
 Subject13/Scene3/Color/rgb1 84 1 85
 Subject13/Scene3/Color/rgb1 82 86 123
 Subject13/Scene3/Color/rgb1 84 124 370
@@ -3069,7 +2943,6 @@ Subject13/Scene3/Color/rgb2 84 1805 1878
 Subject13/Scene3/Color/rgb2 72 1879 1946
 Subject13/Scene3/Color/rgb2 84 1947 2058
 Subject13/Scene3/Color/rgb2 6 2059 2112
-Subject13/Scene3/Color/rgb2 84 2113 2150
 Subject13/Scene3/Color/rgb3 84 1 144
 Subject13/Scene3/Color/rgb3 2 145 210
 Subject13/Scene3/Color/rgb3 84 211 306
@@ -3094,7 +2967,6 @@ Subject13/Scene3/Color/rgb3 84 1321 1367
 Subject13/Scene3/Color/rgb3 32 1368 1410
 Subject13/Scene3/Color/rgb3 84 1411 1469
 Subject13/Scene3/Color/rgb3 61 1470 1520
-Subject13/Scene3/Color/rgb3 84 1521 1570
 Subject13/Scene3/Color/rgb4 84 1 108
 Subject13/Scene3/Color/rgb4 39 109 168
 Subject13/Scene3/Color/rgb4 84 169 242
@@ -3119,7 +2991,6 @@ Subject13/Scene3/Color/rgb4 84 1296 1357
 Subject13/Scene3/Color/rgb4 24 1358 1398
 Subject13/Scene3/Color/rgb4 84 1399 1483
 Subject13/Scene3/Color/rgb4 60 1484 1543
-Subject13/Scene3/Color/rgb4 84 1544 1623
 Subject13/Scene3/Color/rgb5 84 1 107
 Subject13/Scene3/Color/rgb5 48 108 163
 Subject13/Scene3/Color/rgb5 84 164 217
@@ -3144,7 +3015,6 @@ Subject13/Scene3/Color/rgb5 84 1220 1277
 Subject13/Scene3/Color/rgb5 65 1278 1320
 Subject13/Scene3/Color/rgb5 84 1321 1368
 Subject13/Scene3/Color/rgb5 49 1369 1423
-Subject13/Scene3/Color/rgb5 84 1424 1623
 Subject13/Scene3/Color/rgb6 84 1 141
 Subject13/Scene3/Color/rgb6 16 142 177
 Subject13/Scene3/Color/rgb6 84 178 237
@@ -3169,7 +3039,6 @@ Subject13/Scene3/Color/rgb6 84 1289 1335
 Subject13/Scene3/Color/rgb6 19 1336 1396
 Subject13/Scene3/Color/rgb6 84 1397 1516
 Subject13/Scene3/Color/rgb6 77 1517 1562
-Subject13/Scene3/Color/rgb6 84 1563 1649
 Subject13/Scene3/Color/rgb7 84 1 111
 Subject13/Scene3/Color/rgb7 83 112 166
 Subject13/Scene3/Color/rgb7 84 167 216
@@ -3192,7 +3061,6 @@ Subject13/Scene3/Color/rgb7 84 1028 1089
 Subject13/Scene3/Color/rgb7 47 1090 1133
 Subject13/Scene3/Color/rgb7 84 1134 1204
 Subject13/Scene3/Color/rgb7 50 1205 1254
-Subject13/Scene3/Color/rgb7 84 1255 1351
 Subject13/Scene4/Color/rgb1 84 1 93
 Subject13/Scene4/Color/rgb1 25 94 140
 Subject13/Scene4/Color/rgb1 84 141 195
@@ -3217,7 +3085,6 @@ Subject13/Scene4/Color/rgb1 84 1144 1183
 Subject13/Scene4/Color/rgb1 51 1184 1223
 Subject13/Scene4/Color/rgb1 84 1224 1293
 Subject13/Scene4/Color/rgb1 15 1294 1386
-Subject13/Scene4/Color/rgb1 84 1387 1429
 Subject13/Scene4/Color/rgb2 84 1 111
 Subject13/Scene4/Color/rgb2 2 112 173
 Subject13/Scene4/Color/rgb2 84 174 314
@@ -3242,7 +3109,6 @@ Subject13/Scene4/Color/rgb2 84 1126 1157
 Subject13/Scene4/Color/rgb2 76 1158 1214
 Subject13/Scene4/Color/rgb2 84 1215 1284
 Subject13/Scene4/Color/rgb2 82 1285 1341
-Subject13/Scene4/Color/rgb2 84 1342 1375
 Subject13/Scene4/Color/rgb3 84 1 336
 Subject13/Scene4/Color/rgb3 65 337 373
 Subject13/Scene4/Color/rgb3 84 374 435
@@ -3267,7 +3133,6 @@ Subject13/Scene4/Color/rgb3 84 1474 1554
 Subject13/Scene4/Color/rgb3 70 1555 1585
 Subject13/Scene4/Color/rgb3 84 1586 1731
 Subject13/Scene4/Color/rgb3 75 1732 1783
-Subject13/Scene4/Color/rgb3 84 1784 1861
 Subject13/Scene4/Color/rgb4 84 1 100
 Subject13/Scene4/Color/rgb4 71 101 169
 Subject13/Scene4/Color/rgb4 84 170 280
@@ -3292,7 +3157,6 @@ Subject13/Scene4/Color/rgb4 84 1123 1181
 Subject13/Scene4/Color/rgb4 35 1182 1222
 Subject13/Scene4/Color/rgb4 84 1223 1306
 Subject13/Scene4/Color/rgb4 63 1307 1360
-Subject13/Scene4/Color/rgb4 84 1361 1468
 Subject13/Scene4/Color/rgb5 84 1 94
 Subject13/Scene4/Color/rgb5 73 95 157
 Subject13/Scene4/Color/rgb5 84 158 185
@@ -3317,7 +3181,6 @@ Subject13/Scene4/Color/rgb5 84 878 917
 Subject13/Scene4/Color/rgb5 34 918 955
 Subject13/Scene4/Color/rgb5 84 956 1009
 Subject13/Scene4/Color/rgb5 31 1010 1051
-Subject13/Scene4/Color/rgb5 84 1052 1095
 Subject13/Scene4/Color/rgb6 84 1 96
 Subject13/Scene4/Color/rgb6 56 97 144
 Subject13/Scene4/Color/rgb6 84 145 183
@@ -3342,7 +3205,6 @@ Subject13/Scene4/Color/rgb6 84 1061 1139
 Subject13/Scene4/Color/rgb6 17 1140 1170
 Subject13/Scene4/Color/rgb6 84 1171 1229
 Subject13/Scene4/Color/rgb6 38 1230 1280
-Subject13/Scene4/Color/rgb6 84 1281 1371
 Subject13/Scene4/Color/rgb7 84 1 77
 Subject13/Scene4/Color/rgb7 32 78 120
 Subject13/Scene4/Color/rgb7 84 121 177
@@ -3365,7 +3227,6 @@ Subject13/Scene4/Color/rgb7 84 978 1013
 Subject13/Scene4/Color/rgb7 67 1014 1066
 Subject13/Scene4/Color/rgb7 84 1067 1204
 Subject13/Scene4/Color/rgb7 6 1205 1256
-Subject13/Scene4/Color/rgb7 84 1257 1302
 Subject13/Scene5/Color/rgb1 84 1 271
 Subject13/Scene5/Color/rgb1 42 272 319
 Subject13/Scene5/Color/rgb1 84 320 363
@@ -3390,7 +3251,6 @@ Subject13/Scene5/Color/rgb1 84 1427 1476
 Subject13/Scene5/Color/rgb1 47 1477 1511
 Subject13/Scene5/Color/rgb1 84 1512 1559
 Subject13/Scene5/Color/rgb1 21 1560 1594
-Subject13/Scene5/Color/rgb1 84 1595 1637
 Subject13/Scene5/Color/rgb2 84 1 73
 Subject13/Scene5/Color/rgb2 11 74 119
 Subject13/Scene5/Color/rgb2 84 120 168
@@ -3415,7 +3275,6 @@ Subject13/Scene5/Color/rgb2 84 1017 1109
 Subject13/Scene5/Color/rgb2 53 1110 1154
 Subject13/Scene5/Color/rgb2 84 1155 1197
 Subject13/Scene5/Color/rgb2 72 1198 1220
-Subject13/Scene5/Color/rgb2 84 1221 1260
 Subject13/Scene5/Color/rgb3 84 1 68
 Subject13/Scene5/Color/rgb3 62 69 114
 Subject13/Scene5/Color/rgb3 84 115 140
@@ -3440,7 +3299,6 @@ Subject13/Scene5/Color/rgb3 84 1320 1420
 Subject13/Scene5/Color/rgb3 13 1421 1459
 Subject13/Scene5/Color/rgb3 84 1460 1529
 Subject13/Scene5/Color/rgb3 5 1530 1569
-Subject13/Scene5/Color/rgb3 84 1570 1594
 Subject13/Scene5/Color/rgb4 84 1 112
 Subject13/Scene5/Color/rgb4 68 113 146
 Subject13/Scene5/Color/rgb4 84 147 192
@@ -3465,7 +3323,6 @@ Subject13/Scene5/Color/rgb4 84 1428 1575
 Subject13/Scene5/Color/rgb4 43 1576 1621
 Subject13/Scene5/Color/rgb4 84 1622 1682
 Subject13/Scene5/Color/rgb4 32 1683 1719
-Subject13/Scene5/Color/rgb4 84 1720 1729
 Subject13/Scene5/Color/rgb5 84 1 37
 Subject13/Scene5/Color/rgb5 16 38 80
 Subject13/Scene5/Color/rgb5 84 81 127
@@ -3490,7 +3347,6 @@ Subject13/Scene5/Color/rgb5 84 1280 1371
 Subject13/Scene5/Color/rgb5 34 1372 1402
 Subject13/Scene5/Color/rgb5 84 1403 1499
 Subject13/Scene5/Color/rgb5 80 1500 1540
-Subject13/Scene5/Color/rgb5 84 1541 1580
 Subject13/Scene5/Color/rgb6 84 1 51
 Subject13/Scene5/Color/rgb6 70 52 91
 Subject13/Scene5/Color/rgb6 84 92 156
@@ -3515,7 +3371,6 @@ Subject13/Scene5/Color/rgb6 84 1184 1243
 Subject13/Scene5/Color/rgb6 45 1244 1284
 Subject13/Scene5/Color/rgb6 84 1285 1396
 Subject13/Scene5/Color/rgb6 18 1397 1453
-Subject13/Scene5/Color/rgb6 84 1454 1545
 Subject13/Scene5/Color/rgb7 84 1 117
 Subject13/Scene5/Color/rgb7 27 118 152
 Subject13/Scene5/Color/rgb7 84 153 205
@@ -3538,7 +3393,6 @@ Subject13/Scene5/Color/rgb7 84 1001 1076
 Subject13/Scene5/Color/rgb7 78 1077 1117
 Subject13/Scene5/Color/rgb7 84 1118 1181
 Subject13/Scene5/Color/rgb7 71 1182 1229
-Subject13/Scene5/Color/rgb7 84 1230 1316
 Subject13/Scene6/Color/rgb1 84 1 204
 Subject13/Scene6/Color/rgb1 58 205 221
 Subject13/Scene6/Color/rgb1 84 222 270
@@ -3563,7 +3417,6 @@ Subject13/Scene6/Color/rgb1 84 1284 1330
 Subject13/Scene6/Color/rgb1 38 1331 1372
 Subject13/Scene6/Color/rgb1 84 1373 1418
 Subject13/Scene6/Color/rgb1 37 1419 1449
-Subject13/Scene6/Color/rgb1 84 1450 1469
 Subject13/Scene6/Color/rgb2 84 1 358
 Subject13/Scene6/Color/rgb2 56 359 395
 Subject13/Scene6/Color/rgb2 84 396 480
@@ -3588,7 +3441,6 @@ Subject13/Scene6/Color/rgb2 84 1741 1843
 Subject13/Scene6/Color/rgb2 21 1844 1877
 Subject13/Scene6/Color/rgb2 84 1878 1904
 Subject13/Scene6/Color/rgb2 52 1905 1932
-Subject13/Scene6/Color/rgb2 84 1933 1967
 Subject13/Scene6/Color/rgb3 84 1 81
 Subject13/Scene6/Color/rgb3 9 82 118
 Subject13/Scene6/Color/rgb3 84 119 247
@@ -3613,7 +3465,6 @@ Subject13/Scene6/Color/rgb3 84 1408 1529
 Subject13/Scene6/Color/rgb3 66 1530 1559
 Subject13/Scene6/Color/rgb3 84 1560 1636
 Subject13/Scene6/Color/rgb3 11 1637 1680
-Subject13/Scene6/Color/rgb3 84 1681 1719
 Subject13/Scene6/Color/rgb4 84 1 317
 Subject13/Scene6/Color/rgb4 25 318 342
 Subject13/Scene6/Color/rgb4 84 343 397
@@ -3638,7 +3489,6 @@ Subject13/Scene6/Color/rgb4 84 1524 1771
 Subject13/Scene6/Color/rgb4 8 1772 1807
 Subject13/Scene6/Color/rgb4 84 1808 1906
 Subject13/Scene6/Color/rgb4 83 1907 1931
-Subject13/Scene6/Color/rgb4 84 1932 2035
 Subject13/Scene6/Color/rgb5 84 1 52
 Subject13/Scene6/Color/rgb5 74 53 85
 Subject13/Scene6/Color/rgb5 84 86 140
@@ -3663,7 +3513,6 @@ Subject13/Scene6/Color/rgb5 84 1134 1285
 Subject13/Scene6/Color/rgb5 29 1286 1311
 Subject13/Scene6/Color/rgb5 84 1312 1368
 Subject13/Scene6/Color/rgb5 15 1369 1410
-Subject13/Scene6/Color/rgb5 84 1411 1439
 Subject13/Scene6/Color/rgb6 84 1 152
 Subject13/Scene6/Color/rgb6 30 153 175
 Subject13/Scene6/Color/rgb6 84 176 224
@@ -3688,7 +3537,6 @@ Subject13/Scene6/Color/rgb6 84 989 1066
 Subject13/Scene6/Color/rgb6 79 1067 1101
 Subject13/Scene6/Color/rgb6 84 1102 1144
 Subject13/Scene6/Color/rgb6 77 1145 1175
-Subject13/Scene6/Color/rgb6 84 1176 1195
 Subject13/Scene6/Color/rgb7 84 1 155
 Subject13/Scene6/Color/rgb7 36 156 181
 Subject13/Scene6/Color/rgb7 84 182 247
@@ -3711,7 +3559,6 @@ Subject13/Scene6/Color/rgb7 84 1064 1179
 Subject13/Scene6/Color/rgb7 44 1180 1232
 Subject13/Scene6/Color/rgb7 84 1233 1316
 Subject13/Scene6/Color/rgb7 23 1317 1361
-Subject13/Scene6/Color/rgb7 84 1362 1392
 Subject24/Scene1/Color/rgb1 84 1 152
 Subject24/Scene1/Color/rgb1 9 153 201
 Subject24/Scene1/Color/rgb1 84 202 243
@@ -3736,7 +3583,6 @@ Subject24/Scene1/Color/rgb1 84 1203 1276
 Subject24/Scene1/Color/rgb1 62 1277 1324
 Subject24/Scene1/Color/rgb1 84 1325 1384
 Subject24/Scene1/Color/rgb1 22 1385 1449
-Subject24/Scene1/Color/rgb1 84 1450 1475
 Subject24/Scene1/Color/rgb2 84 1 80
 Subject24/Scene1/Color/rgb2 65 81 125
 Subject24/Scene1/Color/rgb2 84 126 169
@@ -3761,7 +3607,6 @@ Subject24/Scene1/Color/rgb2 84 1050 1092
 Subject24/Scene1/Color/rgb2 48 1093 1139
 Subject24/Scene1/Color/rgb2 84 1140 1180
 Subject24/Scene1/Color/rgb2 3 1181 1226
-Subject24/Scene1/Color/rgb2 84 1227 1298
 Subject24/Scene1/Color/rgb3 84 1 52
 Subject24/Scene1/Color/rgb3 44 53 119
 Subject24/Scene1/Color/rgb3 84 120 146
@@ -3786,7 +3631,6 @@ Subject24/Scene1/Color/rgb3 84 1003 1031
 Subject24/Scene1/Color/rgb3 33 1032 1074
 Subject24/Scene1/Color/rgb3 84 1075 1149
 Subject24/Scene1/Color/rgb3 11 1150 1213
-Subject24/Scene1/Color/rgb3 84 1214 1291
 Subject24/Scene1/Color/rgb4 84 1 53
 Subject24/Scene1/Color/rgb4 63 54 101
 Subject24/Scene1/Color/rgb4 84 102 120
@@ -3811,7 +3655,6 @@ Subject24/Scene1/Color/rgb4 84 1160 1207
 Subject24/Scene1/Color/rgb4 54 1208 1267
 Subject24/Scene1/Color/rgb4 84 1268 1317
 Subject24/Scene1/Color/rgb4 38 1318 1368
-Subject24/Scene1/Color/rgb4 84 1369 1446
 Subject24/Scene1/Color/rgb5 84 1 60
 Subject24/Scene1/Color/rgb5 76 61 106
 Subject24/Scene1/Color/rgb5 84 107 162
@@ -3836,7 +3679,6 @@ Subject24/Scene1/Color/rgb5 84 1167 1227
 Subject24/Scene1/Color/rgb5 45 1228 1283
 Subject24/Scene1/Color/rgb5 84 1284 1334
 Subject24/Scene1/Color/rgb5 59 1335 1389
-Subject24/Scene1/Color/rgb5 84 1390 1451
 Subject24/Scene1/Color/rgb6 25 1 27
 Subject24/Scene1/Color/rgb6 84 28 136
 Subject24/Scene1/Color/rgb6 50 137 185
@@ -3860,7 +3702,6 @@ Subject24/Scene1/Color/rgb6 84 1323 1376
 Subject24/Scene1/Color/rgb6 52 1377 1420
 Subject24/Scene1/Color/rgb6 84 1421 1479
 Subject24/Scene1/Color/rgb6 21 1480 1533
-Subject24/Scene1/Color/rgb6 84 1534 1593
 Subject24/Scene1/Color/rgb7 84 1 74
 Subject24/Scene1/Color/rgb7 34 75 137
 Subject24/Scene1/Color/rgb7 84 138 187
@@ -3883,7 +3724,6 @@ Subject24/Scene1/Color/rgb7 84 871 905
 Subject24/Scene1/Color/rgb7 61 906 957
 Subject24/Scene1/Color/rgb7 84 958 1008
 Subject24/Scene1/Color/rgb7 7 1009 1067
-Subject24/Scene1/Color/rgb7 84 1068 1149
 Subject24/Scene2/Color/rgb1 84 1 123
 Subject24/Scene2/Color/rgb1 58 124 178
 Subject24/Scene2/Color/rgb1 84 179 344
@@ -3908,7 +3748,6 @@ Subject24/Scene2/Color/rgb1 84 1363 1391
 Subject24/Scene2/Color/rgb1 32 1392 1422
 Subject24/Scene2/Color/rgb1 84 1423 1445
 Subject24/Scene2/Color/rgb1 64 1446 1481
-Subject24/Scene2/Color/rgb1 84 1482 1546
 Subject24/Scene2/Color/rgb2 84 1 108
 Subject24/Scene2/Color/rgb2 55 109 153
 Subject24/Scene2/Color/rgb2 84 154 206
@@ -3933,7 +3772,6 @@ Subject24/Scene2/Color/rgb2 84 1063 1103
 Subject24/Scene2/Color/rgb2 23 1104 1158
 Subject24/Scene2/Color/rgb2 84 1159 1209
 Subject24/Scene2/Color/rgb2 74 1210 1259
-Subject24/Scene2/Color/rgb2 84 1260 1295
 Subject24/Scene2/Color/rgb3 84 1 117
 Subject24/Scene2/Color/rgb3 59 118 170
 Subject24/Scene2/Color/rgb3 84 171 228
@@ -3958,7 +3796,6 @@ Subject24/Scene2/Color/rgb3 84 1062 1089
 Subject24/Scene2/Color/rgb3 39 1090 1125
 Subject24/Scene2/Color/rgb3 84 1126 1212
 Subject24/Scene2/Color/rgb3 46 1213 1262
-Subject24/Scene2/Color/rgb3 84 1263 1336
 Subject24/Scene2/Color/rgb4 84 1 152
 Subject24/Scene2/Color/rgb4 49 153 204
 Subject24/Scene2/Color/rgb4 84 205 242
@@ -3983,7 +3820,6 @@ Subject24/Scene2/Color/rgb4 84 1090 1116
 Subject24/Scene2/Color/rgb4 38 1117 1169
 Subject24/Scene2/Color/rgb4 84 1170 1187
 Subject24/Scene2/Color/rgb4 25 1188 1219
-Subject24/Scene2/Color/rgb4 84 1220 1259
 Subject24/Scene2/Color/rgb5 84 1 81
 Subject24/Scene2/Color/rgb5 20 82 125
 Subject24/Scene2/Color/rgb5 84 126 167
@@ -4008,7 +3844,6 @@ Subject24/Scene2/Color/rgb5 84 1025 1068
 Subject24/Scene2/Color/rgb5 21 1069 1112
 Subject24/Scene2/Color/rgb5 84 1113 1190
 Subject24/Scene2/Color/rgb5 40 1191 1241
-Subject24/Scene2/Color/rgb5 84 1242 1290
 Subject24/Scene2/Color/rgb6 84 1 119
 Subject24/Scene2/Color/rgb6 3 120 162
 Subject24/Scene2/Color/rgb6 84 163 214
@@ -4033,7 +3868,6 @@ Subject24/Scene2/Color/rgb6 84 1161 1216
 Subject24/Scene2/Color/rgb6 30 1217 1258
 Subject24/Scene2/Color/rgb6 84 1259 1291
 Subject24/Scene2/Color/rgb6 5 1292 1347
-Subject24/Scene2/Color/rgb6 84 1348 1418
 Subject24/Scene2/Color/rgb7 84 1 85
 Subject24/Scene2/Color/rgb7 10 86 151
 Subject24/Scene2/Color/rgb7 84 152 208
@@ -4056,7 +3890,6 @@ Subject24/Scene2/Color/rgb7 84 971 1046
 Subject24/Scene2/Color/rgb7 60 1047 1103
 Subject24/Scene2/Color/rgb7 84 1104 1159
 Subject24/Scene2/Color/rgb7 83 1160 1231
-Subject24/Scene2/Color/rgb7 84 1232 1343
 Subject24/Scene3/Color/rgb1 84 1 485
 Subject24/Scene3/Color/rgb1 53 486 544
 Subject24/Scene3/Color/rgb1 84 545 608
@@ -4081,7 +3914,6 @@ Subject24/Scene3/Color/rgb1 84 1447 1506
 Subject24/Scene3/Color/rgb1 1 1507 1558
 Subject24/Scene3/Color/rgb1 84 1559 1602
 Subject24/Scene3/Color/rgb1 51 1603 1646
-Subject24/Scene3/Color/rgb1 84 1647 1695
 Subject24/Scene3/Color/rgb2 84 1 103
 Subject24/Scene3/Color/rgb2 11 104 163
 Subject24/Scene3/Color/rgb2 84 164 226
@@ -4106,7 +3938,6 @@ Subject24/Scene3/Color/rgb2 84 1193 1246
 Subject24/Scene3/Color/rgb2 14 1247 1303
 Subject24/Scene3/Color/rgb2 84 1304 1353
 Subject24/Scene3/Color/rgb2 70 1354 1401
-Subject24/Scene3/Color/rgb2 84 1402 1431
 Subject24/Scene3/Color/rgb3 84 1 108
 Subject24/Scene3/Color/rgb3 65 109 152
 Subject24/Scene3/Color/rgb3 84 153 189
@@ -4131,7 +3962,6 @@ Subject24/Scene3/Color/rgb3 84 1340 1364
 Subject24/Scene3/Color/rgb3 48 1365 1404
 Subject24/Scene3/Color/rgb3 84 1405 1471
 Subject24/Scene3/Color/rgb3 27 1472 1515
-Subject24/Scene3/Color/rgb3 84 1516 1567
 Subject24/Scene3/Color/rgb4 84 1 85
 Subject24/Scene3/Color/rgb4 49 86 140
 Subject24/Scene3/Color/rgb4 84 141 171
@@ -4156,7 +3986,6 @@ Subject24/Scene3/Color/rgb4 84 1086 1126
 Subject24/Scene3/Color/rgb4 25 1127 1160
 Subject24/Scene3/Color/rgb4 84 1161 1181
 Subject24/Scene3/Color/rgb4 24 1182 1216
-Subject24/Scene3/Color/rgb4 84 1217 1274
 Subject24/Scene3/Color/rgb5 84 1 83
 Subject24/Scene3/Color/rgb5 59 84 133
 Subject24/Scene3/Color/rgb5 84 134 174
@@ -4181,7 +4010,6 @@ Subject24/Scene3/Color/rgb5 84 1019 1058
 Subject24/Scene3/Color/rgb5 80 1059 1112
 Subject24/Scene3/Color/rgb5 84 1113 1146
 Subject24/Scene3/Color/rgb5 18 1147 1217
-Subject24/Scene3/Color/rgb5 84 1218 1286
 Subject24/Scene3/Color/rgb6 84 1 53
 Subject24/Scene3/Color/rgb6 41 54 109
 Subject24/Scene3/Color/rgb6 84 110 153
@@ -4206,7 +4034,6 @@ Subject24/Scene3/Color/rgb6 84 906 944
 Subject24/Scene3/Color/rgb6 22 945 994
 Subject24/Scene3/Color/rgb6 84 995 1033
 Subject24/Scene3/Color/rgb6 45 1034 1088
-Subject24/Scene3/Color/rgb6 84 1089 1129
 Subject24/Scene3/Color/rgb7 84 1 71
 Subject24/Scene3/Color/rgb7 39 72 125
 Subject24/Scene3/Color/rgb7 84 126 147
@@ -4229,7 +4056,6 @@ Subject24/Scene3/Color/rgb7 84 936 992
 Subject24/Scene3/Color/rgb7 82 993 1044
 Subject24/Scene3/Color/rgb7 84 1045 1104
 Subject24/Scene3/Color/rgb7 72 1105 1162
-Subject24/Scene3/Color/rgb7 84 1163 1274
 Subject24/Scene4/Color/rgb1 84 1 281
 Subject24/Scene4/Color/rgb1 66 282 393
 Subject24/Scene4/Color/rgb1 84 394 510
@@ -4254,7 +4080,6 @@ Subject24/Scene4/Color/rgb1 84 1678 1790
 Subject24/Scene4/Color/rgb1 72 1791 1820
 Subject24/Scene4/Color/rgb1 84 1821 1945
 Subject24/Scene4/Color/rgb1 46 1946 1996
-Subject24/Scene4/Color/rgb1 84 1997 2122
 Subject24/Scene4/Color/rgb2 84 1 146
 Subject24/Scene4/Color/rgb2 63 147 174
 Subject24/Scene4/Color/rgb2 84 175 220
@@ -4279,7 +4104,6 @@ Subject24/Scene4/Color/rgb2 84 1091 1124
 Subject24/Scene4/Color/rgb2 30 1125 1165
 Subject24/Scene4/Color/rgb2 84 1166 1212
 Subject24/Scene4/Color/rgb2 45 1213 1261
-Subject24/Scene4/Color/rgb2 84 1262 1362
 Subject24/Scene4/Color/rgb3 84 1 77
 Subject24/Scene4/Color/rgb3 80 78 116
 Subject24/Scene4/Color/rgb3 84 117 179
@@ -4304,7 +4128,6 @@ Subject24/Scene4/Color/rgb3 84 1157 1221
 Subject24/Scene4/Color/rgb3 22 1222 1256
 Subject24/Scene4/Color/rgb3 84 1257 1361
 Subject24/Scene4/Color/rgb3 79 1362 1409
-Subject24/Scene4/Color/rgb3 84 1410 1470
 Subject24/Scene4/Color/rgb4 84 1 83
 Subject24/Scene4/Color/rgb4 51 84 114
 Subject24/Scene4/Color/rgb4 84 115 163
@@ -4329,7 +4152,6 @@ Subject24/Scene4/Color/rgb4 84 792 853
 Subject24/Scene4/Color/rgb4 81 854 899
 Subject24/Scene4/Color/rgb4 84 900 934
 Subject24/Scene4/Color/rgb4 68 935 971
-Subject24/Scene4/Color/rgb4 84 972 1024
 Subject24/Scene4/Color/rgb5 84 1 82
 Subject24/Scene4/Color/rgb5 25 83 106
 Subject24/Scene4/Color/rgb5 84 107 197
@@ -4354,7 +4176,6 @@ Subject24/Scene4/Color/rgb5 84 993 1016
 Subject24/Scene4/Color/rgb5 28 1017 1048
 Subject24/Scene4/Color/rgb5 84 1049 1079
 Subject24/Scene4/Color/rgb5 41 1080 1113
-Subject24/Scene4/Color/rgb5 84 1114 1204
 Subject24/Scene4/Color/rgb6 84 1 92
 Subject24/Scene4/Color/rgb6 69 93 135
 Subject24/Scene4/Color/rgb6 84 136 187
@@ -4379,7 +4200,6 @@ Subject24/Scene4/Color/rgb6 84 941 1025
 Subject24/Scene4/Color/rgb6 43 1026 1085
 Subject24/Scene4/Color/rgb6 84 1086 1127
 Subject24/Scene4/Color/rgb6 12 1128 1178
-Subject24/Scene4/Color/rgb6 84 1179 1236
 Subject24/Scene4/Color/rgb7 84 1 100
 Subject24/Scene4/Color/rgb7 59 101 148
 Subject24/Scene4/Color/rgb7 84 149 201
@@ -4402,7 +4222,6 @@ Subject24/Scene4/Color/rgb7 84 897 926
 Subject24/Scene4/Color/rgb7 20 927 957
 Subject24/Scene4/Color/rgb7 84 958 1006
 Subject24/Scene4/Color/rgb7 13 1007 1050
-Subject24/Scene4/Color/rgb7 84 1051 1105
 Subject24/Scene5/Color/rgb1 84 1 58
 Subject24/Scene5/Color/rgb1 60 59 111
 Subject24/Scene5/Color/rgb1 84 112 175
@@ -4427,7 +4246,6 @@ Subject24/Scene5/Color/rgb1 84 1266 1380
 Subject24/Scene5/Color/rgb1 83 1381 1432
 Subject24/Scene5/Color/rgb1 84 1433 1485
 Subject24/Scene5/Color/rgb1 58 1486 1537
-Subject24/Scene5/Color/rgb1 84 1538 1563
 Subject24/Scene5/Color/rgb2 84 1 36
 Subject24/Scene5/Color/rgb2 7 37 80
 Subject24/Scene5/Color/rgb2 84 81 196
@@ -4452,7 +4270,6 @@ Subject24/Scene5/Color/rgb2 84 1367 1432
 Subject24/Scene5/Color/rgb2 40 1433 1484
 Subject24/Scene5/Color/rgb2 84 1485 1528
 Subject24/Scene5/Color/rgb2 66 1529 1578
-Subject24/Scene5/Color/rgb2 84 1579 1727
 Subject24/Scene5/Color/rgb3 84 1 52
 Subject24/Scene5/Color/rgb3 68 53 99
 Subject24/Scene5/Color/rgb3 84 100 155
@@ -4477,7 +4294,6 @@ Subject24/Scene5/Color/rgb3 84 1447 1568
 Subject24/Scene5/Color/rgb3 14 1569 1626
 Subject24/Scene5/Color/rgb3 84 1627 1703
 Subject24/Scene5/Color/rgb3 23 1704 1775
-Subject24/Scene5/Color/rgb3 84 1776 2049
 Subject24/Scene5/Color/rgb4 84 1 58
 Subject24/Scene5/Color/rgb4 19 59 100
 Subject24/Scene5/Color/rgb4 84 101 208
@@ -4502,7 +4318,6 @@ Subject24/Scene5/Color/rgb4 84 954 991
 Subject24/Scene5/Color/rgb4 15 992 1040
 Subject24/Scene5/Color/rgb4 84 1041 1064
 Subject24/Scene5/Color/rgb4 52 1065 1102
-Subject24/Scene5/Color/rgb4 84 1103 1325
 Subject24/Scene5/Color/rgb5 84 1 36
 Subject24/Scene5/Color/rgb5 39 37 61
 Subject24/Scene5/Color/rgb5 84 62 98
@@ -4527,7 +4342,6 @@ Subject24/Scene5/Color/rgb5 84 735 764
 Subject24/Scene5/Color/rgb5 24 765 800
 Subject24/Scene5/Color/rgb5 84 801 856
 Subject24/Scene5/Color/rgb5 44 857 905
-Subject24/Scene5/Color/rgb5 84 906 1008
 Subject24/Scene5/Color/rgb6 84 1 53
 Subject24/Scene5/Color/rgb6 63 54 82
 Subject24/Scene5/Color/rgb6 84 83 111
@@ -4552,7 +4366,6 @@ Subject24/Scene5/Color/rgb6 84 782 808
 Subject24/Scene5/Color/rgb6 29 809 836
 Subject24/Scene5/Color/rgb6 84 837 863
 Subject24/Scene5/Color/rgb6 33 864 895
-Subject24/Scene5/Color/rgb6 84 896 1027
 Subject24/Scene5/Color/rgb7 84 1 60
 Subject24/Scene5/Color/rgb7 16 61 94
 Subject24/Scene5/Color/rgb7 84 95 138
@@ -4575,7 +4388,6 @@ Subject24/Scene5/Color/rgb7 84 811 852
 Subject24/Scene5/Color/rgb7 18 853 904
 Subject24/Scene5/Color/rgb7 84 905 940
 Subject24/Scene5/Color/rgb7 4 941 981
-Subject24/Scene5/Color/rgb7 84 982 1141
 Subject24/Scene6/Color/rgb1 84 1 286
 Subject24/Scene6/Color/rgb1 36 287 325
 Subject24/Scene6/Color/rgb1 84 326 347
@@ -4600,7 +4412,6 @@ Subject24/Scene6/Color/rgb1 84 904 989
 Subject24/Scene6/Color/rgb1 13 990 1029
 Subject24/Scene6/Color/rgb1 84 1030 1067
 Subject24/Scene6/Color/rgb1 47 1068 1107
-Subject24/Scene6/Color/rgb1 84 1108 1240
 Subject24/Scene6/Color/rgb2 84 1 21
 Subject24/Scene6/Color/rgb2 76 22 61
 Subject24/Scene6/Color/rgb2 84 62 88
@@ -4625,7 +4436,6 @@ Subject24/Scene6/Color/rgb2 84 735 818
 Subject24/Scene6/Color/rgb2 57 819 857
 Subject24/Scene6/Color/rgb2 84 858 902
 Subject24/Scene6/Color/rgb2 66 903 940
-Subject24/Scene6/Color/rgb2 84 941 1076
 Subject24/Scene6/Color/rgb3 84 1 78
 Subject24/Scene6/Color/rgb3 83 79 123
 Subject24/Scene6/Color/rgb3 84 124 163
@@ -4650,7 +4460,6 @@ Subject24/Scene6/Color/rgb3 84 1445 1590
 Subject24/Scene6/Color/rgb3 12 1591 1634
 Subject24/Scene6/Color/rgb3 84 1635 1680
 Subject24/Scene6/Color/rgb3 16 1681 1720
-Subject24/Scene6/Color/rgb3 84 1721 1779
 Subject24/Scene6/Color/rgb4 84 1 98
 Subject24/Scene6/Color/rgb4 72 99 141
 Subject24/Scene6/Color/rgb4 84 142 209
@@ -4675,7 +4484,6 @@ Subject24/Scene6/Color/rgb4 84 1345 1398
 Subject24/Scene6/Color/rgb4 82 1399 1444
 Subject24/Scene6/Color/rgb4 84 1445 1499
 Subject24/Scene6/Color/rgb4 65 1500 1528
-Subject24/Scene6/Color/rgb4 84 1529 1543
 Subject24/Scene6/Color/rgb5 84 1 86
 Subject24/Scene6/Color/rgb5 56 87 132
 Subject24/Scene6/Color/rgb5 84 133 173
@@ -4700,7 +4508,6 @@ Subject24/Scene6/Color/rgb5 84 1144 1255
 Subject24/Scene6/Color/rgb5 75 1256 1303
 Subject24/Scene6/Color/rgb5 84 1304 1341
 Subject24/Scene6/Color/rgb5 39 1342 1386
-Subject24/Scene6/Color/rgb5 84 1387 1477
 Subject24/Scene6/Color/rgb6 84 1 104
 Subject24/Scene6/Color/rgb6 24 105 137
 Subject24/Scene6/Color/rgb6 84 138 181
@@ -4725,7 +4532,6 @@ Subject24/Scene6/Color/rgb6 84 1249 1369
 Subject24/Scene6/Color/rgb6 41 1370 1405
 Subject24/Scene6/Color/rgb6 84 1406 1454
 Subject24/Scene6/Color/rgb6 33 1455 1487
-Subject24/Scene6/Color/rgb6 84 1488 1506
 Subject24/Scene6/Color/rgb7 84 1 111
 Subject24/Scene6/Color/rgb7 68 112 153
 Subject24/Scene6/Color/rgb7 84 154 203
@@ -4748,7 +4554,6 @@ Subject24/Scene6/Color/rgb7 84 1087 1167
 Subject24/Scene6/Color/rgb7 26 1168 1198
 Subject24/Scene6/Color/rgb7 84 1199 1223
 Subject24/Scene6/Color/rgb7 51 1224 1263
-Subject24/Scene6/Color/rgb7 84 1264 1314
 Subject29/Scene1/Color/rgb1 84 1 148
 Subject29/Scene1/Color/rgb1 2 149 186
 Subject29/Scene1/Color/rgb1 84 187 223
@@ -4773,7 +4578,6 @@ Subject29/Scene1/Color/rgb1 84 1143 1202
 Subject29/Scene1/Color/rgb1 37 1203 1242
 Subject29/Scene1/Color/rgb1 84 1243 1294
 Subject29/Scene1/Color/rgb1 29 1295 1323
-Subject29/Scene1/Color/rgb1 84 1324 1340
 Subject29/Scene1/Color/rgb2 84 1 53
 Subject29/Scene1/Color/rgb2 36 54 86
 Subject29/Scene1/Color/rgb2 84 87 156
@@ -4798,7 +4602,6 @@ Subject29/Scene1/Color/rgb2 84 1690 1823
 Subject29/Scene1/Color/rgb2 83 1824 1857
 Subject29/Scene1/Color/rgb2 84 1858 1908
 Subject29/Scene1/Color/rgb2 39 1909 1956
-Subject29/Scene1/Color/rgb2 84 1957 1994
 Subject29/Scene1/Color/rgb3 84 1 96
 Subject29/Scene1/Color/rgb3 45 97 129
 Subject29/Scene1/Color/rgb3 84 130 220
@@ -4823,7 +4626,6 @@ Subject29/Scene1/Color/rgb3 84 1816 2009
 Subject29/Scene1/Color/rgb3 6 2010 2064
 Subject29/Scene1/Color/rgb3 84 2065 2153
 Subject29/Scene1/Color/rgb3 69 2154 2208
-Subject29/Scene1/Color/rgb3 84 2209 2275
 Subject29/Scene1/Color/rgb4 84 1 75
 Subject29/Scene1/Color/rgb4 20 76 99
 Subject29/Scene1/Color/rgb4 84 100 183
@@ -4848,7 +4650,6 @@ Subject29/Scene1/Color/rgb4 84 1145 1385
 Subject29/Scene1/Color/rgb4 5 1386 1432
 Subject29/Scene1/Color/rgb4 84 1433 1509
 Subject29/Scene1/Color/rgb4 38 1510 1555
-Subject29/Scene1/Color/rgb4 84 1556 1660
 Subject29/Scene1/Color/rgb5 84 1 127
 Subject29/Scene1/Color/rgb5 43 128 181
 Subject29/Scene1/Color/rgb5 84 182 245
@@ -4873,7 +4674,6 @@ Subject29/Scene1/Color/rgb5 84 1374 1470
 Subject29/Scene1/Color/rgb5 76 1471 1507
 Subject29/Scene1/Color/rgb5 84 1508 1547
 Subject29/Scene1/Color/rgb5 25 1548 1572
-Subject29/Scene1/Color/rgb5 84 1573 1676
 Subject29/Scene1/Color/rgb6 84 1 42
 Subject29/Scene1/Color/rgb6 31 43 68
 Subject29/Scene1/Color/rgb6 84 69 122
@@ -4898,7 +4698,6 @@ Subject29/Scene1/Color/rgb6 84 1394 1508
 Subject29/Scene1/Color/rgb6 17 1509 1520
 Subject29/Scene1/Color/rgb6 84 1521 1652
 Subject29/Scene1/Color/rgb6 58 1653 1681
-Subject29/Scene1/Color/rgb6 84 1682 1756
 Subject29/Scene1/Color/rgb7 84 1 165
 Subject29/Scene1/Color/rgb7 78 166 209
 Subject29/Scene1/Color/rgb7 84 210 364
@@ -4921,7 +4720,6 @@ Subject29/Scene1/Color/rgb7 84 1244 1293
 Subject29/Scene1/Color/rgb7 52 1294 1311
 Subject29/Scene1/Color/rgb7 84 1312 1372
 Subject29/Scene1/Color/rgb7 30 1373 1401
-Subject29/Scene1/Color/rgb7 84 1402 1495
 Subject29/Scene2/Color/rgb1 84 1 173
 Subject29/Scene2/Color/rgb1 24 174 209
 Subject29/Scene2/Color/rgb1 84 210 352
@@ -4946,7 +4744,6 @@ Subject29/Scene2/Color/rgb1 84 1248 1329
 Subject29/Scene2/Color/rgb1 74 1330 1367
 Subject29/Scene2/Color/rgb1 84 1368 1421
 Subject29/Scene2/Color/rgb1 62 1422 1456
-Subject29/Scene2/Color/rgb1 84 1457 1513
 Subject29/Scene2/Color/rgb2 84 1 121
 Subject29/Scene2/Color/rgb2 23 122 168
 Subject29/Scene2/Color/rgb2 84 169 368
@@ -4971,7 +4768,6 @@ Subject29/Scene2/Color/rgb2 84 2010 2133
 Subject29/Scene2/Color/rgb2 81 2134 2168
 Subject29/Scene2/Color/rgb2 84 2169 2286
 Subject29/Scene2/Color/rgb2 12 2287 2332
-Subject29/Scene2/Color/rgb2 84 2333 2378
 Subject29/Scene2/Color/rgb3 84 1 54
 Subject29/Scene2/Color/rgb3 1 55 96
 Subject29/Scene2/Color/rgb3 84 97 175
@@ -4996,7 +4792,6 @@ Subject29/Scene2/Color/rgb3 84 1248 1296
 Subject29/Scene2/Color/rgb3 63 1297 1326
 Subject29/Scene2/Color/rgb3 84 1327 1373
 Subject29/Scene2/Color/rgb3 79 1374 1410
-Subject29/Scene2/Color/rgb3 84 1411 1430
 Subject29/Scene2/Color/rgb4 84 1 115
 Subject29/Scene2/Color/rgb4 73 116 160
 Subject29/Scene2/Color/rgb4 84 161 220
@@ -5021,7 +4816,6 @@ Subject29/Scene2/Color/rgb4 84 1255 1335
 Subject29/Scene2/Color/rgb4 28 1336 1363
 Subject29/Scene2/Color/rgb4 84 1364 1526
 Subject29/Scene2/Color/rgb4 17 1527 1538
-Subject29/Scene2/Color/rgb4 84 1539 1640
 Subject29/Scene2/Color/rgb5 84 1 101
 Subject29/Scene2/Color/rgb5 35 102 124
 Subject29/Scene2/Color/rgb5 84 125 169
@@ -5046,7 +4840,6 @@ Subject29/Scene2/Color/rgb5 84 1280 1408
 Subject29/Scene2/Color/rgb5 71 1409 1449
 Subject29/Scene2/Color/rgb5 84 1450 1501
 Subject29/Scene2/Color/rgb5 72 1502 1523
-Subject29/Scene2/Color/rgb5 84 1524 1571
 Subject29/Scene2/Color/rgb6 84 1 105
 Subject29/Scene2/Color/rgb6 7 106 131
 Subject29/Scene2/Color/rgb6 84 132 255
@@ -5071,7 +4864,6 @@ Subject29/Scene2/Color/rgb6 84 1374 1405
 Subject29/Scene2/Color/rgb6 21 1406 1438
 Subject29/Scene2/Color/rgb6 84 1439 1557
 Subject29/Scene2/Color/rgb6 80 1558 1582
-Subject29/Scene2/Color/rgb6 84 1583 1617
 Subject29/Scene2/Color/rgb7 84 1 126
 Subject29/Scene2/Color/rgb7 70 127 151
 Subject29/Scene2/Color/rgb7 84 152 240
@@ -5094,7 +4886,6 @@ Subject29/Scene2/Color/rgb7 84 1150 1244
 Subject29/Scene2/Color/rgb7 8 1245 1288
 Subject29/Scene2/Color/rgb7 84 1289 1388
 Subject29/Scene2/Color/rgb7 68 1389 1433
-Subject29/Scene2/Color/rgb7 84 1434 1485
 Subject29/Scene3/Color/rgb1 84 1 27
 Subject29/Scene3/Color/rgb1 3 28 82
 Subject29/Scene3/Color/rgb1 84 83 167
@@ -5119,7 +4910,6 @@ Subject29/Scene3/Color/rgb1 84 1010 1107
 Subject29/Scene3/Color/rgb1 82 1108 1131
 Subject29/Scene3/Color/rgb1 84 1132 1187
 Subject29/Scene3/Color/rgb1 24 1188 1216
-Subject29/Scene3/Color/rgb1 84 1217 1237
 Subject29/Scene3/Color/rgb2 84 1 158
 Subject29/Scene3/Color/rgb2 83 159 181
 Subject29/Scene3/Color/rgb2 84 182 237
@@ -5144,7 +4934,6 @@ Subject29/Scene3/Color/rgb2 84 1342 1444
 Subject29/Scene3/Color/rgb2 80 1445 1479
 Subject29/Scene3/Color/rgb2 84 1480 1606
 Subject29/Scene3/Color/rgb2 53 1607 1640
-Subject29/Scene3/Color/rgb2 84 1641 1751
 Subject29/Scene3/Color/rgb3 84 1 64
 Subject29/Scene3/Color/rgb3 62 65 94
 Subject29/Scene3/Color/rgb3 84 95 125
@@ -5169,7 +4958,6 @@ Subject29/Scene3/Color/rgb3 84 1037 1102
 Subject29/Scene3/Color/rgb3 60 1103 1126
 Subject29/Scene3/Color/rgb3 84 1127 1220
 Subject29/Scene3/Color/rgb3 13 1221 1272
-Subject29/Scene3/Color/rgb3 84 1273 1315
 Subject29/Scene3/Color/rgb4 84 1 82
 Subject29/Scene3/Color/rgb4 11 83 134
 Subject29/Scene3/Color/rgb4 84 135 243
@@ -5194,7 +4982,6 @@ Subject29/Scene3/Color/rgb4 84 1423 1476
 Subject29/Scene3/Color/rgb4 49 1477 1525
 Subject29/Scene3/Color/rgb4 84 1526 1609
 Subject29/Scene3/Color/rgb4 78 1610 1653
-Subject29/Scene3/Color/rgb4 84 1654 1683
 Subject29/Scene3/Color/rgb5 84 1 35
 Subject29/Scene3/Color/rgb5 81 36 68
 Subject29/Scene3/Color/rgb5 84 69 128
@@ -5219,7 +5006,6 @@ Subject29/Scene3/Color/rgb5 84 1263 1342
 Subject29/Scene3/Color/rgb5 28 1343 1374
 Subject29/Scene3/Color/rgb5 84 1375 1507
 Subject29/Scene3/Color/rgb5 68 1508 1551
-Subject29/Scene3/Color/rgb5 84 1552 1612
 Subject29/Scene3/Color/rgb6 84 1 8
 Subject29/Scene3/Color/rgb6 66 9 40
 Subject29/Scene3/Color/rgb6 84 41 79
@@ -5244,7 +5030,6 @@ Subject29/Scene3/Color/rgb6 84 1011 1101
 Subject29/Scene3/Color/rgb6 59 1102 1146
 Subject29/Scene3/Color/rgb6 84 1147 1181
 Subject29/Scene3/Color/rgb6 8 1182 1225
-Subject29/Scene3/Color/rgb6 84 1226 1248
 Subject29/Scene3/Color/rgb7 84 1 121
 Subject29/Scene3/Color/rgb7 45 122 144
 Subject29/Scene3/Color/rgb7 84 145 208
@@ -5267,7 +5052,6 @@ Subject29/Scene3/Color/rgb7 84 1200 1241
 Subject29/Scene3/Color/rgb7 29 1242 1269
 Subject29/Scene3/Color/rgb7 84 1270 1297
 Subject29/Scene3/Color/rgb7 30 1298 1320
-Subject29/Scene3/Color/rgb7 84 1321 1361
 Subject29/Scene4/Color/rgb1 84 1 276
 Subject29/Scene4/Color/rgb1 40 277 312
 Subject29/Scene4/Color/rgb1 84 313 390
@@ -5292,7 +5076,6 @@ Subject29/Scene4/Color/rgb1 84 1391 1476
 Subject29/Scene4/Color/rgb1 52 1477 1494
 Subject29/Scene4/Color/rgb1 84 1495 1535
 Subject29/Scene4/Color/rgb1 30 1536 1553
-Subject29/Scene4/Color/rgb1 84 1554 1608
 Subject29/Scene4/Color/rgb2 84 1 128
 Subject29/Scene4/Color/rgb2 29 129 148
 Subject29/Scene4/Color/rgb2 84 149 187
@@ -5317,7 +5100,6 @@ Subject29/Scene4/Color/rgb2 84 1189 1263
 Subject29/Scene4/Color/rgb2 72 1264 1277
 Subject29/Scene4/Color/rgb2 84 1278 1355
 Subject29/Scene4/Color/rgb2 67 1356 1381
-Subject29/Scene4/Color/rgb2 84 1382 1431
 Subject29/Scene4/Color/rgb3 84 1 80
 Subject29/Scene4/Color/rgb3 12 81 105
 Subject29/Scene4/Color/rgb3 84 106 192
@@ -5342,7 +5124,6 @@ Subject29/Scene4/Color/rgb3 84 1108 1232
 Subject29/Scene4/Color/rgb3 55 1233 1264
 Subject29/Scene4/Color/rgb3 84 1265 1379
 Subject29/Scene4/Color/rgb3 10 1380 1422
-Subject29/Scene4/Color/rgb3 84 1423 1457
 Subject29/Scene4/Color/rgb4 84 1 128
 Subject29/Scene4/Color/rgb4 78 129 162
 Subject29/Scene4/Color/rgb4 84 163 270
@@ -5367,7 +5148,6 @@ Subject29/Scene4/Color/rgb4 84 1075 1143
 Subject29/Scene4/Color/rgb4 9 1144 1179
 Subject29/Scene4/Color/rgb4 84 1180 1239
 Subject29/Scene4/Color/rgb4 46 1240 1280
-Subject29/Scene4/Color/rgb4 84 1281 1307
 Subject29/Scene4/Color/rgb5 84 1 186
 Subject29/Scene4/Color/rgb5 45 187 210
 Subject29/Scene4/Color/rgb5 84 211 284
@@ -5392,7 +5172,6 @@ Subject29/Scene4/Color/rgb5 84 1315 1404
 Subject29/Scene4/Color/rgb5 15 1405 1450
 Subject29/Scene4/Color/rgb5 84 1451 1509
 Subject29/Scene4/Color/rgb5 58 1510 1533
-Subject29/Scene4/Color/rgb5 84 1534 1603
 Subject29/Scene4/Color/rgb6 84 1 88
 Subject29/Scene4/Color/rgb6 79 89 110
 Subject29/Scene4/Color/rgb6 84 111 173
@@ -5417,7 +5196,6 @@ Subject29/Scene4/Color/rgb6 84 992 1037
 Subject29/Scene4/Color/rgb6 38 1038 1064
 Subject29/Scene4/Color/rgb6 84 1065 1137
 Subject29/Scene4/Color/rgb6 5 1138 1186
-Subject29/Scene4/Color/rgb6 84 1187 1220
 Subject29/Scene4/Color/rgb7 84 1 63
 Subject29/Scene4/Color/rgb7 24 64 86
 Subject29/Scene4/Color/rgb7 84 87 154
@@ -5440,7 +5218,6 @@ Subject29/Scene4/Color/rgb7 84 858 911
 Subject29/Scene4/Color/rgb7 74 912 946
 Subject29/Scene4/Color/rgb7 84 947 1037
 Subject29/Scene4/Color/rgb7 69 1038 1074
-Subject29/Scene4/Color/rgb7 84 1075 1163
 Subject29/Scene5/Color/rgb1 84 1 19
 Subject29/Scene5/Color/rgb1 20 20 58
 Subject29/Scene5/Color/rgb1 84 59 81
@@ -5465,7 +5242,6 @@ Subject29/Scene5/Color/rgb1 84 915 1009
 Subject29/Scene5/Color/rgb1 72 1010 1052
 Subject29/Scene5/Color/rgb1 84 1053 1147
 Subject29/Scene5/Color/rgb1 7 1148 1220
-Subject29/Scene5/Color/rgb1 84 1221 1276
 Subject29/Scene5/Color/rgb2 84 1 75
 Subject29/Scene5/Color/rgb2 26 76 108
 Subject29/Scene5/Color/rgb2 84 109 188
@@ -5490,7 +5266,6 @@ Subject29/Scene5/Color/rgb2 84 1055 1132
 Subject29/Scene5/Color/rgb2 15 1133 1187
 Subject29/Scene5/Color/rgb2 84 1188 1257
 Subject29/Scene5/Color/rgb2 66 1258 1291
-Subject29/Scene5/Color/rgb2 84 1292 1330
 Subject29/Scene5/Color/rgb3 84 1 99
 Subject29/Scene5/Color/rgb3 22 100 125
 Subject29/Scene5/Color/rgb3 84 126 375
@@ -5515,7 +5290,6 @@ Subject29/Scene5/Color/rgb3 84 1336 1446
 Subject29/Scene5/Color/rgb3 64 1447 1488
 Subject29/Scene5/Color/rgb3 84 1489 1533
 Subject29/Scene5/Color/rgb3 49 1534 1575
-Subject29/Scene5/Color/rgb3 84 1576 1655
 Subject29/Scene5/Color/rgb4 84 1 33
 Subject29/Scene5/Color/rgb4 31 34 59
 Subject29/Scene5/Color/rgb4 84 60 104
@@ -5540,7 +5314,6 @@ Subject29/Scene5/Color/rgb4 84 1309 1364
 Subject29/Scene5/Color/rgb4 74 1365 1397
 Subject29/Scene5/Color/rgb4 84 1398 1450
 Subject29/Scene5/Color/rgb4 50 1451 1493
-Subject29/Scene5/Color/rgb4 84 1494 1520
 Subject29/Scene5/Color/rgb5 84 1 41
 Subject29/Scene5/Color/rgb5 60 42 72
 Subject29/Scene5/Color/rgb5 84 73 136
@@ -5565,7 +5338,6 @@ Subject29/Scene5/Color/rgb5 84 1076 1160
 Subject29/Scene5/Color/rgb5 76 1161 1194
 Subject29/Scene5/Color/rgb5 84 1195 1323
 Subject29/Scene5/Color/rgb5 14 1324 1372
-Subject29/Scene5/Color/rgb5 84 1373 1487
 Subject29/Scene5/Color/rgb6 84 1 27
 Subject29/Scene5/Color/rgb6 36 28 57
 Subject29/Scene5/Color/rgb6 84 58 152
@@ -5590,7 +5362,6 @@ Subject29/Scene5/Color/rgb6 84 1120 1170
 Subject29/Scene5/Color/rgb6 52 1171 1191
 Subject29/Scene5/Color/rgb6 84 1192 1247
 Subject29/Scene5/Color/rgb6 61 1248 1275
-Subject29/Scene5/Color/rgb6 84 1276 1354
 Subject29/Scene5/Color/rgb7 84 1 51
 Subject29/Scene5/Color/rgb7 75 52 84
 Subject29/Scene5/Color/rgb7 84 85 143
@@ -5613,7 +5384,6 @@ Subject29/Scene5/Color/rgb7 84 891 952
 Subject29/Scene5/Color/rgb7 3 953 991
 Subject29/Scene5/Color/rgb7 84 992 1028
 Subject29/Scene5/Color/rgb7 62 1029 1055
-Subject29/Scene5/Color/rgb7 84 1056 1179
 Subject29/Scene6/Color/rgb1 84 1 164
 Subject29/Scene6/Color/rgb1 56 165 195
 Subject29/Scene6/Color/rgb1 84 196 253
@@ -5638,7 +5408,6 @@ Subject29/Scene6/Color/rgb1 84 1291 1341
 Subject29/Scene6/Color/rgb1 30 1342 1361
 Subject29/Scene6/Color/rgb1 84 1362 1399
 Subject29/Scene6/Color/rgb1 29 1400 1422
-Subject29/Scene6/Color/rgb1 84 1423 1453
 Subject29/Scene6/Color/rgb2 84 1 53
 Subject29/Scene6/Color/rgb2 2 54 78
 Subject29/Scene6/Color/rgb2 84 79 129
@@ -5663,7 +5432,6 @@ Subject29/Scene6/Color/rgb2 84 750 810
 Subject29/Scene6/Color/rgb2 73 811 851
 Subject29/Scene6/Color/rgb2 84 852 887
 Subject29/Scene6/Color/rgb2 47 888 915
-Subject29/Scene6/Color/rgb2 84 916 997
 Subject29/Scene6/Color/rgb3 84 1 170
 Subject29/Scene6/Color/rgb3 6 171 209
 Subject29/Scene6/Color/rgb3 84 210 253
@@ -5688,7 +5456,6 @@ Subject29/Scene6/Color/rgb3 84 1187 1216
 Subject29/Scene6/Color/rgb3 36 1217 1252
 Subject29/Scene6/Color/rgb3 84 1253 1375
 Subject29/Scene6/Color/rgb3 43 1376 1416
-Subject29/Scene6/Color/rgb3 84 1417 1529
 Subject29/Scene6/Color/rgb4 84 1 42
 Subject29/Scene6/Color/rgb4 1 43 70
 Subject29/Scene6/Color/rgb4 84 71 144
@@ -5713,7 +5480,6 @@ Subject29/Scene6/Color/rgb4 84 973 1034
 Subject29/Scene6/Color/rgb4 68 1035 1071
 Subject29/Scene6/Color/rgb4 84 1072 1145
 Subject29/Scene6/Color/rgb4 71 1146 1178
-Subject29/Scene6/Color/rgb4 84 1179 1200
 Subject29/Scene6/Color/rgb5 84 1 39
 Subject29/Scene6/Color/rgb5 50 40 68
 Subject29/Scene6/Color/rgb5 84 69 115
@@ -5738,7 +5504,6 @@ Subject29/Scene6/Color/rgb5 84 772 875
 Subject29/Scene6/Color/rgb5 60 876 892
 Subject29/Scene6/Color/rgb5 84 893 1105
 Subject29/Scene6/Color/rgb5 78 1106 1136
-Subject29/Scene6/Color/rgb5 84 1137 1167
 Subject29/Scene6/Color/rgb6 84 1 124
 Subject29/Scene6/Color/rgb6 46 125 154
 Subject29/Scene6/Color/rgb6 84 155 209
@@ -5763,7 +5528,6 @@ Subject29/Scene6/Color/rgb6 84 914 960
 Subject29/Scene6/Color/rgb6 52 961 980
 Subject29/Scene6/Color/rgb6 84 981 1064
 Subject29/Scene6/Color/rgb6 77 1065 1094
-Subject29/Scene6/Color/rgb6 84 1095 1135
 Subject29/Scene6/Color/rgb7 84 1 129
 Subject29/Scene6/Color/rgb7 40 130 150
 Subject29/Scene6/Color/rgb7 84 151 211
@@ -5786,7 +5550,6 @@ Subject29/Scene6/Color/rgb7 84 845 896
 Subject29/Scene6/Color/rgb7 35 897 921
 Subject29/Scene6/Color/rgb7 84 922 1070
 Subject29/Scene6/Color/rgb7 44 1071 1107
-Subject29/Scene6/Color/rgb7 84 1108 1138
 Subject33/Scene1/Color/rgb1 84 1 92
 Subject33/Scene1/Color/rgb1 62 93 129
 Subject33/Scene1/Color/rgb1 84 130 167
@@ -5811,7 +5574,6 @@ Subject33/Scene1/Color/rgb1 84 933 984
 Subject33/Scene1/Color/rgb1 77 985 1021
 Subject33/Scene1/Color/rgb1 84 1022 1070
 Subject33/Scene1/Color/rgb1 26 1071 1105
-Subject33/Scene1/Color/rgb1 84 1106 1165
 Subject33/Scene1/Color/rgb2 84 1 159
 Subject33/Scene1/Color/rgb2 41 160 196
 Subject33/Scene1/Color/rgb2 84 197 229
@@ -5836,7 +5598,6 @@ Subject33/Scene1/Color/rgb2 84 873 904
 Subject33/Scene1/Color/rgb2 48 905 940
 Subject33/Scene1/Color/rgb2 84 941 973
 Subject33/Scene1/Color/rgb2 5 974 1009
-Subject33/Scene1/Color/rgb2 84 1010 1057
 Subject33/Scene1/Color/rgb3 52 1 28
 Subject33/Scene1/Color/rgb3 84 29 76
 Subject33/Scene1/Color/rgb3 18 77 114
@@ -5860,7 +5621,6 @@ Subject33/Scene1/Color/rgb3 84 827 892
 Subject33/Scene1/Color/rgb3 65 893 928
 Subject33/Scene1/Color/rgb3 84 929 969
 Subject33/Scene1/Color/rgb3 64 970 1006
-Subject33/Scene1/Color/rgb3 84 1007 1044
 Subject33/Scene1/Color/rgb4 84 1 156
 Subject33/Scene1/Color/rgb4 72 157 203
 Subject33/Scene1/Color/rgb4 84 204 233
@@ -5885,7 +5645,6 @@ Subject33/Scene1/Color/rgb4 84 1098 1131
 Subject33/Scene1/Color/rgb4 68 1132 1172
 Subject33/Scene1/Color/rgb4 84 1173 1213
 Subject33/Scene1/Color/rgb4 45 1214 1254
-Subject33/Scene1/Color/rgb4 84 1255 1309
 Subject33/Scene1/Color/rgb5 84 1 282
 Subject33/Scene1/Color/rgb5 23 283 320
 Subject33/Scene1/Color/rgb5 84 321 404
@@ -5910,7 +5669,6 @@ Subject33/Scene1/Color/rgb5 84 1193 1221
 Subject33/Scene1/Color/rgb5 20 1222 1264
 Subject33/Scene1/Color/rgb5 84 1265 1297
 Subject33/Scene1/Color/rgb5 69 1298 1346
-Subject33/Scene1/Color/rgb5 84 1347 1396
 Subject33/Scene1/Color/rgb6 84 1 147
 Subject33/Scene1/Color/rgb6 15 148 199
 Subject33/Scene1/Color/rgb6 84 200 248
@@ -5935,7 +5693,6 @@ Subject33/Scene1/Color/rgb6 84 1113 1185
 Subject33/Scene1/Color/rgb6 80 1186 1232
 Subject33/Scene1/Color/rgb6 84 1233 1287
 Subject33/Scene1/Color/rgb6 37 1288 1333
-Subject33/Scene1/Color/rgb6 84 1334 1362
 Subject33/Scene1/Color/rgb7 84 1 121
 Subject33/Scene1/Color/rgb7 29 122 148
 Subject33/Scene1/Color/rgb7 84 149 178
@@ -5958,7 +5715,6 @@ Subject33/Scene1/Color/rgb7 84 780 831
 Subject33/Scene1/Color/rgb7 27 832 861
 Subject33/Scene1/Color/rgb7 84 862 920
 Subject33/Scene1/Color/rgb7 6 921 961
-Subject33/Scene1/Color/rgb7 84 962 1029
 Subject33/Scene2/Color/rgb1 84 1 106
 Subject33/Scene2/Color/rgb1 57 107 145
 Subject33/Scene2/Color/rgb1 84 146 159
@@ -5983,7 +5739,6 @@ Subject33/Scene2/Color/rgb1 84 1031 1069
 Subject33/Scene2/Color/rgb1 76 1070 1102
 Subject33/Scene2/Color/rgb1 84 1103 1134
 Subject33/Scene2/Color/rgb1 66 1135 1168
-Subject33/Scene2/Color/rgb1 84 1169 1232
 Subject33/Scene2/Color/rgb2 84 1 70
 Subject33/Scene2/Color/rgb2 73 71 117
 Subject33/Scene2/Color/rgb2 84 118 158
@@ -6008,7 +5763,6 @@ Subject33/Scene2/Color/rgb2 84 819 851
 Subject33/Scene2/Color/rgb2 50 852 892
 Subject33/Scene2/Color/rgb2 84 893 929
 Subject33/Scene2/Color/rgb2 32 930 968
-Subject33/Scene2/Color/rgb2 84 969 1026
 Subject33/Scene2/Color/rgb3 84 1 180
 Subject33/Scene2/Color/rgb3 77 181 221
 Subject33/Scene2/Color/rgb3 84 222 276
@@ -6033,7 +5787,6 @@ Subject33/Scene2/Color/rgb3 84 1059 1092
 Subject33/Scene2/Color/rgb3 38 1093 1135
 Subject33/Scene2/Color/rgb3 84 1136 1195
 Subject33/Scene2/Color/rgb3 58 1196 1226
-Subject33/Scene2/Color/rgb3 84 1227 1263
 Subject33/Scene2/Color/rgb4 84 1 106
 Subject33/Scene2/Color/rgb4 35 107 144
 Subject33/Scene2/Color/rgb4 84 145 192
@@ -6058,7 +5811,6 @@ Subject33/Scene2/Color/rgb4 84 895 932
 Subject33/Scene2/Color/rgb4 1 933 970
 Subject33/Scene2/Color/rgb4 84 971 1012
 Subject33/Scene2/Color/rgb4 47 1013 1044
-Subject33/Scene2/Color/rgb4 84 1045 1105
 Subject33/Scene2/Color/rgb5 84 1 110
 Subject33/Scene2/Color/rgb5 54 111 154
 Subject33/Scene2/Color/rgb5 84 155 192
@@ -6083,7 +5835,6 @@ Subject33/Scene2/Color/rgb5 84 876 945
 Subject33/Scene2/Color/rgb5 10 946 989
 Subject33/Scene2/Color/rgb5 84 990 1051
 Subject33/Scene2/Color/rgb5 14 1052 1099
-Subject33/Scene2/Color/rgb5 84 1100 1145
 Subject33/Scene2/Color/rgb6 84 1 51
 Subject33/Scene2/Color/rgb6 23 52 86
 Subject33/Scene2/Color/rgb6 84 87 163
@@ -6108,7 +5859,6 @@ Subject33/Scene2/Color/rgb6 84 879 934
 Subject33/Scene2/Color/rgb6 55 935 979
 Subject33/Scene2/Color/rgb6 84 980 1017
 Subject33/Scene2/Color/rgb6 34 1018 1057
-Subject33/Scene2/Color/rgb6 84 1058 1095
 Subject33/Scene2/Color/rgb7 84 1 113
 Subject33/Scene2/Color/rgb7 49 114 150
 Subject33/Scene2/Color/rgb7 84 151 185
@@ -6131,7 +5881,6 @@ Subject33/Scene2/Color/rgb7 84 937 981
 Subject33/Scene2/Color/rgb7 18 982 1028
 Subject33/Scene2/Color/rgb7 84 1029 1067
 Subject33/Scene2/Color/rgb7 71 1068 1111
-Subject33/Scene2/Color/rgb7 84 1112 1160
 Subject33/Scene3/Color/rgb1 84 1 149
 Subject33/Scene3/Color/rgb1 64 150 189
 Subject33/Scene3/Color/rgb1 84 190 239
@@ -6156,7 +5905,6 @@ Subject33/Scene3/Color/rgb1 84 1019 1051
 Subject33/Scene3/Color/rgb1 19 1052 1095
 Subject33/Scene3/Color/rgb1 84 1096 1194
 Subject33/Scene3/Color/rgb1 46 1195 1232
-Subject33/Scene3/Color/rgb1 84 1233 1347
 Subject33/Scene3/Color/rgb2 84 1 123
 Subject33/Scene3/Color/rgb2 5 124 156
 Subject33/Scene3/Color/rgb2 84 157 211
@@ -6181,7 +5929,6 @@ Subject33/Scene3/Color/rgb2 84 1315 1391
 Subject33/Scene3/Color/rgb2 14 1392 1441
 Subject33/Scene3/Color/rgb2 84 1442 1493
 Subject33/Scene3/Color/rgb2 6 1494 1529
-Subject33/Scene3/Color/rgb2 84 1530 1603
 Subject33/Scene3/Color/rgb3 84 1 95
 Subject33/Scene3/Color/rgb3 82 96 118
 Subject33/Scene3/Color/rgb3 84 119 210
@@ -6206,7 +5953,6 @@ Subject33/Scene3/Color/rgb3 84 1151 1253
 Subject33/Scene3/Color/rgb3 12 1254 1295
 Subject33/Scene3/Color/rgb3 84 1296 1327
 Subject33/Scene3/Color/rgb3 17 1328 1372
-Subject33/Scene3/Color/rgb3 84 1373 1422
 Subject33/Scene3/Color/rgb4 84 1 58
 Subject33/Scene3/Color/rgb4 4 59 100
 Subject33/Scene3/Color/rgb4 84 101 151
@@ -6231,7 +5977,6 @@ Subject33/Scene3/Color/rgb4 84 1090 1147
 Subject33/Scene3/Color/rgb4 10 1148 1200
 Subject33/Scene3/Color/rgb4 84 1201 1273
 Subject33/Scene3/Color/rgb4 39 1274 1312
-Subject33/Scene3/Color/rgb4 84 1313 1337
 Subject33/Scene3/Color/rgb5 84 1 79
 Subject33/Scene3/Color/rgb5 73 80 133
 Subject33/Scene3/Color/rgb5 84 134 163
@@ -6256,7 +6001,6 @@ Subject33/Scene3/Color/rgb5 84 956 1007
 Subject33/Scene3/Color/rgb5 52 1008 1053
 Subject33/Scene3/Color/rgb5 84 1054 1107
 Subject33/Scene3/Color/rgb5 40 1108 1157
-Subject33/Scene3/Color/rgb5 84 1158 1195
 Subject33/Scene3/Color/rgb6 84 1 57
 Subject33/Scene3/Color/rgb6 45 58 94
 Subject33/Scene3/Color/rgb6 84 95 140
@@ -6281,7 +6025,6 @@ Subject33/Scene3/Color/rgb6 84 1004 1120
 Subject33/Scene3/Color/rgb6 31 1121 1160
 Subject33/Scene3/Color/rgb6 84 1161 1228
 Subject33/Scene3/Color/rgb6 8 1229 1276
-Subject33/Scene3/Color/rgb6 84 1277 1291
 Subject33/Scene3/Color/rgb7 84 1 58
 Subject33/Scene3/Color/rgb7 3 59 102
 Subject33/Scene3/Color/rgb7 84 103 154
@@ -6304,7 +6047,6 @@ Subject33/Scene3/Color/rgb7 84 1004 1074
 Subject33/Scene3/Color/rgb7 69 1075 1133
 Subject33/Scene3/Color/rgb7 84 1134 1218
 Subject33/Scene3/Color/rgb7 44 1219 1265
-Subject33/Scene3/Color/rgb7 84 1266 1280
 Subject33/Scene4/Color/rgb1 84 1 472
 Subject33/Scene4/Color/rgb1 53 473 516
 Subject33/Scene4/Color/rgb1 84 517 557
@@ -6329,7 +6071,6 @@ Subject33/Scene4/Color/rgb1 84 1351 1418
 Subject33/Scene4/Color/rgb1 44 1419 1467
 Subject33/Scene4/Color/rgb1 84 1468 1498
 Subject33/Scene4/Color/rgb1 21 1499 1539
-Subject33/Scene4/Color/rgb1 84 1540 1598
 Subject33/Scene4/Color/rgb2 84 1 79
 Subject33/Scene4/Color/rgb2 40 80 122
 Subject33/Scene4/Color/rgb2 84 123 175
@@ -6354,7 +6095,6 @@ Subject33/Scene4/Color/rgb2 84 831 871
 Subject33/Scene4/Color/rgb2 48 872 906
 Subject33/Scene4/Color/rgb2 84 907 938
 Subject33/Scene4/Color/rgb2 16 939 964
-Subject33/Scene4/Color/rgb2 84 965 1039
 Subject33/Scene4/Color/rgb3 84 1 174
 Subject33/Scene4/Color/rgb3 42 175 206
 Subject33/Scene4/Color/rgb3 84 207 262
@@ -6379,7 +6119,6 @@ Subject33/Scene4/Color/rgb3 84 986 1059
 Subject33/Scene4/Color/rgb3 75 1060 1102
 Subject33/Scene4/Color/rgb3 84 1103 1192
 Subject33/Scene4/Color/rgb3 55 1193 1238
-Subject33/Scene4/Color/rgb3 84 1239 1345
 Subject33/Scene4/Color/rgb4 84 1 77
 Subject33/Scene4/Color/rgb4 43 78 132
 Subject33/Scene4/Color/rgb4 84 133 179
@@ -6404,7 +6143,6 @@ Subject33/Scene4/Color/rgb4 84 952 992
 Subject33/Scene4/Color/rgb4 13 993 1031
 Subject33/Scene4/Color/rgb4 84 1032 1052
 Subject33/Scene4/Color/rgb4 52 1053 1104
-Subject33/Scene4/Color/rgb4 84 1105 1168
 Subject33/Scene4/Color/rgb5 84 1 88
 Subject33/Scene4/Color/rgb5 51 89 114
 Subject33/Scene4/Color/rgb5 84 115 159
@@ -6429,7 +6167,6 @@ Subject33/Scene4/Color/rgb5 84 838 881
 Subject33/Scene4/Color/rgb5 35 882 919
 Subject33/Scene4/Color/rgb5 84 920 962
 Subject33/Scene4/Color/rgb5 45 963 991
-Subject33/Scene4/Color/rgb5 84 992 1014
 Subject33/Scene4/Color/rgb6 84 1 88
 Subject33/Scene4/Color/rgb6 10 89 134
 Subject33/Scene4/Color/rgb6 84 135 204
@@ -6454,7 +6191,6 @@ Subject33/Scene4/Color/rgb6 84 1049 1100
 Subject33/Scene4/Color/rgb6 73 1101 1152
 Subject33/Scene4/Color/rgb6 84 1153 1191
 Subject33/Scene4/Color/rgb6 65 1192 1241
-Subject33/Scene4/Color/rgb6 84 1242 1268
 Subject33/Scene4/Color/rgb7 84 1 71
 Subject33/Scene4/Color/rgb7 79 72 99
 Subject33/Scene4/Color/rgb7 84 100 184
@@ -6477,7 +6213,6 @@ Subject33/Scene4/Color/rgb7 84 750 841
 Subject33/Scene4/Color/rgb7 82 842 863
 Subject33/Scene4/Color/rgb7 84 864 930
 Subject33/Scene4/Color/rgb7 39 931 970
-Subject33/Scene4/Color/rgb7 84 971 1021
 Subject33/Scene5/Color/rgb1 84 1 10
 Subject33/Scene5/Color/rgb1 78 11 57
 Subject33/Scene5/Color/rgb1 84 58 106
@@ -6502,7 +6237,6 @@ Subject33/Scene5/Color/rgb1 84 925 997
 Subject33/Scene5/Color/rgb1 1 998 1052
 Subject33/Scene5/Color/rgb1 84 1053 1106
 Subject33/Scene5/Color/rgb1 5 1107 1157
-Subject33/Scene5/Color/rgb1 84 1158 1182
 Subject33/Scene5/Color/rgb2 84 1 84
 Subject33/Scene5/Color/rgb2 73 85 144
 Subject33/Scene5/Color/rgb2 84 145 181
@@ -6527,7 +6261,6 @@ Subject33/Scene5/Color/rgb2 84 1185 1216
 Subject33/Scene5/Color/rgb2 34 1217 1264
 Subject33/Scene5/Color/rgb2 84 1265 1304
 Subject33/Scene5/Color/rgb2 4 1305 1345
-Subject33/Scene5/Color/rgb2 84 1346 1373
 Subject33/Scene5/Color/rgb3 84 1 14
 Subject33/Scene5/Color/rgb3 30 15 57
 Subject33/Scene5/Color/rgb3 84 58 110
@@ -6552,7 +6285,6 @@ Subject33/Scene5/Color/rgb3 84 1111 1167
 Subject33/Scene5/Color/rgb3 70 1168 1222
 Subject33/Scene5/Color/rgb3 84 1223 1281
 Subject33/Scene5/Color/rgb3 54 1282 1346
-Subject33/Scene5/Color/rgb3 84 1347 1440
 Subject33/Scene5/Color/rgb4 84 1 28
 Subject33/Scene5/Color/rgb4 69 29 83
 Subject33/Scene5/Color/rgb4 84 84 114
@@ -6577,7 +6309,6 @@ Subject33/Scene5/Color/rgb4 84 1139 1183
 Subject33/Scene5/Color/rgb4 47 1184 1232
 Subject33/Scene5/Color/rgb4 84 1233 1283
 Subject33/Scene5/Color/rgb4 40 1284 1330
-Subject33/Scene5/Color/rgb4 84 1331 1417
 Subject33/Scene5/Color/rgb5 84 1 71
 Subject33/Scene5/Color/rgb5 10 72 124
 Subject33/Scene5/Color/rgb5 84 125 191
@@ -6602,7 +6333,6 @@ Subject33/Scene5/Color/rgb5 84 1257 1367
 Subject33/Scene5/Color/rgb5 7 1368 1418
 Subject33/Scene5/Color/rgb5 84 1419 1500
 Subject33/Scene5/Color/rgb5 74 1501 1550
-Subject33/Scene5/Color/rgb5 84 1551 1618
 Subject33/Scene5/Color/rgb6 84 1 116
 Subject33/Scene5/Color/rgb6 60 117 173
 Subject33/Scene5/Color/rgb6 84 174 203
@@ -6627,7 +6357,6 @@ Subject33/Scene5/Color/rgb6 84 1516 1567
 Subject33/Scene5/Color/rgb6 83 1568 1605
 Subject33/Scene5/Color/rgb6 84 1606 1713
 Subject33/Scene5/Color/rgb6 68 1714 1761
-Subject33/Scene5/Color/rgb6 84 1762 1790
 Subject33/Scene5/Color/rgb7 84 1 54
 Subject33/Scene5/Color/rgb7 14 55 106
 Subject33/Scene5/Color/rgb7 84 107 215
@@ -6650,7 +6379,6 @@ Subject33/Scene5/Color/rgb7 84 1405 1474
 Subject33/Scene5/Color/rgb7 17 1475 1497
 Subject33/Scene5/Color/rgb7 84 1498 1589
 Subject33/Scene5/Color/rgb7 15 1590 1651
-Subject33/Scene5/Color/rgb7 84 1652 1725
 Subject33/Scene6/Color/rgb1 84 1 147
 Subject33/Scene6/Color/rgb1 7 148 189
 Subject33/Scene6/Color/rgb1 84 190 223
@@ -6675,7 +6403,6 @@ Subject33/Scene6/Color/rgb1 84 1264 1356
 Subject33/Scene6/Color/rgb1 83 1357 1390
 Subject33/Scene6/Color/rgb1 84 1391 1464
 Subject33/Scene6/Color/rgb1 67 1465 1498
-Subject33/Scene6/Color/rgb1 84 1499 1569
 Subject33/Scene6/Color/rgb2 84 1 151
 Subject33/Scene6/Color/rgb2 82 152 199
 Subject33/Scene6/Color/rgb2 84 200 231
@@ -6700,7 +6427,6 @@ Subject33/Scene6/Color/rgb2 84 1168 1199
 Subject33/Scene6/Color/rgb2 25 1200 1228
 Subject33/Scene6/Color/rgb2 84 1229 1263
 Subject33/Scene6/Color/rgb2 28 1264 1295
-Subject33/Scene6/Color/rgb2 84 1296 1398
 Subject33/Scene6/Color/rgb3 84 1 127
 Subject33/Scene6/Color/rgb3 36 128 172
 Subject33/Scene6/Color/rgb3 84 173 275
@@ -6725,7 +6451,6 @@ Subject33/Scene6/Color/rgb3 84 1238 1321
 Subject33/Scene6/Color/rgb3 33 1322 1359
 Subject33/Scene6/Color/rgb3 84 1360 1386
 Subject33/Scene6/Color/rgb3 21 1387 1421
-Subject33/Scene6/Color/rgb3 84 1422 1504
 Subject33/Scene6/Color/rgb4 84 1 177
 Subject33/Scene6/Color/rgb4 14 178 217
 Subject33/Scene6/Color/rgb4 84 218 293
@@ -6750,7 +6475,6 @@ Subject33/Scene6/Color/rgb4 84 1101 1181
 Subject33/Scene6/Color/rgb4 66 1182 1215
 Subject33/Scene6/Color/rgb4 84 1216 1267
 Subject33/Scene6/Color/rgb4 80 1268 1296
-Subject33/Scene6/Color/rgb4 84 1297 1409
 Subject33/Scene6/Color/rgb5 84 1 93
 Subject33/Scene6/Color/rgb5 51 94 117
 Subject33/Scene6/Color/rgb5 84 118 175
@@ -6775,7 +6499,6 @@ Subject33/Scene6/Color/rgb5 84 986 1061
 Subject33/Scene6/Color/rgb5 45 1062 1112
 Subject33/Scene6/Color/rgb5 84 1113 1203
 Subject33/Scene6/Color/rgb5 12 1204 1253
-Subject33/Scene6/Color/rgb5 84 1254 1339
 Subject33/Scene6/Color/rgb6 84 1 185
 Subject33/Scene6/Color/rgb6 26 186 220
 Subject33/Scene6/Color/rgb6 84 221 261
@@ -6800,7 +6523,6 @@ Subject33/Scene6/Color/rgb6 84 1381 1411
 Subject33/Scene6/Color/rgb6 52 1412 1453
 Subject33/Scene6/Color/rgb6 84 1454 1490
 Subject33/Scene6/Color/rgb6 50 1491 1525
-Subject33/Scene6/Color/rgb6 84 1526 1606
 Subject33/Scene6/Color/rgb7 84 1 112
 Subject33/Scene6/Color/rgb7 61 113 154
 Subject33/Scene6/Color/rgb7 84 155 208
@@ -6823,7 +6545,6 @@ Subject33/Scene6/Color/rgb7 84 1265 1379
 Subject33/Scene6/Color/rgb7 8 1380 1428
 Subject33/Scene6/Color/rgb7 84 1429 1468
 Subject33/Scene6/Color/rgb7 15 1469 1512
-Subject33/Scene6/Color/rgb7 84 1513 1552
 Subject34/Scene1/Color/rgb1 84 1 74
 Subject34/Scene1/Color/rgb1 32 75 104
 Subject34/Scene1/Color/rgb1 84 105 147
@@ -6848,7 +6569,6 @@ Subject34/Scene1/Color/rgb1 84 978 1029
 Subject34/Scene1/Color/rgb1 69 1030 1079
 Subject34/Scene1/Color/rgb1 84 1080 1142
 Subject34/Scene1/Color/rgb1 11 1143 1208
-Subject34/Scene1/Color/rgb1 84 1209 1272
 Subject34/Scene1/Color/rgb2 84 1 134
 Subject34/Scene1/Color/rgb2 54 135 168
 Subject34/Scene1/Color/rgb2 84 169 215
@@ -6873,7 +6593,6 @@ Subject34/Scene1/Color/rgb2 84 1057 1090
 Subject34/Scene1/Color/rgb2 51 1091 1119
 Subject34/Scene1/Color/rgb2 84 1120 1161
 Subject34/Scene1/Color/rgb2 33 1162 1199
-Subject34/Scene1/Color/rgb2 84 1200 1255
 Subject34/Scene1/Color/rgb3 84 1 60
 Subject34/Scene1/Color/rgb3 7 61 97
 Subject34/Scene1/Color/rgb3 84 98 136
@@ -6898,7 +6617,6 @@ Subject34/Scene1/Color/rgb3 84 1060 1127
 Subject34/Scene1/Color/rgb3 80 1128 1168
 Subject34/Scene1/Color/rgb3 84 1169 1226
 Subject34/Scene1/Color/rgb3 14 1227 1276
-Subject34/Scene1/Color/rgb3 84 1277 1324
 Subject34/Scene1/Color/rgb4 84 1 139
 Subject34/Scene1/Color/rgb4 46 140 180
 Subject34/Scene1/Color/rgb4 84 181 240
@@ -6923,7 +6641,6 @@ Subject34/Scene1/Color/rgb4 84 1057 1256
 Subject34/Scene1/Color/rgb4 53 1257 1301
 Subject34/Scene1/Color/rgb4 84 1302 1354
 Subject34/Scene1/Color/rgb4 29 1355 1381
-Subject34/Scene1/Color/rgb4 84 1382 1439
 Subject34/Scene1/Color/rgb5 84 1 69
 Subject34/Scene1/Color/rgb5 21 70 104
 Subject34/Scene1/Color/rgb5 84 105 134
@@ -6948,7 +6665,6 @@ Subject34/Scene1/Color/rgb5 84 927 954
 Subject34/Scene1/Color/rgb5 26 955 990
 Subject34/Scene1/Color/rgb5 84 991 1029
 Subject34/Scene1/Color/rgb5 43 1030 1084
-Subject34/Scene1/Color/rgb5 84 1085 1162
 Subject34/Scene1/Color/rgb6 84 1 83
 Subject34/Scene1/Color/rgb6 19 84 130
 Subject34/Scene1/Color/rgb6 84 131 170
@@ -6973,7 +6689,6 @@ Subject34/Scene1/Color/rgb6 84 1122 1157
 Subject34/Scene1/Color/rgb6 2 1158 1194
 Subject34/Scene1/Color/rgb6 84 1195 1232
 Subject34/Scene1/Color/rgb6 4 1233 1267
-Subject34/Scene1/Color/rgb6 84 1268 1344
 Subject34/Scene1/Color/rgb7 84 1 123
 Subject34/Scene1/Color/rgb7 18 124 169
 Subject34/Scene1/Color/rgb7 84 170 277
@@ -6996,7 +6711,6 @@ Subject34/Scene1/Color/rgb7 84 916 965
 Subject34/Scene1/Color/rgb7 10 966 1023
 Subject34/Scene1/Color/rgb7 84 1024 1072
 Subject34/Scene1/Color/rgb7 12 1073 1113
-Subject34/Scene1/Color/rgb7 84 1114 1169
 Subject34/Scene2/Color/rgb1 84 1 566
 Subject34/Scene2/Color/rgb1 40 567 609
 Subject34/Scene2/Color/rgb1 84 610 655
@@ -7021,7 +6735,6 @@ Subject34/Scene2/Color/rgb1 84 1522 1569
 Subject34/Scene2/Color/rgb1 38 1570 1619
 Subject34/Scene2/Color/rgb1 84 1620 1666
 Subject34/Scene2/Color/rgb1 77 1667 1710
-Subject34/Scene2/Color/rgb1 84 1711 1764
 Subject34/Scene2/Color/rgb2 84 1 77
 Subject34/Scene2/Color/rgb2 65 78 110
 Subject34/Scene2/Color/rgb2 84 111 156
@@ -7046,7 +6759,6 @@ Subject34/Scene2/Color/rgb2 84 948 1024
 Subject34/Scene2/Color/rgb2 66 1025 1062
 Subject34/Scene2/Color/rgb2 84 1063 1107
 Subject34/Scene2/Color/rgb2 30 1108 1142
-Subject34/Scene2/Color/rgb2 84 1143 1167
 Subject34/Scene2/Color/rgb3 84 1 66
 Subject34/Scene2/Color/rgb3 64 67 108
 Subject34/Scene2/Color/rgb3 84 109 151
@@ -7071,7 +6783,6 @@ Subject34/Scene2/Color/rgb3 84 1017 1089
 Subject34/Scene2/Color/rgb3 60 1090 1119
 Subject34/Scene2/Color/rgb3 84 1120 1205
 Subject34/Scene2/Color/rgb3 76 1206 1249
-Subject34/Scene2/Color/rgb3 84 1250 1298
 Subject34/Scene2/Color/rgb4 84 1 67
 Subject34/Scene2/Color/rgb4 6 68 110
 Subject34/Scene2/Color/rgb4 84 111 183
@@ -7096,7 +6807,6 @@ Subject34/Scene2/Color/rgb4 84 1131 1203
 Subject34/Scene2/Color/rgb4 73 1204 1255
 Subject34/Scene2/Color/rgb4 84 1256 1358
 Subject34/Scene2/Color/rgb4 72 1359 1383
-Subject34/Scene2/Color/rgb4 84 1384 1418
 Subject34/Scene2/Color/rgb5 84 1 132
 Subject34/Scene2/Color/rgb5 61 133 164
 Subject34/Scene2/Color/rgb5 84 165 219
@@ -7121,7 +6831,6 @@ Subject34/Scene2/Color/rgb5 84 1326 1383
 Subject34/Scene2/Color/rgb5 59 1384 1422
 Subject34/Scene2/Color/rgb5 84 1423 1460
 Subject34/Scene2/Color/rgb5 25 1461 1490
-Subject34/Scene2/Color/rgb5 84 1491 1511
 Subject34/Scene2/Color/rgb6 84 1 35
 Subject34/Scene2/Color/rgb6 26 36 58
 Subject34/Scene2/Color/rgb6 84 59 96
@@ -7146,7 +6855,6 @@ Subject34/Scene2/Color/rgb6 84 1072 1100
 Subject34/Scene2/Color/rgb6 33 1101 1129
 Subject34/Scene2/Color/rgb6 84 1130 1185
 Subject34/Scene2/Color/rgb6 58 1186 1204
-Subject34/Scene2/Color/rgb6 84 1205 1269
 Subject34/Scene2/Color/rgb7 84 1 114
 Subject34/Scene2/Color/rgb7 43 115 149
 Subject34/Scene2/Color/rgb7 84 150 265
@@ -7169,7 +6877,6 @@ Subject34/Scene2/Color/rgb7 84 970 1011
 Subject34/Scene2/Color/rgb7 39 1012 1047
 Subject34/Scene2/Color/rgb7 84 1048 1131
 Subject34/Scene2/Color/rgb7 35 1132 1165
-Subject34/Scene2/Color/rgb7 84 1166 1224
 Subject34/Scene3/Color/rgb1 84 1 80
 Subject34/Scene3/Color/rgb1 8 81 125
 Subject34/Scene3/Color/rgb1 84 126 428
@@ -7194,7 +6901,6 @@ Subject34/Scene3/Color/rgb1 84 1342 1372
 Subject34/Scene3/Color/rgb1 20 1373 1434
 Subject34/Scene3/Color/rgb1 84 1435 1462
 Subject34/Scene3/Color/rgb1 58 1463 1513
-Subject34/Scene3/Color/rgb1 84 1514 1557
 Subject34/Scene3/Color/rgb2 84 1 164
 Subject34/Scene3/Color/rgb2 18 165 234
 Subject34/Scene3/Color/rgb2 84 235 256
@@ -7219,7 +6925,6 @@ Subject34/Scene3/Color/rgb2 84 1247 1395
 Subject34/Scene3/Color/rgb2 66 1396 1447
 Subject34/Scene3/Color/rgb2 84 1448 1479
 Subject34/Scene3/Color/rgb2 76 1480 1531
-Subject34/Scene3/Color/rgb2 84 1532 1586
 Subject34/Scene3/Color/rgb3 84 1 160
 Subject34/Scene3/Color/rgb3 16 161 201
 Subject34/Scene3/Color/rgb3 84 202 248
@@ -7244,7 +6949,6 @@ Subject34/Scene3/Color/rgb3 84 1528 1580
 Subject34/Scene3/Color/rgb3 64 1581 1630
 Subject34/Scene3/Color/rgb3 84 1631 1689
 Subject34/Scene3/Color/rgb3 73 1690 1752
-Subject34/Scene3/Color/rgb3 84 1753 1786
 Subject34/Scene3/Color/rgb4 84 1 201
 Subject34/Scene3/Color/rgb4 57 202 267
 Subject34/Scene3/Color/rgb4 84 268 339
@@ -7269,7 +6973,6 @@ Subject34/Scene3/Color/rgb4 84 1372 1439
 Subject34/Scene3/Color/rgb4 31 1440 1490
 Subject34/Scene3/Color/rgb4 84 1491 1569
 Subject34/Scene3/Color/rgb4 32 1570 1610
-Subject34/Scene3/Color/rgb4 84 1611 1728
 Subject34/Scene3/Color/rgb5 84 1 38
 Subject34/Scene3/Color/rgb5 38 39 104
 Subject34/Scene3/Color/rgb5 84 105 158
@@ -7294,7 +6997,6 @@ Subject34/Scene3/Color/rgb5 84 1227 1273
 Subject34/Scene3/Color/rgb5 35 1274 1324
 Subject34/Scene3/Color/rgb5 84 1325 1378
 Subject34/Scene3/Color/rgb5 13 1379 1439
-Subject34/Scene3/Color/rgb5 84 1440 1478
 Subject34/Scene3/Color/rgb6 84 1 106
 Subject34/Scene3/Color/rgb6 11 107 203
 Subject34/Scene3/Color/rgb6 84 204 249
@@ -7319,7 +7021,6 @@ Subject34/Scene3/Color/rgb6 84 1300 1344
 Subject34/Scene3/Color/rgb6 37 1345 1393
 Subject34/Scene3/Color/rgb6 84 1394 1428
 Subject34/Scene3/Color/rgb6 33 1429 1484
-Subject34/Scene3/Color/rgb6 84 1485 1527
 Subject34/Scene3/Color/rgb7 84 1 71
 Subject34/Scene3/Color/rgb7 7 72 120
 Subject34/Scene3/Color/rgb7 84 121 152
@@ -7342,7 +7043,6 @@ Subject34/Scene3/Color/rgb7 84 1006 1036
 Subject34/Scene3/Color/rgb7 2 1037 1087
 Subject34/Scene3/Color/rgb7 84 1088 1139
 Subject34/Scene3/Color/rgb7 60 1140 1180
-Subject34/Scene3/Color/rgb7 84 1181 1243
 Subject34/Scene4/Color/rgb1 84 1 93
 Subject34/Scene4/Color/rgb1 45 94 120
 Subject34/Scene4/Color/rgb1 84 121 145
@@ -7367,7 +7067,6 @@ Subject34/Scene4/Color/rgb1 84 1318 1346
 Subject34/Scene4/Color/rgb1 22 1347 1379
 Subject34/Scene4/Color/rgb1 84 1380 1409
 Subject34/Scene4/Color/rgb1 71 1410 1445
-Subject34/Scene4/Color/rgb1 84 1446 1472
 Subject34/Scene4/Color/rgb2 84 1 155
 Subject34/Scene4/Color/rgb2 20 156 187
 Subject34/Scene4/Color/rgb2 84 188 242
@@ -7392,7 +7091,6 @@ Subject34/Scene4/Color/rgb2 84 1439 1521
 Subject34/Scene4/Color/rgb2 29 1522 1549
 Subject34/Scene4/Color/rgb2 84 1550 1617
 Subject34/Scene4/Color/rgb2 18 1618 1658
-Subject34/Scene4/Color/rgb2 84 1659 1702
 Subject34/Scene4/Color/rgb3 84 1 156
 Subject34/Scene4/Color/rgb3 10 157 197
 Subject34/Scene4/Color/rgb3 84 198 277
@@ -7417,7 +7115,6 @@ Subject34/Scene4/Color/rgb3 84 1167 1227
 Subject34/Scene4/Color/rgb3 35 1228 1250
 Subject34/Scene4/Color/rgb3 84 1251 1291
 Subject34/Scene4/Color/rgb3 6 1292 1320
-Subject34/Scene4/Color/rgb3 84 1321 1343
 Subject34/Scene4/Color/rgb4 84 1 130
 Subject34/Scene4/Color/rgb4 46 131 159
 Subject34/Scene4/Color/rgb4 84 160 220
@@ -7442,7 +7139,6 @@ Subject34/Scene4/Color/rgb4 84 1179 1223
 Subject34/Scene4/Color/rgb4 37 1224 1247
 Subject34/Scene4/Color/rgb4 84 1248 1288
 Subject34/Scene4/Color/rgb4 38 1289 1322
-Subject34/Scene4/Color/rgb4 84 1323 1346
 Subject34/Scene4/Color/rgb5 84 1 125
 Subject34/Scene4/Color/rgb5 7 126 147
 Subject34/Scene4/Color/rgb5 84 148 259
@@ -7467,7 +7163,6 @@ Subject34/Scene4/Color/rgb5 84 1010 1047
 Subject34/Scene4/Color/rgb5 49 1048 1099
 Subject34/Scene4/Color/rgb5 84 1100 1131
 Subject34/Scene4/Color/rgb5 26 1132 1155
-Subject34/Scene4/Color/rgb5 84 1156 1177
 Subject34/Scene4/Color/rgb6 84 1 109
 Subject34/Scene4/Color/rgb6 21 110 134
 Subject34/Scene4/Color/rgb6 84 135 183
@@ -7492,7 +7187,6 @@ Subject34/Scene4/Color/rgb6 84 999 1071
 Subject34/Scene4/Color/rgb6 69 1072 1096
 Subject34/Scene4/Color/rgb6 84 1097 1132
 Subject34/Scene4/Color/rgb6 74 1133 1160
-Subject34/Scene4/Color/rgb6 84 1161 1221
 Subject34/Scene4/Color/rgb7 84 1 182
 Subject34/Scene4/Color/rgb7 39 183 217
 Subject34/Scene4/Color/rgb7 84 218 249
@@ -7515,7 +7209,6 @@ Subject34/Scene4/Color/rgb7 84 810 828
 Subject34/Scene4/Color/rgb7 48 829 872
 Subject34/Scene4/Color/rgb7 84 873 901
 Subject34/Scene4/Color/rgb7 11 902 955
-Subject34/Scene4/Color/rgb7 84 956 991
 Subject34/Scene5/Color/rgb1 84 1 96
 Subject34/Scene5/Color/rgb1 1 97 127
 Subject34/Scene5/Color/rgb1 84 128 163
@@ -7540,7 +7233,6 @@ Subject34/Scene5/Color/rgb1 84 722 747
 Subject34/Scene5/Color/rgb1 26 748 771
 Subject34/Scene5/Color/rgb1 84 772 824
 Subject34/Scene5/Color/rgb1 37 825 853
-Subject34/Scene5/Color/rgb1 84 854 930
 Subject34/Scene5/Color/rgb2 84 1 112
 Subject34/Scene5/Color/rgb2 67 113 143
 Subject34/Scene5/Color/rgb2 84 144 170
@@ -7565,7 +7257,6 @@ Subject34/Scene5/Color/rgb2 84 685 709
 Subject34/Scene5/Color/rgb2 62 710 742
 Subject34/Scene5/Color/rgb2 84 743 750
 Subject34/Scene5/Color/rgb2 52 751 788
-Subject34/Scene5/Color/rgb2 84 789 899
 Subject34/Scene5/Color/rgb3 84 1 44
 Subject34/Scene5/Color/rgb3 13 45 80
 Subject34/Scene5/Color/rgb3 84 81 117
@@ -7590,7 +7281,6 @@ Subject34/Scene5/Color/rgb3 84 967 989
 Subject34/Scene5/Color/rgb3 47 990 1025
 Subject34/Scene5/Color/rgb3 84 1026 1068
 Subject34/Scene5/Color/rgb3 81 1069 1108
-Subject34/Scene5/Color/rgb3 84 1109 1265
 Subject34/Scene5/Color/rgb4 84 1 110
 Subject34/Scene5/Color/rgb4 17 111 121
 Subject34/Scene5/Color/rgb4 84 122 262
@@ -7615,7 +7305,6 @@ Subject34/Scene5/Color/rgb4 84 1140 1164
 Subject34/Scene5/Color/rgb4 22 1165 1195
 Subject34/Scene5/Color/rgb4 84 1196 1237
 Subject34/Scene5/Color/rgb4 15 1238 1286
-Subject34/Scene5/Color/rgb4 84 1287 1309
 Subject34/Scene5/Color/rgb5 84 1 24
 Subject34/Scene5/Color/rgb5 30 25 58
 Subject34/Scene5/Color/rgb5 84 59 105
@@ -7640,7 +7329,6 @@ Subject34/Scene5/Color/rgb5 84 929 973
 Subject34/Scene5/Color/rgb5 21 974 1005
 Subject34/Scene5/Color/rgb5 84 1006 1033
 Subject34/Scene5/Color/rgb5 24 1034 1068
-Subject34/Scene5/Color/rgb5 84 1069 1156
 Subject34/Scene5/Color/rgb6 84 1 65
 Subject34/Scene5/Color/rgb6 32 66 94
 Subject34/Scene5/Color/rgb6 84 95 130
@@ -7665,7 +7353,6 @@ Subject34/Scene5/Color/rgb6 84 766 835
 Subject34/Scene5/Color/rgb6 53 836 889
 Subject34/Scene5/Color/rgb6 84 890 925
 Subject34/Scene5/Color/rgb6 38 926 960
-Subject34/Scene5/Color/rgb6 84 961 1024
 Subject34/Scene5/Color/rgb7 84 1 55
 Subject34/Scene5/Color/rgb7 60 56 75
 Subject34/Scene5/Color/rgb7 84 76 200
@@ -7688,7 +7375,6 @@ Subject34/Scene5/Color/rgb7 84 877 903
 Subject34/Scene5/Color/rgb7 2 904 945
 Subject34/Scene5/Color/rgb7 84 946 980
 Subject34/Scene5/Color/rgb7 27 981 1015
-Subject34/Scene5/Color/rgb7 84 1016 1097
 Subject34/Scene6/Color/rgb1 84 1 83
 Subject34/Scene6/Color/rgb1 37 84 107
 Subject34/Scene6/Color/rgb1 84 108 162
@@ -7713,7 +7399,6 @@ Subject34/Scene6/Color/rgb1 84 885 967
 Subject34/Scene6/Color/rgb1 46 968 996
 Subject34/Scene6/Color/rgb1 84 997 1059
 Subject34/Scene6/Color/rgb1 58 1060 1087
-Subject34/Scene6/Color/rgb1 84 1088 1189
 Subject34/Scene6/Color/rgb2 84 1 60
 Subject34/Scene6/Color/rgb2 52 61 104
 Subject34/Scene6/Color/rgb2 84 105 162
@@ -7738,7 +7423,6 @@ Subject34/Scene6/Color/rgb2 84 1236 1318
 Subject34/Scene6/Color/rgb2 59 1319 1344
 Subject34/Scene6/Color/rgb2 84 1345 1395
 Subject34/Scene6/Color/rgb2 22 1396 1417
-Subject34/Scene6/Color/rgb2 84 1418 1602
 Subject34/Scene6/Color/rgb3 84 1 52
 Subject34/Scene6/Color/rgb3 42 53 82
 Subject34/Scene6/Color/rgb3 84 83 131
@@ -7763,7 +7447,6 @@ Subject34/Scene6/Color/rgb3 84 885 978
 Subject34/Scene6/Color/rgb3 12 979 1012
 Subject34/Scene6/Color/rgb3 84 1013 1080
 Subject34/Scene6/Color/rgb3 75 1081 1113
-Subject34/Scene6/Color/rgb3 84 1114 1213
 Subject34/Scene6/Color/rgb4 84 1 36
 Subject34/Scene6/Color/rgb4 14 37 79
 Subject34/Scene6/Color/rgb4 84 80 150
@@ -7788,7 +7471,6 @@ Subject34/Scene6/Color/rgb4 84 1274 1344
 Subject34/Scene6/Color/rgb4 61 1345 1374
 Subject34/Scene6/Color/rgb4 84 1375 1415
 Subject34/Scene6/Color/rgb4 34 1416 1440
-Subject34/Scene6/Color/rgb4 84 1441 1543
 Subject34/Scene6/Color/rgb5 84 1 126
 Subject34/Scene6/Color/rgb5 74 127 155
 Subject34/Scene6/Color/rgb5 84 156 206
@@ -7813,7 +7495,6 @@ Subject34/Scene6/Color/rgb5 84 932 978
 Subject34/Scene6/Color/rgb5 23 979 1019
 Subject34/Scene6/Color/rgb5 84 1020 1054
 Subject34/Scene6/Color/rgb5 32 1055 1077
-Subject34/Scene6/Color/rgb5 84 1078 1185
 Subject34/Scene6/Color/rgb6 84 1 82
 Subject34/Scene6/Color/rgb6 21 83 102
 Subject34/Scene6/Color/rgb6 84 103 161
@@ -7838,7 +7519,6 @@ Subject34/Scene6/Color/rgb6 84 989 1146
 Subject34/Scene6/Color/rgb6 6 1147 1174
 Subject34/Scene6/Color/rgb6 84 1175 1297
 Subject34/Scene6/Color/rgb6 31 1298 1314
-Subject34/Scene6/Color/rgb6 84 1315 1445
 Subject34/Scene6/Color/rgb7 84 1 93
 Subject34/Scene6/Color/rgb7 43 94 126
 Subject34/Scene6/Color/rgb7 84 127 176
@@ -7861,7 +7541,6 @@ Subject34/Scene6/Color/rgb7 84 1071 1107
 Subject34/Scene6/Color/rgb7 19 1108 1119
 Subject34/Scene6/Color/rgb7 84 1120 1257
 Subject34/Scene6/Color/rgb7 1 1258 1288
-Subject34/Scene6/Color/rgb7 84 1289 1375
 Subject35/Scene1/Color/rgb1 84 1 136
 Subject35/Scene1/Color/rgb1 58 137 173
 Subject35/Scene1/Color/rgb1 84 174 243
@@ -7886,7 +7565,6 @@ Subject35/Scene1/Color/rgb1 84 1008 1085
 Subject35/Scene1/Color/rgb1 31 1086 1105
 Subject35/Scene1/Color/rgb1 84 1106 1149
 Subject35/Scene1/Color/rgb1 62 1150 1175
-Subject35/Scene1/Color/rgb1 84 1176 1239
 Subject35/Scene1/Color/rgb2 84 1 38
 Subject35/Scene1/Color/rgb2 72 39 56
 Subject35/Scene1/Color/rgb2 84 57 117
@@ -7911,7 +7589,6 @@ Subject35/Scene1/Color/rgb2 84 1053 1101
 Subject35/Scene1/Color/rgb2 43 1102 1136
 Subject35/Scene1/Color/rgb2 84 1137 1170
 Subject35/Scene1/Color/rgb2 52 1171 1189
-Subject35/Scene1/Color/rgb2 84 1190 1256
 Subject35/Scene1/Color/rgb3 84 1 69
 Subject35/Scene1/Color/rgb3 25 70 90
 Subject35/Scene1/Color/rgb3 84 91 148
@@ -7936,7 +7613,6 @@ Subject35/Scene1/Color/rgb3 84 1194 1266
 Subject35/Scene1/Color/rgb3 57 1267 1299
 Subject35/Scene1/Color/rgb3 84 1300 1343
 Subject35/Scene1/Color/rgb3 50 1344 1378
-Subject35/Scene1/Color/rgb3 84 1379 1443
 Subject35/Scene1/Color/rgb4 84 1 52
 Subject35/Scene1/Color/rgb4 24 53 81
 Subject35/Scene1/Color/rgb4 84 82 156
@@ -7961,7 +7637,6 @@ Subject35/Scene1/Color/rgb4 84 973 1073
 Subject35/Scene1/Color/rgb4 13 1074 1109
 Subject35/Scene1/Color/rgb4 84 1110 1158
 Subject35/Scene1/Color/rgb4 3 1159 1200
-Subject35/Scene1/Color/rgb4 84 1201 1250
 Subject35/Scene1/Color/rgb5 84 1 71
 Subject35/Scene1/Color/rgb5 45 72 106
 Subject35/Scene1/Color/rgb5 84 107 140
@@ -7986,7 +7661,6 @@ Subject35/Scene1/Color/rgb5 84 1331 1454
 Subject35/Scene1/Color/rgb5 33 1455 1481
 Subject35/Scene1/Color/rgb5 84 1482 1572
 Subject35/Scene1/Color/rgb5 56 1573 1613
-Subject35/Scene1/Color/rgb5 84 1614 1699
 Subject35/Scene1/Color/rgb6 84 1 72
 Subject35/Scene1/Color/rgb6 16 73 98
 Subject35/Scene1/Color/rgb6 84 99 146
@@ -8011,7 +7685,6 @@ Subject35/Scene1/Color/rgb6 84 908 996
 Subject35/Scene1/Color/rgb6 69 997 1023
 Subject35/Scene1/Color/rgb6 84 1024 1091
 Subject35/Scene1/Color/rgb6 63 1092 1118
-Subject35/Scene1/Color/rgb6 84 1119 1192
 Subject35/Scene1/Color/rgb7 84 1 119
 Subject35/Scene1/Color/rgb7 78 120 158
 Subject35/Scene1/Color/rgb7 84 159 213
@@ -8034,7 +7707,6 @@ Subject35/Scene1/Color/rgb7 84 995 1119
 Subject35/Scene1/Color/rgb7 82 1120 1155
 Subject35/Scene1/Color/rgb7 84 1156 1263
 Subject35/Scene1/Color/rgb7 18 1264 1317
-Subject35/Scene1/Color/rgb7 84 1318 1392
 Subject35/Scene2/Color/rgb1 84 1 45
 Subject35/Scene2/Color/rgb1 82 46 54
 Subject35/Scene2/Color/rgb1 84 55 93
@@ -8059,7 +7731,6 @@ Subject35/Scene2/Color/rgb1 84 645 722
 Subject35/Scene2/Color/rgb1 56 723 744
 Subject35/Scene2/Color/rgb1 84 745 797
 Subject35/Scene2/Color/rgb1 68 798 810
-Subject35/Scene2/Color/rgb1 84 811 842
 Subject35/Scene2/Color/rgb2 84 1 99
 Subject35/Scene2/Color/rgb2 9 100 115
 Subject35/Scene2/Color/rgb2 84 116 152
@@ -8082,7 +7753,6 @@ Subject35/Scene2/Color/rgb2 84 647 725
 Subject35/Scene2/Color/rgb2 72 726 740
 Subject35/Scene2/Color/rgb2 84 741 792
 Subject35/Scene2/Color/rgb2 6 793 813
-Subject35/Scene2/Color/rgb2 84 814 846
 Subject35/Scene2/Color/rgb3 84 1 73
 Subject35/Scene2/Color/rgb3 2 74 88
 Subject35/Scene2/Color/rgb3 84 89 120
@@ -8107,7 +7777,6 @@ Subject35/Scene2/Color/rgb3 84 718 757
 Subject35/Scene2/Color/rgb3 32 758 774
 Subject35/Scene2/Color/rgb3 84 775 803
 Subject35/Scene2/Color/rgb3 61 804 824
-Subject35/Scene2/Color/rgb3 84 825 859
 Subject35/Scene2/Color/rgb4 84 1 44
 Subject35/Scene2/Color/rgb4 39 45 63
 Subject35/Scene2/Color/rgb4 84 64 97
@@ -8132,7 +7801,6 @@ Subject35/Scene2/Color/rgb4 84 688 735
 Subject35/Scene2/Color/rgb4 24 736 748
 Subject35/Scene2/Color/rgb4 84 749 787
 Subject35/Scene2/Color/rgb4 60 788 800
-Subject35/Scene2/Color/rgb4 84 801 864
 Subject35/Scene2/Color/rgb5 84 1 30
 Subject35/Scene2/Color/rgb5 48 31 44
 Subject35/Scene2/Color/rgb5 84 45 64
@@ -8157,7 +7825,6 @@ Subject35/Scene2/Color/rgb5 84 604 662
 Subject35/Scene2/Color/rgb5 65 663 683
 Subject35/Scene2/Color/rgb5 84 684 705
 Subject35/Scene2/Color/rgb5 49 706 727
-Subject35/Scene2/Color/rgb5 84 728 755
 Subject35/Scene2/Color/rgb6 84 1 109
 Subject35/Scene2/Color/rgb6 16 110 122
 Subject35/Scene2/Color/rgb6 84 123 170
@@ -8182,7 +7849,6 @@ Subject35/Scene2/Color/rgb6 84 722 768
 Subject35/Scene2/Color/rgb6 19 769 784
 Subject35/Scene2/Color/rgb6 84 785 848
 Subject35/Scene2/Color/rgb6 77 849 862
-Subject35/Scene2/Color/rgb6 84 863 873
 Subject35/Scene2/Color/rgb7 84 1 75
 Subject35/Scene2/Color/rgb7 83 76 89
 Subject35/Scene2/Color/rgb7 84 90 127
@@ -8205,7 +7871,6 @@ Subject35/Scene2/Color/rgb7 84 513 528
 Subject35/Scene2/Color/rgb7 47 529 544
 Subject35/Scene2/Color/rgb7 84 545 578
 Subject35/Scene2/Color/rgb7 50 579 596
-Subject35/Scene2/Color/rgb7 84 597 629
 Subject35/Scene3/Color/rgb1 84 1 73
 Subject35/Scene3/Color/rgb1 28 74 101
 Subject35/Scene3/Color/rgb1 84 102 232
@@ -8230,7 +7895,6 @@ Subject35/Scene3/Color/rgb1 84 1549 1646
 Subject35/Scene3/Color/rgb1 68 1647 1692
 Subject35/Scene3/Color/rgb1 84 1693 1776
 Subject35/Scene3/Color/rgb1 80 1777 1820
-Subject35/Scene3/Color/rgb1 84 1821 1885
 Subject35/Scene3/Color/rgb2 84 1 384
 Subject35/Scene3/Color/rgb2 13 385 416
 Subject35/Scene3/Color/rgb2 84 417 490
@@ -8255,7 +7919,6 @@ Subject35/Scene3/Color/rgb2 84 1532 1657
 Subject35/Scene3/Color/rgb2 35 1658 1696
 Subject35/Scene3/Color/rgb2 84 1697 1744
 Subject35/Scene3/Color/rgb2 42 1745 1774
-Subject35/Scene3/Color/rgb2 84 1775 1861
 Subject35/Scene3/Color/rgb3 84 1 87
 Subject35/Scene3/Color/rgb3 74 88 120
 Subject35/Scene3/Color/rgb3 84 121 207
@@ -8280,7 +7943,6 @@ Subject35/Scene3/Color/rgb3 84 1321 1419
 Subject35/Scene3/Color/rgb3 15 1420 1466
 Subject35/Scene3/Color/rgb3 84 1467 1537
 Subject35/Scene3/Color/rgb3 36 1538 1574
-Subject35/Scene3/Color/rgb3 84 1575 1619
 Subject35/Scene3/Color/rgb4 84 1 362
 Subject35/Scene3/Color/rgb4 77 363 395
 Subject35/Scene3/Color/rgb4 84 396 488
@@ -8305,7 +7967,6 @@ Subject35/Scene3/Color/rgb4 84 1480 1565
 Subject35/Scene3/Color/rgb4 24 1566 1604
 Subject35/Scene3/Color/rgb4 84 1605 1641
 Subject35/Scene3/Color/rgb4 41 1642 1683
-Subject35/Scene3/Color/rgb4 84 1684 1748
 Subject35/Scene3/Color/rgb5 84 1 125
 Subject35/Scene3/Color/rgb5 2 126 162
 Subject35/Scene3/Color/rgb5 84 163 202
@@ -8330,7 +7991,6 @@ Subject35/Scene3/Color/rgb5 84 1248 1276
 Subject35/Scene3/Color/rgb5 23 1277 1319
 Subject35/Scene3/Color/rgb5 84 1320 1355
 Subject35/Scene3/Color/rgb5 47 1356 1389
-Subject35/Scene3/Color/rgb5 84 1390 1493
 Subject35/Scene3/Color/rgb6 84 1 90
 Subject35/Scene3/Color/rgb6 40 91 128
 Subject35/Scene3/Color/rgb6 84 129 196
@@ -8355,7 +8015,6 @@ Subject35/Scene3/Color/rgb6 84 1060 1191
 Subject35/Scene3/Color/rgb6 82 1192 1223
 Subject35/Scene3/Color/rgb6 84 1224 1403
 Subject35/Scene3/Color/rgb6 56 1404 1447
-Subject35/Scene3/Color/rgb6 84 1448 1522
 Subject35/Scene3/Color/rgb7 84 1 58
 Subject35/Scene3/Color/rgb7 29 59 85
 Subject35/Scene3/Color/rgb7 84 86 129
@@ -8378,7 +8037,6 @@ Subject35/Scene3/Color/rgb7 84 733 822
 Subject35/Scene3/Color/rgb7 27 823 855
 Subject35/Scene3/Color/rgb7 84 856 910
 Subject35/Scene3/Color/rgb7 31 911 947
-Subject35/Scene3/Color/rgb7 84 948 1009
 Subject35/Scene4/Color/rgb1 84 1 55
 Subject35/Scene4/Color/rgb1 25 56 66
 Subject35/Scene4/Color/rgb1 84 67 97
@@ -8427,7 +8085,6 @@ Subject35/Scene4/Color/rgb2 84 480 527
 Subject35/Scene4/Color/rgb2 76 528 551
 Subject35/Scene4/Color/rgb2 84 552 627
 Subject35/Scene4/Color/rgb2 82 628 645
-Subject35/Scene4/Color/rgb2 84 646 727
 Subject35/Scene4/Color/rgb3 84 1 50
 Subject35/Scene4/Color/rgb3 65 51 65
 Subject35/Scene4/Color/rgb3 84 66 113
@@ -8452,7 +8109,6 @@ Subject35/Scene4/Color/rgb3 84 769 794
 Subject35/Scene4/Color/rgb3 70 795 809
 Subject35/Scene4/Color/rgb3 84 810 882
 Subject35/Scene4/Color/rgb3 75 883 896
-Subject35/Scene4/Color/rgb3 84 897 928
 Subject35/Scene4/Color/rgb4 84 1 88
 Subject35/Scene4/Color/rgb4 71 89 100
 Subject35/Scene4/Color/rgb4 84 101 135
@@ -8501,7 +8157,6 @@ Subject35/Scene4/Color/rgb5 84 681 746
 Subject35/Scene4/Color/rgb5 34 747 776
 Subject35/Scene4/Color/rgb5 84 777 816
 Subject35/Scene4/Color/rgb5 31 817 853
-Subject35/Scene4/Color/rgb5 84 854 876
 Subject35/Scene4/Color/rgb6 84 1 81
 Subject35/Scene4/Color/rgb6 56 82 106
 Subject35/Scene4/Color/rgb6 84 107 130
@@ -8526,7 +8181,6 @@ Subject35/Scene4/Color/rgb6 84 546 581
 Subject35/Scene4/Color/rgb6 17 582 603
 Subject35/Scene4/Color/rgb6 84 604 614
 Subject35/Scene4/Color/rgb6 38 615 635
-Subject35/Scene4/Color/rgb6 84 636 654
 Subject35/Scene4/Color/rgb7 84 1 63
 Subject35/Scene4/Color/rgb7 32 64 77
 Subject35/Scene4/Color/rgb7 84 78 114
@@ -8549,7 +8203,6 @@ Subject35/Scene4/Color/rgb7 84 500 536
 Subject35/Scene4/Color/rgb7 67 537 556
 Subject35/Scene4/Color/rgb7 84 557 573
 Subject35/Scene4/Color/rgb7 6 574 598
-Subject35/Scene4/Color/rgb7 84 599 612
 Subject35/Scene5/Color/rgb1 84 1 114
 Subject35/Scene5/Color/rgb1 42 115 150
 Subject35/Scene5/Color/rgb1 84 151 175
@@ -8574,7 +8227,6 @@ Subject35/Scene5/Color/rgb1 84 766 809
 Subject35/Scene5/Color/rgb1 47 810 838
 Subject35/Scene5/Color/rgb1 84 839 872
 Subject35/Scene5/Color/rgb1 21 873 908
-Subject35/Scene5/Color/rgb1 84 909 931
 Subject35/Scene5/Color/rgb2 84 1 59
 Subject35/Scene5/Color/rgb2 11 60 99
 Subject35/Scene5/Color/rgb2 84 100 135
@@ -8623,7 +8275,6 @@ Subject35/Scene5/Color/rgb3 84 807 895
 Subject35/Scene5/Color/rgb3 13 896 945
 Subject35/Scene5/Color/rgb3 84 946 1157
 Subject35/Scene5/Color/rgb3 5 1158 1205
-Subject35/Scene5/Color/rgb3 84 1206 1250
 Subject35/Scene5/Color/rgb4 84 1 39
 Subject35/Scene5/Color/rgb4 68 40 88
 Subject35/Scene5/Color/rgb4 84 89 102
@@ -8648,7 +8299,6 @@ Subject35/Scene5/Color/rgb4 84 804 932
 Subject35/Scene5/Color/rgb4 43 933 977
 Subject35/Scene5/Color/rgb4 84 978 1019
 Subject35/Scene5/Color/rgb4 32 1020 1059
-Subject35/Scene5/Color/rgb4 84 1060 1073
 Subject35/Scene5/Color/rgb5 84 1 26
 Subject35/Scene5/Color/rgb5 16 27 62
 Subject35/Scene5/Color/rgb5 84 63 92
@@ -8673,7 +8323,6 @@ Subject35/Scene5/Color/rgb5 84 779 797
 Subject35/Scene5/Color/rgb5 34 798 831
 Subject35/Scene5/Color/rgb5 84 832 878
 Subject35/Scene5/Color/rgb5 80 879 930
-Subject35/Scene5/Color/rgb5 84 931 941
 Subject35/Scene5/Color/rgb6 84 1 33
 Subject35/Scene5/Color/rgb6 70 34 84
 Subject35/Scene5/Color/rgb6 84 85 114
@@ -8698,7 +8347,6 @@ Subject35/Scene5/Color/rgb6 84 846 874
 Subject35/Scene5/Color/rgb6 45 875 915
 Subject35/Scene5/Color/rgb6 84 916 967
 Subject35/Scene5/Color/rgb6 18 968 1024
-Subject35/Scene5/Color/rgb6 84 1025 1060
 Subject35/Scene5/Color/rgb7 84 1 31
 Subject35/Scene5/Color/rgb7 27 32 72
 Subject35/Scene5/Color/rgb7 84 73 91
@@ -8745,7 +8393,6 @@ Subject35/Scene6/Color/rgb1 84 1000 1033
 Subject35/Scene6/Color/rgb1 38 1034 1061
 Subject35/Scene6/Color/rgb1 84 1062 1107
 Subject35/Scene6/Color/rgb1 37 1108 1139
-Subject35/Scene6/Color/rgb1 84 1140 1249
 Subject35/Scene6/Color/rgb2 84 1 42
 Subject35/Scene6/Color/rgb2 56 43 80
 Subject35/Scene6/Color/rgb2 84 81 135
@@ -8770,7 +8417,6 @@ Subject35/Scene6/Color/rgb2 84 1043 1113
 Subject35/Scene6/Color/rgb2 21 1114 1155
 Subject35/Scene6/Color/rgb2 84 1156 1190
 Subject35/Scene6/Color/rgb2 52 1191 1227
-Subject35/Scene6/Color/rgb2 84 1228 1342
 Subject35/Scene6/Color/rgb3 84 1 113
 Subject35/Scene6/Color/rgb3 9 114 148
 Subject35/Scene6/Color/rgb3 84 149 230
@@ -8795,7 +8441,6 @@ Subject35/Scene6/Color/rgb3 84 1372 1445
 Subject35/Scene6/Color/rgb3 66 1446 1488
 Subject35/Scene6/Color/rgb3 84 1489 1549
 Subject35/Scene6/Color/rgb3 11 1550 1598
-Subject35/Scene6/Color/rgb3 84 1599 1702
 Subject35/Scene6/Color/rgb4 84 1 109
 Subject35/Scene6/Color/rgb4 25 110 145
 Subject35/Scene6/Color/rgb4 84 146 255
@@ -8820,7 +8465,6 @@ Subject35/Scene6/Color/rgb4 84 1236 1340
 Subject35/Scene6/Color/rgb4 8 1341 1381
 Subject35/Scene6/Color/rgb4 84 1382 1475
 Subject35/Scene6/Color/rgb4 83 1476 1501
-Subject35/Scene6/Color/rgb4 84 1502 1641
 Subject35/Scene6/Color/rgb5 84 1 91
 Subject35/Scene6/Color/rgb5 74 92 126
 Subject35/Scene6/Color/rgb5 84 127 172
@@ -8845,7 +8489,6 @@ Subject35/Scene6/Color/rgb5 84 1103 1193
 Subject35/Scene6/Color/rgb5 29 1194 1218
 Subject35/Scene6/Color/rgb5 84 1219 1297
 Subject35/Scene6/Color/rgb5 15 1298 1342
-Subject35/Scene6/Color/rgb5 84 1343 1424
 Subject35/Scene6/Color/rgb6 84 1 84
 Subject35/Scene6/Color/rgb6 30 85 113
 Subject35/Scene6/Color/rgb6 84 114 158
@@ -8870,7 +8513,6 @@ Subject35/Scene6/Color/rgb6 84 894 988
 Subject35/Scene6/Color/rgb6 79 989 1025
 Subject35/Scene6/Color/rgb6 84 1026 1092
 Subject35/Scene6/Color/rgb6 77 1093 1129
-Subject35/Scene6/Color/rgb6 84 1130 1207
 Subject35/Scene6/Color/rgb7 84 1 111
 Subject35/Scene6/Color/rgb7 36 112 139
 Subject35/Scene6/Color/rgb7 84 140 217
@@ -8893,7 +8535,6 @@ Subject35/Scene6/Color/rgb7 84 1161 1259
 Subject35/Scene6/Color/rgb7 44 1260 1301
 Subject35/Scene6/Color/rgb7 84 1302 1354
 Subject35/Scene6/Color/rgb7 23 1355 1387
-Subject35/Scene6/Color/rgb7 84 1388 1481
 Subject37/Scene1/Color/rgb1 84 1 65
 Subject37/Scene1/Color/rgb1 23 66 140
 Subject37/Scene1/Color/rgb1 84 141 172
@@ -8918,7 +8559,6 @@ Subject37/Scene1/Color/rgb1 84 990 1028
 Subject37/Scene1/Color/rgb1 28 1029 1048
 Subject37/Scene1/Color/rgb1 84 1049 1126
 Subject37/Scene1/Color/rgb1 7 1127 1153
-Subject37/Scene1/Color/rgb1 84 1154 1207
 Subject37/Scene1/Color/rgb2 84 1 93
 Subject37/Scene1/Color/rgb2 25 94 110
 Subject37/Scene1/Color/rgb2 84 111 148
@@ -8943,7 +8583,6 @@ Subject37/Scene1/Color/rgb2 84 697 726
 Subject37/Scene1/Color/rgb2 52 727 762
 Subject37/Scene1/Color/rgb2 84 763 811
 Subject37/Scene1/Color/rgb2 78 812 838
-Subject37/Scene1/Color/rgb2 84 839 927
 Subject37/Scene1/Color/rgb3 84 1 115
 Subject37/Scene1/Color/rgb3 79 116 137
 Subject37/Scene1/Color/rgb3 84 138 205
@@ -8968,7 +8607,6 @@ Subject37/Scene1/Color/rgb3 84 974 1039
 Subject37/Scene1/Color/rgb3 72 1040 1054
 Subject37/Scene1/Color/rgb3 84 1055 1098
 Subject37/Scene1/Color/rgb3 62 1099 1125
-Subject37/Scene1/Color/rgb3 84 1126 1191
 Subject37/Scene1/Color/rgb4 84 1 97
 Subject37/Scene1/Color/rgb4 70 98 140
 Subject37/Scene1/Color/rgb4 84 141 189
@@ -8993,7 +8631,6 @@ Subject37/Scene1/Color/rgb4 84 1355 1389
 Subject37/Scene1/Color/rgb4 13 1390 1421
 Subject37/Scene1/Color/rgb4 84 1422 1600
 Subject37/Scene1/Color/rgb4 10 1601 1653
-Subject37/Scene1/Color/rgb4 84 1654 1726
 Subject37/Scene1/Color/rgb5 84 1 147
 Subject37/Scene1/Color/rgb5 42 148 178
 Subject37/Scene1/Color/rgb5 84 179 211
@@ -9018,7 +8655,6 @@ Subject37/Scene1/Color/rgb5 84 774 802
 Subject37/Scene1/Color/rgb5 61 803 830
 Subject37/Scene1/Color/rgb5 84 831 848
 Subject37/Scene1/Color/rgb5 29 849 882
-Subject37/Scene1/Color/rgb5 84 883 978
 Subject37/Scene1/Color/rgb6 84 1 168
 Subject37/Scene1/Color/rgb6 58 169 201
 Subject37/Scene1/Color/rgb6 84 202 214
@@ -9043,7 +8679,6 @@ Subject37/Scene1/Color/rgb6 84 1103 1191
 Subject37/Scene1/Color/rgb6 3 1192 1216
 Subject37/Scene1/Color/rgb6 84 1217 1257
 Subject37/Scene1/Color/rgb6 63 1258 1284
-Subject37/Scene1/Color/rgb6 84 1285 1351
 Subject37/Scene1/Color/rgb7 84 1 71
 Subject37/Scene1/Color/rgb7 55 72 112
 Subject37/Scene1/Color/rgb7 84 113 159
@@ -9066,7 +8701,6 @@ Subject37/Scene1/Color/rgb7 84 826 894
 Subject37/Scene1/Color/rgb7 81 895 928
 Subject37/Scene1/Color/rgb7 84 929 1009
 Subject37/Scene1/Color/rgb7 43 1010 1051
-Subject37/Scene1/Color/rgb7 84 1052 1126
 Subject37/Scene2/Color/rgb1 84 1 84
 Subject37/Scene2/Color/rgb1 5 85 105
 Subject37/Scene2/Color/rgb1 84 106 188
@@ -9091,7 +8725,6 @@ Subject37/Scene2/Color/rgb1 84 780 868
 Subject37/Scene2/Color/rgb1 18 869 910
 Subject37/Scene2/Color/rgb1 84 911 934
 Subject37/Scene2/Color/rgb1 62 935 958
-Subject37/Scene2/Color/rgb1 84 959 1039
 Subject37/Scene2/Color/rgb2 84 1 58
 Subject37/Scene2/Color/rgb2 22 59 84
 Subject37/Scene2/Color/rgb2 84 85 108
@@ -9116,7 +8749,6 @@ Subject37/Scene2/Color/rgb2 84 1121 1228
 Subject37/Scene2/Color/rgb2 27 1229 1273
 Subject37/Scene2/Color/rgb2 84 1274 1318
 Subject37/Scene2/Color/rgb2 58 1319 1349
-Subject37/Scene2/Color/rgb2 84 1350 1428
 Subject37/Scene2/Color/rgb3 84 1 228
 Subject37/Scene2/Color/rgb3 80 229 256
 Subject37/Scene2/Color/rgb3 84 257 344
@@ -9141,7 +8773,6 @@ Subject37/Scene2/Color/rgb3 84 1158 1214
 Subject37/Scene2/Color/rgb3 57 1215 1243
 Subject37/Scene2/Color/rgb3 84 1244 1354
 Subject37/Scene2/Color/rgb3 33 1355 1388
-Subject37/Scene2/Color/rgb3 84 1389 1550
 Subject37/Scene2/Color/rgb4 84 1 76
 Subject37/Scene2/Color/rgb4 60 77 89
 Subject37/Scene2/Color/rgb4 84 90 128
@@ -9166,7 +8797,6 @@ Subject37/Scene2/Color/rgb4 84 983 1024
 Subject37/Scene2/Color/rgb4 29 1025 1050
 Subject37/Scene2/Color/rgb4 84 1051 1086
 Subject37/Scene2/Color/rgb4 9 1087 1122
-Subject37/Scene2/Color/rgb4 84 1123 1214
 Subject37/Scene2/Color/rgb5 84 1 71
 Subject37/Scene2/Color/rgb5 71 72 101
 Subject37/Scene2/Color/rgb5 84 102 160
@@ -9191,7 +8821,6 @@ Subject37/Scene2/Color/rgb5 84 800 845
 Subject37/Scene2/Color/rgb5 43 846 881
 Subject37/Scene2/Color/rgb5 84 882 930
 Subject37/Scene2/Color/rgb5 35 931 958
-Subject37/Scene2/Color/rgb5 84 959 1031
 Subject37/Scene2/Color/rgb6 84 1 83
 Subject37/Scene2/Color/rgb6 24 84 107
 Subject37/Scene2/Color/rgb6 84 108 136
@@ -9216,7 +8845,6 @@ Subject37/Scene2/Color/rgb6 84 870 945
 Subject37/Scene2/Color/rgb6 14 946 978
 Subject37/Scene2/Color/rgb6 84 979 1076
 Subject37/Scene2/Color/rgb6 68 1077 1101
-Subject37/Scene2/Color/rgb6 84 1102 1174
 Subject37/Scene2/Color/rgb7 84 1 45
 Subject37/Scene2/Color/rgb7 76 46 72
 Subject37/Scene2/Color/rgb7 84 73 138
@@ -9239,7 +8867,6 @@ Subject37/Scene2/Color/rgb7 84 1001 1050
 Subject37/Scene2/Color/rgb7 37 1051 1083
 Subject37/Scene2/Color/rgb7 84 1084 1110
 Subject37/Scene2/Color/rgb7 49 1111 1137
-Subject37/Scene2/Color/rgb7 84 1138 1192
 Subject37/Scene3/Color/rgb1 84 1 105
 Subject37/Scene3/Color/rgb1 63 106 127
 Subject37/Scene3/Color/rgb1 84 128 149
@@ -9264,7 +8891,6 @@ Subject37/Scene3/Color/rgb1 84 759 811
 Subject37/Scene3/Color/rgb1 55 812 840
 Subject37/Scene3/Color/rgb1 84 841 894
 Subject37/Scene3/Color/rgb1 59 895 923
-Subject37/Scene3/Color/rgb1 84 924 987
 Subject37/Scene3/Color/rgb2 84 1 18
 Subject37/Scene3/Color/rgb2 58 19 51
 Subject37/Scene3/Color/rgb2 84 52 79
@@ -9289,7 +8915,6 @@ Subject37/Scene3/Color/rgb2 84 883 925
 Subject37/Scene3/Color/rgb2 46 926 952
 Subject37/Scene3/Color/rgb2 84 953 984
 Subject37/Scene3/Color/rgb2 35 985 1012
-Subject37/Scene3/Color/rgb2 84 1013 1096
 Subject37/Scene3/Color/rgb3 84 1 57
 Subject37/Scene3/Color/rgb3 79 58 80
 Subject37/Scene3/Color/rgb3 84 81 122
@@ -9314,7 +8939,6 @@ Subject37/Scene3/Color/rgb3 84 1098 1162
 Subject37/Scene3/Color/rgb3 78 1163 1195
 Subject37/Scene3/Color/rgb3 84 1196 1252
 Subject37/Scene3/Color/rgb3 49 1253 1279
-Subject37/Scene3/Color/rgb3 84 1280 1338
 Subject37/Scene3/Color/rgb4 84 1 29
 Subject37/Scene3/Color/rgb4 66 30 56
 Subject37/Scene3/Color/rgb4 84 57 83
@@ -9339,7 +8963,6 @@ Subject37/Scene3/Color/rgb4 84 668 729
 Subject37/Scene3/Color/rgb4 11 730 771
 Subject37/Scene3/Color/rgb4 84 772 863
 Subject37/Scene3/Color/rgb4 45 864 886
-Subject37/Scene3/Color/rgb4 84 887 967
 Subject37/Scene3/Color/rgb5 84 1 47
 Subject37/Scene3/Color/rgb5 42 48 77
 Subject37/Scene3/Color/rgb5 84 78 117
@@ -9364,7 +8987,6 @@ Subject37/Scene3/Color/rgb5 84 868 924
 Subject37/Scene3/Color/rgb5 71 925 944
 Subject37/Scene3/Color/rgb5 84 945 981
 Subject37/Scene3/Color/rgb5 9 982 1008
-Subject37/Scene3/Color/rgb5 84 1009 1082
 Subject37/Scene3/Color/rgb6 84 1 30
 Subject37/Scene3/Color/rgb6 27 31 69
 Subject37/Scene3/Color/rgb6 84 70 126
@@ -9387,7 +9009,6 @@ Subject37/Scene3/Color/rgb6 84 660 689
 Subject37/Scene3/Color/rgb6 41 690 724
 Subject37/Scene3/Color/rgb6 84 725 752
 Subject37/Scene3/Color/rgb6 36 753 789
-Subject37/Scene3/Color/rgb6 84 790 854
 Subject37/Scene3/Color/rgb7 84 1 51
 Subject37/Scene3/Color/rgb7 6 52 82
 Subject37/Scene3/Color/rgb7 84 83 143
@@ -9410,7 +9031,6 @@ Subject37/Scene3/Color/rgb7 84 837 884
 Subject37/Scene3/Color/rgb7 14 885 912
 Subject37/Scene3/Color/rgb7 84 913 984
 Subject37/Scene3/Color/rgb7 82 985 996
-Subject37/Scene3/Color/rgb7 84 997 1067
 Subject37/Scene4/Color/rgb1 84 1 125
 Subject37/Scene4/Color/rgb1 49 126 155
 Subject37/Scene4/Color/rgb1 84 156 210
@@ -9435,7 +9055,6 @@ Subject37/Scene4/Color/rgb1 84 855 921
 Subject37/Scene4/Color/rgb1 59 922 948
 Subject37/Scene4/Color/rgb1 84 949 1002
 Subject37/Scene4/Color/rgb1 2 1003 1023
-Subject37/Scene4/Color/rgb1 84 1024 1107
 Subject37/Scene4/Color/rgb2 84 1 113
 Subject37/Scene4/Color/rgb2 58 114 132
 Subject37/Scene4/Color/rgb2 84 133 167
@@ -9460,7 +9079,6 @@ Subject37/Scene4/Color/rgb2 84 782 815
 Subject37/Scene4/Color/rgb2 80 816 851
 Subject37/Scene4/Color/rgb2 84 852 904
 Subject37/Scene4/Color/rgb2 31 905 936
-Subject37/Scene4/Color/rgb2 84 937 989
 Subject37/Scene4/Color/rgb3 84 1 230
 Subject37/Scene4/Color/rgb3 27 231 260
 Subject37/Scene4/Color/rgb3 84 261 291
@@ -9485,7 +9103,6 @@ Subject37/Scene4/Color/rgb3 84 1002 1030
 Subject37/Scene4/Color/rgb3 29 1031 1062
 Subject37/Scene4/Color/rgb3 84 1063 1080
 Subject37/Scene4/Color/rgb3 21 1081 1108
-Subject37/Scene4/Color/rgb3 84 1109 1164
 Subject37/Scene4/Color/rgb4 84 1 77
 Subject37/Scene4/Color/rgb4 7 78 115
 Subject37/Scene4/Color/rgb4 84 116 149
@@ -9510,7 +9127,6 @@ Subject37/Scene4/Color/rgb4 84 878 933
 Subject37/Scene4/Color/rgb4 11 934 960
 Subject37/Scene4/Color/rgb4 84 961 1031
 Subject37/Scene4/Color/rgb4 77 1032 1050
-Subject37/Scene4/Color/rgb4 84 1051 1092
 Subject37/Scene4/Color/rgb5 84 1 138
 Subject37/Scene4/Color/rgb5 68 139 156
 Subject37/Scene4/Color/rgb5 84 157 226
@@ -9535,7 +9151,6 @@ Subject37/Scene4/Color/rgb5 84 864 954
 Subject37/Scene4/Color/rgb5 18 955 987
 Subject37/Scene4/Color/rgb5 84 988 1056
 Subject37/Scene4/Color/rgb5 1 1057 1075
-Subject37/Scene4/Color/rgb5 84 1076 1140
 Subject37/Scene4/Color/rgb6 84 1 55
 Subject37/Scene4/Color/rgb6 71 56 76
 Subject37/Scene4/Color/rgb6 84 77 113
@@ -9560,7 +9175,6 @@ Subject37/Scene4/Color/rgb6 84 683 756
 Subject37/Scene4/Color/rgb6 44 757 798
 Subject37/Scene4/Color/rgb6 84 799 849
 Subject37/Scene4/Color/rgb6 78 850 880
-Subject37/Scene4/Color/rgb6 84 881 900
 Subject37/Scene4/Color/rgb7 84 1 94
 Subject37/Scene4/Color/rgb7 12 95 118
 Subject37/Scene4/Color/rgb7 84 119 148
@@ -9583,7 +9197,6 @@ Subject37/Scene4/Color/rgb7 84 709 755
 Subject37/Scene4/Color/rgb7 23 756 802
 Subject37/Scene4/Color/rgb7 84 803 839
 Subject37/Scene4/Color/rgb7 35 840 864
-Subject37/Scene4/Color/rgb7 84 865 940
 Subject37/Scene5/Color/rgb1 84 1 33
 Subject37/Scene5/Color/rgb1 10 34 66
 Subject37/Scene5/Color/rgb1 84 67 87
@@ -9608,7 +9221,6 @@ Subject37/Scene5/Color/rgb1 84 596 648
 Subject37/Scene5/Color/rgb1 5 649 668
 Subject37/Scene5/Color/rgb1 84 669 715
 Subject37/Scene5/Color/rgb1 55 716 761
-Subject37/Scene5/Color/rgb1 84 762 797
 Subject37/Scene5/Color/rgb2 84 1 43
 Subject37/Scene5/Color/rgb2 63 44 62
 Subject37/Scene5/Color/rgb2 84 63 92
@@ -9633,7 +9245,6 @@ Subject37/Scene5/Color/rgb2 84 592 660
 Subject37/Scene5/Color/rgb2 12 661 679
 Subject37/Scene5/Color/rgb2 84 680 717
 Subject37/Scene5/Color/rgb2 30 718 733
-Subject37/Scene5/Color/rgb2 84 734 806
 Subject37/Scene5/Color/rgb3 84 1 11
 Subject37/Scene5/Color/rgb3 31 12 27
 Subject37/Scene5/Color/rgb3 84 28 50
@@ -9658,7 +9269,6 @@ Subject37/Scene5/Color/rgb3 84 505 577
 Subject37/Scene5/Color/rgb3 43 578 599
 Subject37/Scene5/Color/rgb3 84 600 646
 Subject37/Scene5/Color/rgb3 56 647 671
-Subject37/Scene5/Color/rgb3 84 672 715
 Subject37/Scene5/Color/rgb4 78 1 6
 Subject37/Scene5/Color/rgb4 84 7 33
 Subject37/Scene5/Color/rgb4 41 34 52
@@ -9682,7 +9292,6 @@ Subject37/Scene5/Color/rgb4 84 487 520
 Subject37/Scene5/Color/rgb4 32 521 536
 Subject37/Scene5/Color/rgb4 84 537 584
 Subject37/Scene5/Color/rgb4 1 585 603
-Subject37/Scene5/Color/rgb4 84 604 684
 Subject37/Scene5/Color/rgb5 84 1 145
 Subject37/Scene5/Color/rgb5 58 146 159
 Subject37/Scene5/Color/rgb5 84 160 189
@@ -9707,7 +9316,6 @@ Subject37/Scene5/Color/rgb5 84 708 754
 Subject37/Scene5/Color/rgb5 71 755 772
 Subject37/Scene5/Color/rgb5 84 773 800
 Subject37/Scene5/Color/rgb5 67 801 821
-Subject37/Scene5/Color/rgb5 84 822 837
 Subject37/Scene5/Color/rgb6 84 1 24
 Subject37/Scene5/Color/rgb6 16 25 38
 Subject37/Scene5/Color/rgb6 84 39 68
@@ -9730,7 +9338,6 @@ Subject37/Scene5/Color/rgb6 84 477 523
 Subject37/Scene5/Color/rgb6 65 524 538
 Subject37/Scene5/Color/rgb6 84 539 572
 Subject37/Scene5/Color/rgb6 27 573 596
-Subject37/Scene5/Color/rgb6 84 597 636
 Subject37/Scene5/Color/rgb7 84 1 167
 Subject37/Scene5/Color/rgb7 57 168 181
 Subject37/Scene5/Color/rgb7 84 182 220
@@ -9753,7 +9360,6 @@ Subject37/Scene5/Color/rgb7 84 594 635
 Subject37/Scene5/Color/rgb7 50 636 656
 Subject37/Scene5/Color/rgb7 84 657 692
 Subject37/Scene5/Color/rgb7 49 693 711
-Subject37/Scene5/Color/rgb7 84 712 755
 Subject37/Scene6/Color/rgb1 84 1 91
 Subject37/Scene6/Color/rgb1 65 92 111
 Subject37/Scene6/Color/rgb1 84 112 204
@@ -9778,7 +9384,6 @@ Subject37/Scene6/Color/rgb1 84 695 744
 Subject37/Scene6/Color/rgb1 30 745 765
 Subject37/Scene6/Color/rgb1 84 766 806
 Subject37/Scene6/Color/rgb1 31 807 831
-Subject37/Scene6/Color/rgb1 84 832 936
 Subject37/Scene6/Color/rgb2 84 1 94
 Subject37/Scene6/Color/rgb2 67 95 115
 Subject37/Scene6/Color/rgb2 84 116 140
@@ -9803,7 +9408,6 @@ Subject37/Scene6/Color/rgb2 84 581 601
 Subject37/Scene6/Color/rgb2 25 602 620
 Subject37/Scene6/Color/rgb2 84 621 657
 Subject37/Scene6/Color/rgb2 43 658 681
-Subject37/Scene6/Color/rgb2 84 682 750
 Subject37/Scene6/Color/rgb3 84 1 43
 Subject37/Scene6/Color/rgb3 69 44 63
 Subject37/Scene6/Color/rgb3 84 64 96
@@ -9828,7 +9432,6 @@ Subject37/Scene6/Color/rgb3 84 577 602
 Subject37/Scene6/Color/rgb3 50 603 624
 Subject37/Scene6/Color/rgb3 84 625 669
 Subject37/Scene6/Color/rgb3 8 670 682
-Subject37/Scene6/Color/rgb3 84 683 742
 Subject37/Scene6/Color/rgb4 84 1 12
 Subject37/Scene6/Color/rgb4 3 13 32
 Subject37/Scene6/Color/rgb4 84 33 55
@@ -9853,7 +9456,6 @@ Subject37/Scene6/Color/rgb4 84 575 601
 Subject37/Scene6/Color/rgb4 14 602 630
 Subject37/Scene6/Color/rgb4 84 631 656
 Subject37/Scene6/Color/rgb4 60 657 671
-Subject37/Scene6/Color/rgb4 84 672 728
 Subject37/Scene6/Color/rgb5 84 1 49
 Subject37/Scene6/Color/rgb5 23 50 89
 Subject37/Scene6/Color/rgb5 84 90 114
@@ -9878,7 +9480,6 @@ Subject37/Scene6/Color/rgb5 84 658 684
 Subject37/Scene6/Color/rgb5 72 685 695
 Subject37/Scene6/Color/rgb5 84 696 736
 Subject37/Scene6/Color/rgb5 4 737 755
-Subject37/Scene6/Color/rgb5 84 756 808
 Subject37/Scene6/Color/rgb6 84 1 48
 Subject37/Scene6/Color/rgb6 54 49 82
 Subject37/Scene6/Color/rgb6 84 83 108
@@ -9903,7 +9504,6 @@ Subject37/Scene6/Color/rgb6 84 617 687
 Subject37/Scene6/Color/rgb6 11 688 710
 Subject37/Scene6/Color/rgb6 84 711 754
 Subject37/Scene6/Color/rgb6 15 755 784
-Subject37/Scene6/Color/rgb6 84 785 835
 Subject37/Scene6/Color/rgb7 84 1 45
 Subject37/Scene6/Color/rgb7 61 46 63
 Subject37/Scene6/Color/rgb7 84 64 89
@@ -9926,4 +9526,3 @@ Subject37/Scene6/Color/rgb7 84 783 824
 Subject37/Scene6/Color/rgb7 62 825 845
 Subject37/Scene6/Color/rgb7 84 846 886
 Subject37/Scene6/Color/rgb7 53 887 920
-Subject37/Scene6/Color/rgb7 84 921 967

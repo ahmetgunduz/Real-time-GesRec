@@ -1,8 +1,8 @@
 
 python main.py --root_path ~/ \
 	--video_path ~/datasets/jester \
-	--annotation_path Real-time-GesRec/annotation_Jester/jester.json \
-	--result_path Real-time-GesRec/results \
+	--annotation_path Efficient-3DCNNs/annotation_Jester/jester.json \
+	--result_path Efficient-3DCNNs/results \
 	--dataset jester \
 	--n_classes 27 \
 	--model mobilenet \

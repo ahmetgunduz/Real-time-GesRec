@@ -3,9 +3,8 @@ from torch.autograd import Variable
 import time
 import os
 import sys
-import pdb
 
-from utils import AverageMeter, calculate_accuracy, calculate_precision, calculate_recall
+from utils import *
 
 
 def train_epoch(epoch, data_loader, model, criterion, optimizer, opt,
@@ -17,31 +16,24 @@ def train_epoch(epoch, data_loader, model, criterion, optimizer, opt,
     batch_time = AverageMeter()
     data_time = AverageMeter()
     losses = AverageMeter()
-    accuracies = AverageMeter()
-    precisions = AverageMeter() #
-    recalls = AverageMeter()
+    top1 = AverageMeter()
+    top5 = AverageMeter()
 
     end_time = time.time()
-    # i, (inputs, targets) = next(iter(enumerate(data_loader)))
     for i, (inputs, targets) in enumerate(data_loader):
         data_time.update(time.time() - end_time)
 
         if not opt.no_cuda:
-            targets = targets.cuda(non_blocking=True)
+            targets = targets.cuda()
         inputs = Variable(inputs)
         targets = Variable(targets)
-        #pdb.set_trace()
         outputs = model(inputs)
         loss = criterion(outputs, targets)
-        acc = calculate_accuracy(outputs, targets)
-        precision = calculate_precision(outputs, targets) #
-        recall = calculate_recall(outputs,targets)
 
-        losses.update(loss.item(), inputs.size(0))
-        accuracies.update(acc, inputs.size(0))
-        precisions.update(precision, inputs.size(0))
-        recalls.update(recall,inputs.size(0))
-
+        losses.update(loss.data, inputs.size(0))
+        prec1, prec5 = calculate_accuracy(outputs.data, targets.data, topk=(1,5))
+        top1.update(prec1, inputs.size(0))
+        top5.update(prec5, inputs.size(0))
 
         optimizer.zero_grad()
         loss.backward()
@@ -54,10 +46,9 @@ def train_epoch(epoch, data_loader, model, criterion, optimizer, opt,
             'epoch': epoch,
             'batch': i + 1,
             'iter': (epoch - 1) * len(data_loader) + (i + 1),
-            'loss': losses.val,
-            'acc': accuracies.val,
-            'precision':precisions.val,
-            'recall':recalls.val,
+            'loss': losses.val.item(),
+            'prec1': top1.val.item(),
+            'prec5': top5.val.item(),
             'lr': optimizer.param_groups[0]['lr']
         })
         if i % 10 ==0:
@@ -65,26 +56,23 @@ def train_epoch(epoch, data_loader, model, criterion, optimizer, opt,
                   'Time {batch_time.val:.3f} ({batch_time.avg:.3f})\t'
                   'Data {data_time.val:.3f} ({data_time.avg:.3f})\t'
                   'Loss {loss.val:.4f} ({loss.avg:.4f})\t'
-                  'Acc {acc.val:.3f} ({acc.avg:.3f})\t'
-                  'Precision {precision.val:.3f}({precision.avg:.3f})\t'
-                  'Recall {recall.val:.3f}({recall.avg:.3f})'.format(
+                  'Prec@1 {top1.val:.5f} ({top1.avg:.5f})\t'
+                  'Prec@5 {top5.val:.5f} ({top5.avg:.5f})'.format(
                       epoch,
                       i,
                       len(data_loader),
                       batch_time=batch_time,
                       data_time=data_time,
                       loss=losses,
-                      lr=optimizer.param_groups[0]['lr'],
-                      acc=accuracies,
-                      precision=precisions,
-                      recall=recalls))
+                      top1=top1,
+                      top5=top5,
+                      lr=optimizer.param_groups[0]['lr']))
 
     epoch_logger.log({
         'epoch': epoch,
-        'loss': losses.avg,
-        'acc': accuracies.avg,
-        'precision':precisions.avg,
-        'recall':recalls.avg,
+        'loss': losses.avg.item(),
+        'prec1': top1.avg.item(),
+        'prec5': top5.avg.item(),
         'lr': optimizer.param_groups[0]['lr']
     })
 

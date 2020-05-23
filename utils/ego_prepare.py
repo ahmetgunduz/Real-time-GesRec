@@ -5,7 +5,7 @@ import pandas as pd
 import csv
 import os
 
-path_to_dataset = '/Users/A.Gunduz/Desktop/EgoGesture'
+path_to_dataset = '/usr/home/kop/datasets/EgoGesture'
 
 paths = sorted(glob.glob(os.path.join(path_to_dataset,'labels-final-revised1/*/*/*' )))
 ########################################################

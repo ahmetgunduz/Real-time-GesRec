@@ -7,7 +7,7 @@ from torch import nn
 from torch import optim
 from torch.optim import lr_scheduler
 
-from opts import parse_opts_offline
+from opts import parse_opts
 from model import generate_model
 from mean import get_mean, get_std
 from spatial_transforms import *
@@ -20,8 +20,10 @@ from train import train_epoch
 from validation import val_epoch
 import test
 
+
+
 if __name__ == '__main__':
-    opt = parse_opts_offline()
+    opt = parse_opts()
     if opt.root_path != '':
         opt.video_path = os.path.join(opt.root_path, opt.video_path)
         opt.annotation_path = os.path.join(opt.root_path, opt.annotation_path)
@@ -50,8 +52,8 @@ if __name__ == '__main__':
     print(model)
 
     # Egogesture, with "no-gesture" training, weighted loss
-    class_weights = torch.cat((0.012 * torch.ones([1, 83]), 0.00015 * torch.ones([1, 1])), 1)
-    criterion = nn.CrossEntropyLoss(weight=class_weights, size_average=False)
+    # class_weights = torch.cat((0.012*torch.ones([1, 83]), 0.00015*torch.ones([1, 1])), 1)
+    criterion = nn.CrossEntropyLoss()
 
     # # nvgesture, with "no-gesture" training, weighted loss
     # class_weights = torch.cat((0.04*torch.ones([1, 25]), 0.0008*torch.ones([1, 1])), 1)
@@ -78,15 +80,15 @@ if __name__ == '__main__':
             crop_method = MultiScaleCornerCrop(
                 opt.scales, opt.sample_size, crop_positions=['c'])
         spatial_transform = Compose([
-            # RandomHorizontalFlip(),
-            # RandomRotate(),
-            # RandomResize(),
+            #RandomHorizontalFlip(),
+            #RandomRotate(),
+            #RandomResize(),
             crop_method,
-            # MultiplyValues(),
-            # Dropout(),
-            # SaltImage(),
-            # Gaussian_blur(),
-            # SpatialElasticDisplacement(),
+            #MultiplyValues(),
+            #Dropout(),
+            #SaltImage(),
+            #Gaussian_blur(),
+            #SpatialElasticDisplacement(),
             ToTensor(opt.norm_value), norm_method
         ])
         temporal_transform = TemporalRandomCrop(opt.sample_duration, opt.downsample)
@@ -125,14 +127,14 @@ if __name__ == '__main__':
             CenterCrop(opt.sample_size),
             ToTensor(opt.norm_value), norm_method
         ])
-        # temporal_transform = LoopPadding(opt.sample_duration)
+        #temporal_transform = LoopPadding(opt.sample_duration)
         temporal_transform = TemporalCenterCrop(opt.sample_duration, opt.downsample)
         target_transform = ClassLabel()
         validation_data = get_validation_set(
             opt, spatial_transform, temporal_transform, target_transform)
         val_loader = torch.utils.data.DataLoader(
             validation_data,
-            batch_size=40,
+            batch_size=8,
             shuffle=False,
             num_workers=opt.n_threads,
             pin_memory=True)
@@ -148,9 +150,10 @@ if __name__ == '__main__':
         opt.begin_epoch = checkpoint['epoch']
         model.load_state_dict(checkpoint['state_dict'])
 
+
     print('run')
     for i in range(opt.begin_epoch, opt.n_epochs + 1):
-        # for i in range(opt.begin_epoch, opt.begin_epoch + 10):
+    # for i in range(opt.begin_epoch, opt.begin_epoch + 10):
         if not opt.no_train:
             adjust_learning_rate(optimizer, i, opt)
             train_epoch(i, train_loader, model, criterion, optimizer, opt,
@@ -161,12 +164,12 @@ if __name__ == '__main__':
                 'state_dict': model.state_dict(),
                 'optimizer': optimizer.state_dict(),
                 'best_prec1': best_prec1
-            }
+                }
             save_checkpoint(state, False, opt)
-
+            
         if not opt.no_val:
             validation_loss, prec1 = val_epoch(i, val_loader, model, criterion, opt,
-                                               val_logger)
+                                        val_logger)
             is_best = prec1 > best_prec1
             best_prec1 = max(prec1, best_prec1)
             state = {
@@ -175,8 +178,9 @@ if __name__ == '__main__':
                 'state_dict': model.state_dict(),
                 'optimizer': optimizer.state_dict(),
                 'best_prec1': best_prec1
-            }
+                }
             save_checkpoint(state, is_best, opt)
+
 
     if opt.test:
         spatial_transform = Compose([

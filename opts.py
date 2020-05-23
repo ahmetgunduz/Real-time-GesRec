@@ -1,14 +1,15 @@
 import argparse
 
 
-def parse_opts_offline():
+def parse_opts():
     parser = argparse.ArgumentParser()
     parser.add_argument('--root_path', default='/root/data/ActivityNet', type=str, help='Root directory path of data')
     parser.add_argument('--video_path', default='video_kinetics_jpg', type=str, help='Directory path of Videos')
     parser.add_argument('--annotation_path', default='kinetics.json', type=str, help='Annotation file path')
     parser.add_argument('--result_path', default='results', type=str, help='Result directory path')
     parser.add_argument('--store_name', default='model', type=str, help='Name to store checkpoints')
-    parser.add_argument('--modality', default='RGB', type=str, help='Modality of input data. RGB, Flow or RGBFlow')
+    parser.add_argument('--modality', default='RGB', type=str, help='Modality of generated model. RGB, Flow or RGBFlow')
+    parser.add_argument('--pretrain_modality', default='RGB', type=str, help='Modality of the pretrain model. RGB, Flow or RGBFlow')
     parser.add_argument('--dataset', default='kinetics', type=str, help='Used dataset (activitynet | kinetics | ucf101 | hmdb51)')
     parser.add_argument('--n_classes', default=400, type=int, help='Number of classes (activitynet: 200, kinetics: 400, ucf101: 101, hmdb51: 51)')
     parser.add_argument('--n_finetune_classes', default=400, type=int, help='Number of classes for fine-tuning. n_classes is set to the number when pretraining.')
@@ -20,7 +21,7 @@ def parse_opts_offline():
     parser.add_argument('--scale_step', default=0.84089641525, type=float, help='Scale step for multiscale cropping')
     parser.add_argument('--train_crop', default='corner', type=str, help='Spatial cropping method in training. random is uniform. corner is selection from 4 corners and 1 center.  (random | corner | center)')
     parser.add_argument('--learning_rate', default=0.04, type=float, help='Initial learning rate (divided by 10 while training by lr scheduler)')
-    parser.add_argument('--lr_steps', default=[9, 16, 18, 50, 200, 250], type=float, nargs="+", metavar='LRSteps', help='epochs to decay learning rate by 10') # [15, 30, 37, 50, 200, 250]
+    parser.add_argument('--lr_steps', default=[15, 25, 35, 45, 60, 50, 200, 250], type=float, nargs="+", metavar='LRSteps', help='epochs to decay learning rate by 10') # [15, 30, 37, 50, 200, 250]
     parser.add_argument('--momentum', default=0.9, type=float, help='Momentum')
     parser.add_argument('--dampening', default=0.9, type=float, help='dampening of SGD')
     parser.add_argument('--weight_decay', default=1e-3, type=float, help='Weight Decay')
@@ -185,6 +186,10 @@ def parse_opts_online():
     parser.add_argument('--wide_resnet_k_clf', default=2, type=int, help='Wide resnet k')
     parser.add_argument('--resnext_cardinality_clf', default=32, type=int, help='ResNeXt cardinality')
 
+    parser.add_argument('--width_mult', default=1.0, type=float, help='The applied width multiplier to scale number of filters')
+    parser.add_argument('--width_mult_det', default=1.0, type=float, help='The applied width multiplier to scale number of filters')
+    parser.add_argument('--width_mult_clf', default=1.0, type=float, help='The applied width multiplier to scale number of filters')
+    
     parser.add_argument('--manual_seed', default=1, type=int, help='Manually set random seed')
     parser.add_argument('--det_strategy', default='raw', type=str, help='Detector filter (raw | median | ma | ewma)')
     parser.add_argument('--det_queue_size', default=1, type=int, help='Detector queue size')
@@ -195,7 +200,10 @@ def parse_opts_online():
     parser.add_argument('--clf_threshold_final', default=1, type=float,
                         help='Cumulative sum threshold to predict at the end')
     parser.add_argument('--stride_len', default=1, type=int, help='Stride Lenght of video loader window')
-
+    parser.add_argument('--ft_portion', default='complete', type=str, help='The portion of the model to apply fine tuning, either complete or last_layer')
+    parser.add_argument('--groups', default=3, type=int, help='The number of groups at group convolutions at conv layers')
+    parser.add_argument('--downsample', default=1, type=int, help='Downsampling. Selecting 1 frame out of N')
+    
     args = parser.parse_args()
 
     return args

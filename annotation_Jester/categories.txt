@@ -1,27 +1,27 @@
-Doing_other_things
-Drumming_Fingers
-No_gesture
-Pulling_Hand_In
-Pulling_Two_Fingers_In
-Pushing_Hand_Away
-Pushing_Two_Fingers_Away
-Rolling_Hand_Backward
-Rolling_Hand_Forward
-Shaking_Hand
-Sliding_Two_Fingers_Down
-Sliding_Two_Fingers_Left
-Sliding_Two_Fingers_Right
-Sliding_Two_Fingers_Up
-Stop_Sign
-Swiping_Down
-Swiping_Left
-Swiping_Right
-Swiping_Up
-Thumb_Down
-Thumb_Up
-Turning_Hand_Clockwise
-Turning_Hand_Counterclockwise
-Zooming_In_With_Full_Hand
-Zooming_In_With_Two_Fingers
-Zooming_Out_With_Full_Hand
-Zooming_Out_With_Two_Fingers
+1 Doing_other_things
+2 Drumming_Fingers
+3 No_gesture
+4 Pulling_Hand_In
+5 Pulling_Two_Fingers_In
+6 Pushing_Hand_Away
+7 Pushing_Two_Fingers_Away
+8 Rolling_Hand_Backward
+9 Rolling_Hand_Forward
+10 Shaking_Hand
+11 Sliding_Two_Fingers_Down
+12 Sliding_Two_Fingers_Left
+13 Sliding_Two_Fingers_Right
+14 Sliding_Two_Fingers_Up
+15 Stop_Sign
+16 Swiping_Down
+17 Swiping_Left
+18 Swiping_Right
+19 Swiping_Up
+20 Thumb_Down
+21 Thumb_Up
+22 Turning_Hand_Clockwise
+23 Turning_Hand_Counterclockwise
+24 Zooming_In_With_Full_Hand
+25 Zooming_In_With_Two_Fingers
+26 Zooming_Out_With_Full_Hand
+27 Zooming_Out_With_Two_Fingers

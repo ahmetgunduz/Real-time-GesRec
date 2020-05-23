@@ -4,8 +4,8 @@
 
 python main.py --root_path ~/ \
 	--video_path ~/datasets/nvGesture \
-	--annotation_path Real-time-GesRec/annotation_nvGesture/nvall_but_None.json \
-	--result_path Real-time-GesRec/results/nvGesture_RGB_all \
+	--annotation_path Efficient-3DCNNs/annotation_nvGesture/nvall_but_None.json \
+	--result_path Efficient-3DCNNs/results/nvGesture_RGB_all \
 	--pretrain_path "$1" \
 	--dataset nvgesture \
 	--n_classes 27 \
@@ -29,8 +29,8 @@ python main.py --root_path ~/ \
 	# --no_train \
  	# --no_val \
  	# --test
- 	# --resume_path Real-time-GesRec/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
- 		# --pretrain_path Real-time-GesRec/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \
+ 	# --resume_path Efficient-3DCNNs/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
+ 		# --pretrain_path Efficient-3DCNNs/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \
 
 
 
@@ -42,8 +42,8 @@ python main.py --root_path ~/ \
 
 # python main.py --root_path ~/ \
 # 	--video_path ~/datasets/nvGesture \
-# 	--annotation_path Real-time-GesRec/annotation_nvGesture/nvall_but_None.json \
-# 	--result_path Real-time-GesRec/results \
+# 	--annotation_path Efficient-3DCNNs/annotation_nvGesture/nvall_but_None.json \
+# 	--result_path Efficient-3DCNNs/results \
 # 	--pretrain_path "$1" \
 # 	--resume_path "$2" \
 # 	--dataset nvgesture \
@@ -68,5 +68,5 @@ python main.py --root_path ~/ \
 # 	# --no_train \
 #  	# --no_val \
 #  	# --test
-#  	# --resume_path Real-time-GesRec/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
-#  		# --pretrain_path Real-time-GesRec/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \
+#  	# --resume_path Efficient-3DCNNs/results/egogesture_shufflenet_2.0x_Depth_16_checkpoint.pth \
+#  		# --pretrain_path Efficient-3DCNNs/results/jester_mobilenetv2_1.0x_RGB_16_best.pth \

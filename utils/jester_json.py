@@ -9,7 +9,7 @@ def convert_csv_to_dict(csv_path, subset, labels):
     keys = []
     key_labels = []
     for i in range(data.shape[0]):
-        row = data.ix[i, :]
+        row = data.iloc[i, :]
         class_name = labels[row[1]-1]
         basename = str(row[0])
         
@@ -30,7 +30,7 @@ def load_labels(label_csv_path):
     data = pd.read_csv(label_csv_path, delimiter=' ', header=None)
     labels = []
     for i in range(data.shape[0]):
-        labels.append(data.ix[i, 1])
+        labels.append(data.iloc[i, 1])
     return labels
 
 def convert_jester_csv_to_activitynet_json(label_csv_path, train_csv_path, 
@@ -52,9 +52,10 @@ if __name__ == '__main__':
     csv_dir_path = sys.argv[1]
 
     label_csv_path = os.path.join(csv_dir_path, 'classInd.txt')
-    train_csv_path = os.path.join(csv_dir_path, 'trainlist01.txt')
-    val_csv_path = os.path.join(csv_dir_path, 'vallist01.txt')
+    train_csv_path = os.path.join(csv_dir_path, 'trainlist.txt')
+    val_csv_path = os.path.join(csv_dir_path, 'vallist.txt')
     dst_json_path = os.path.join(csv_dir_path, 'jester.json')
-
+    
     convert_jester_csv_to_activitynet_json(label_csv_path, train_csv_path,
                                                val_csv_path, dst_json_path)
+
