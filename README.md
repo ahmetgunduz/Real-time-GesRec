@@ -1,172 +1,145 @@
-# Efficient-3DCNNs
-PyTorch Implementation of the article "[Resource Efficient 3D Convolutional Neural Networks](https://arxiv.org/pdf/1904.02422.pdf)", codes and pretrained models.
+# Real-time Hand Gesture Recognition with 3D CNNs
+PyTorch implementation of the article [Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks](https://arxiv.org/abs/1901.10323) and [Resource Efficient 3D Convolutional Neural Networks](https://arxiv.org/pdf/1904.02422.pdf), codes and pretrained models.
+
+
+<div align="center" style="width:image width px;">
+  <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="simulation results">
+</div>
+
+Figure: A real-time simulation of the architecture with input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side) are shown, where each class is annotated with different color. 
+
+
+This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
+Note that the code only includes ResNet-10, ResNetL-10, ResneXt-101, C3D v1, whose other versions can be easily added.
+
+## Abstract
+Real-time recognition of dynamic hand gestures from video streams is a challenging task since (i) 
+there is no indication when a gesture starts and ends in the video, (ii) performed gestures should 
+only be recognized once, and (iii) the entire architecture should be designed considering the memory 
+and power budget. In this work, we address these challenges by proposing a hierarchical structure 
+enabling offline-working convolutional neural network (CNN) architectures to operate online efficiently
+by using sliding window approach. The proposed architecture consists of two models: (1) A detector which 
+is a lightweight CNN architecture to detect gestures and (2) a classifier which is a deep CNN to classify 
+the detected gestures. In order to evaluate the single-time activations of the detected gestures, we propose
+to use the Levenshtein distance as an evaluation metric since it can measure misclassifications, multiple detections,
+and missing detections at the same time. We evaluate our architecture on two publicly available datasets - EgoGesture
+and NVIDIA Dynamic Hand Gesture Datasets - which require temporal detection and classification of the performed hand gestures.
+ResNeXt-101 model, which is used as a classifier, achieves the state-of-the-art offline classification accuracy of 94.04% and 
+83.82% for depth modality on EgoGesture and NVIDIA benchmarks, respectively. In real-time detection and classification,
+we obtain considerable early detections while achieving performances close to offline operation. The codes and pretrained models used in this work are publicly available. 
+
+
 
 ## Requirements
 
-* [PyTorch 1.0.1.post2](http://pytorch.org/)
-* OpenCV
-* FFmpeg, FFprobe
-* Python 3
-
-## Pre-trained models
-
-Pretrained models can be downloaded from [here](https://drive.google.com/open?id=1eggpkmy_zjb62Xra6kQviLa67vzP_FR8).
-
-Implemented models:
- - 3D SqueezeNet
- - 3D MobileNet
- - 3D ShuffleNet
- - 3D MobileNetv2
- - 3D ShuffleNetv2
- 
- All models (except for SqueezeNet) are evaluated for 4 different complexity levels by adjusting their 'width_multiplier' with 2 different hardware platforms.
-
-## Results
-
-<p align="center"><img src="https://github.com/okankop/Efficient-3DCNNs/blob/master/utils/results_Eff_3DCNNs.jpg" align="middle" width="900" title="Results of Efficient 3DCNNs" /></p>
-
-## Dataset Preparation
-
-### Kinetics
-
-* Download videos using [the official crawler](https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics).
-  * Locate test set in ```video_directory/test```.
-* Different from the other datasets, we did not extract frames from the videos. Insted, we read the frames directly from videos using OpenCV throughout the training. If you want to extract the frames for Kinetics dataset, please follow the preperation steps in [Kensho Hara's codebase](https://github.com/kenshohara/3D-ResNets-PyTorch). You also need to modify the kinetics.py file in the datasets folder.
-
-* Generate annotation file in json format similar to ActivityNet using ```utils/kinetics_json.py```
-  * The CSV files (kinetics_{train, val, test}.csv) are included in the crawler.
+* [PyTorch](http://pytorch.org/)
 
 ```bash
-python utils/kinetics_json.py train_csv_path val_csv_path video_dataset_path dst_json_path
+conda install pytorch torchvision cuda80 -c soumith
+```
+
+* Python 3
+
+### Pretrained models
+[Pretrained_models_v1 (1.08GB)](https://real-time-gesture-models.s3.eu-central-1.amazonaws.com/shared_models_v1.zip): The best performing models in [paper](https://arxiv.org/abs/1901.10323)
+
+[Pretrained_models_v2 (15.2GB)](https://real-time-gesture-models.s3.eu-central-1.amazonaws.com/shared_models_v2.zip): All models in [paper](https://ieeexplore.ieee.org/document/8982092) with efficient 3D-CNN Models
+## Preparation
+
+### EgoGesture
+
+* Download videos by following [the official site](http://www.nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html).
+* We will use extracted images that is also provided by the owners
+
+* Generate n_frames files using ```utils/ego_prepare.py``` 
+
+N frames format is as following: "path to the folder" "class index" "start frame" "end frame"
+
+```bash
+mkdir annotation_EgoGesture
+python utils/ego_prepare.py training trainlistall.txt all
+python utils/ego_prepare.py training trainlistall_but_None.txt all_but_None
+python utils/ego_prepare.py training trainlistbinary.txt binary
+python utils/ego_prepare.py validation vallistall.txt all
+python utils/ego_prepare.py validation vallistall_but_None.txt all_but_None
+python utils/ego_prepare.py validation vallistbinary.txt binary
+python utils/ego_prepare.py testing testlistall.txt all
+python utils/ego_prepare.py testing testlistall_but_None.txt all_but_None
+python utils/ego_prepare.py testing testlistbinary.txt binary
+```
+
+* Generate annotation file in json format similar to ActivityNet using ```utils/egogesture_json.py```
+
+```bash
+python utils/egogesture_json.py 'annotation_EgoGesture' all
+python utils/egogesture_json.py 'annotation_EgoGesture' all_but_None
+python utils/egogesture_json.py 'annotation_EgoGesture' binary
+```
+
+### nvGesture
+
+* Download videos by following [the official site](https://research.nvidia.com/publication/online-detection-and-classification-dynamic-hand-gestures-recurrent-3d-convolutional).
+
+* Generate n_frames files using ```utils/nv_prepare.py``` 
+
+N frames format is as following: "path to the folder" "class index" "start frame" "end frame"
+
+```bash
+mkdir annotation_nvGesture
+python utils/nv_prepare.py training trainlistall.txt all
+python utils/nv_prepare.py training trainlistall_but_None.txt all_but_None
+python utils/nv_prepare.py training trainlistbinary.txt binary
+python utils/nv_prepare.py validation vallistall.txt all
+python utils/nv_prepare.py validation vallistall_but_None.txt all_but_None
+python utils/nv_prepare.py validation vallistbinary.txt binary
+```
+
+* Generate annotation file in json format similar to ActivityNet using ```utils/nv_json.py```
+
+```bash
+python utils/nv_json.py 'annotation_nvGesture' all
+python utils/nv_json.py 'annotation_nvGesture' all_but_None
+python utils/nv_json.py 'annotation_nvGesture' binary
 ```
 
 ### Jester
 
-* Download videos [here](https://20bn.com/datasets/jester#download).
-* Generate n_frames files using ```utils/n_frames_jester.py```
+* Download videos by following [the official site](https://20bn.com/datasets/jester).
 
-```bash
-python utils/n_frames_jester.py dataset_directory
-```
+* N frames and class index  file is already provided annotation_Jester/{'classInd.txt', 'trainlist01.txt', 'vallist01.txt'}
+
+N frames format is as following: "path to the folder" "class index" "start frame" "end frame"
 
 * Generate annotation file in json format similar to ActivityNet using ```utils/jester_json.py```
-  * ```annotation_dir_path``` includes classInd.txt, trainlist.txt, vallist.txt
 
 ```bash
-python utils/jester_json.py annotation_dir_path
-```
-
-### UCF-101
-
-* Download videos and train/test splits [here](http://crcv.ucf.edu/data/UCF101.php).
-* Convert from avi to jpg files using ```utils/video_jpg_ucf101_hmdb51.py```
-
-```bash
-python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
-```
-
-* Generate n_frames files using ```utils/n_frames_ucf101_hmdb51.py```
-
-```bash
-python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
-```
-
-* Generate annotation file in json format similar to ActivityNet using ```utils/ucf101_json.py```
-  * ```annotation_dir_path``` includes classInd.txt, trainlist0{1, 2, 3}.txt, testlist0{1, 2, 3}.txt
-
-```bash
-python utils/ucf101_json.py annotation_dir_path
+python utils/jester_json.py 'annotation_Jester'
 ```
 
 
 ## Running the code
-
-Please check all the 'Resource efficient 3D CNN models' in models folder and run the code by providing the necessary parameters. An example run is given as follows:
-
-- Training from scratch:
+* Offline testing (offline_test.py) and training (main.py)
 ```bash
-python main.py --root_path ~/ \
-	--video_path ~/datasets/jester \
-	--annotation_path Efficient-3DCNNs/annotation_Jester/jester.json \
-	--result_path Efficient-3DCNNs/results \
-	--dataset jester \
-	--n_classes 27 \
-	--model mobilenet \
-	--width_mult 0.5 \
-	--train_crop random \
-	--learning_rate 0.1 \
-	--sample_duration 16 \
-	--downsample 2 \
-	--batch_size 64 \
-	--n_threads 16 \
-	--checkpoint 1 \
-	--n_val_samples 1 \
+bash run_offline.sh
 ```
 
-- Resuming training from a checkpoint:
+* Online testing
 ```bash
-python main.py --root_path ~/ \
-	--video_path ~/datasets/jester \
-	--annotation_path Efficient-3DCNNs/annotation_Jester/jester.json \
-	--result_path Efficient-3DCNNs/results \
-	--resume_path Efficient-3DCNNs/results/jester_shufflenet_0.5x_G3_RGB_16_best.pth \
-	--dataset jester \
-	--n_classes 27 \
-	--model shufflenet \
-	--groups 3 \
-	--width_mult 0.5 \
-	--train_crop random \
-	--learning_rate 0.1 \
-	--sample_duration 16 \
-	--downsample 2 \
-	--batch_size 64 \
-	--n_threads 16 \
-	--checkpoint 1 \
-	--n_val_samples 1 \
+bash run_online.sh
 ```
-
-
-- Training from a pretrained model. Use '--ft_portion' and select 'complete' or 'last_layer' for the fine tuning:
-```bash
-python main.py --root_path ~/ \
-	--video_path ~/datasets/jester \
-	--annotation_path Efficient-3DCNNs/annotation_UCF101/ucf101_01.json \
-	--result_path Efficient-3DCNNs/results \
-	--pretrain_path Efficient-3DCNNs/results/kinetics_shufflenet_0.5x_G3_RGB_16_best.pth \
-	--dataset ucf101 \
-	--n_classes 600 \
-	--n_finetune_classes 101 \
-	--ft_portion last_layer \
-	--model shufflenet \
-	--groups 3 \
-	--width_mult 0.5 \
-	--train_crop random \
-	--learning_rate 0.1 \
-	--sample_duration 16 \
-	--downsample 1 \
-	--batch_size 64 \
-	--n_threads 16 \
-	--checkpoint 1 \
-	--n_val_samples 1 \
-```
-
-### Augmentations
-
-There are several augmentation techniques available. Please check spatial_transforms.py and temporal_transforms.py for the details of the augmentation methods.
-
-Note: Do not use "RandomHorizontalFlip" for trainings of Jester dataset, as it alters the class type of some classes (e.g. Swipe_Left --> RandomHorizontalFlip() --> Swipe_Right)
-
-### Calculating Video Accuracy
-
-In order to calculate viceo accuracy, you should first run the models with '--test' mode in order to create 'val.json'. Then, you need to run 'video_accuracy.py' in utils folder to calculate video accuracies. 
-
-### Calculating FLOPs
-
-In order to calculate FLOPs, run the file 'calculate_FLOP.py'. You need to fist uncomment the desired model in the file. 
 
 ## Citation
 
-Please cite the following article if you use this code or pre-trained models:
+Please cite the following articles if you use this code or pre-trained models:
+
+```bibtex
+@article{kopuklu_real-time_2019,
+	title = {Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks},
+	url = {http://arxiv.org/abs/1901.10323},
+	author = {Köpüklü, Okan and Gunduz, Ahmet and Kose, Neslihan and Rigoll, Gerhard},
+  year={2019}
+}
+```
 
 ```bibtex
 @article{kopuklu2019resource,
