@@ -13,7 +13,7 @@ from torch.autograd import Variable
 from sklearn.metrics import confusion_matrix
 from torch.nn import functional as F
 
-from opts import parse_opts_offline
+from opts import parse_opts
 from model import generate_model
 from mean import get_mean, get_std
 from spatial_transforms import *
