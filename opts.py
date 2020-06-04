@@ -79,6 +79,7 @@ def parse_opts_online():
     parser = argparse.ArgumentParser()
     parser.add_argument('--root_path', default='/root/data/ActivityNet', type=str, help='Root directory path of data')
     parser.add_argument('--video_path', default='video_kinetics_jpg', type=str, help='Directory path of Videos')
+    parser.add_argument('--video', default='data2/EgoGesture/videos/Subject02/Scene1/Color/rgb1.avi', type=str, help='Directory path of test Videos')
     parser.add_argument('--whole_path', default='video_kinetics_jpg', type=str, help='The whole path of Videos')
     parser.add_argument('--annotation_path', default='kinetics.json', type=str, help='Annotation file path')
     parser.add_argument('--result_path', default='results', type=str, help='Result directory path')
