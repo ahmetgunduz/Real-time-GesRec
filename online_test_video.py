@@ -29,7 +29,7 @@ import datetime
 ##Google Drive
 #https://drive.google.com/file/d/1V23zvjAKZr7FUOBLpgPZkpHGv8_D-cOs/view?usp=sharing
 ##Baidu Netdisk
-#https://pan.baidu.com/s/1nmb08v3cLBg56Kf-H2_DCg code:u5hn
+#https://pan.baidu.com/s/114WKw0lxLfWMZA6SYSSJlw code:p1va
 
 def weighting_func(x):
     return (1 / (1 + np.exp(-0.2 * (x - 9))))
