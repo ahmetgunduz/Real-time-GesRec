@@ -145,11 +145,15 @@ Please cite the following articles if you use this code or pre-trained models:
 ```
 
 ```bibtex
-@article{kopuklu2019resource,
-  title={Resource Efficient 3D Convolutional Neural Networks},
-  author={K{\"o}p{\"u}kl{\"u}, Okan and Kose, Neslihan and Gunduz, Ahmet and Rigoll, Gerhard},
-  journal={arXiv preprint arXiv:1904.02422},
-  year={2019}
+@article{kopuklu2020online,
+  title={Online Dynamic Hand Gesture Recognition Including Efficiency Analysis},
+  author={K{\"o}p{\"u}kl{\"u}, Okan and Gunduz, Ahmet and Kose, Neslihan and Rigoll, Gerhard},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science},
+  volume={2},
+  number={2},
+  pages={85--97},
+  year={2020},
+  publisher={IEEE}
 }
 ```
 
