@@ -41,7 +41,7 @@ def test(data_loader, model, opt, class_names):
 
         with torch.no_grad():
             inputs = Variable(inputs)
-        outputs = model(inputs)
+            outputs = model(inputs)
         if not opt.no_softmax_in_test:
             outputs = F.softmax(outputs, dim=1)
 
@@ -51,7 +51,7 @@ def test(data_loader, model, opt, class_names):
                                         test_results, class_names)
                 output_buffer = []
             output_buffer.append(outputs[j].data.cpu())
-            previous_video_id = targets[j]
+            previous_video_id = targets[j].item()
 
         if (i % 100) == 0:
             with open(
