@@ -9,6 +9,11 @@ PyTorch implementation of the article [Real-time Hand Gesture Detection and Clas
 Figure: A real-time simulation of the architecture with input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side) are shown, where each class is annotated with different color. 
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ahmetgunduz/Real-time-GesRec&type=Date)](https://star-history.com/#ahmetgunduz/Real-time-GesRec&Date)
+
+
 This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
 Note that the code only includes ResNet-10, ResNetL-10, ResneXt-101, C3D v1, whose other versions can be easily added.
 
