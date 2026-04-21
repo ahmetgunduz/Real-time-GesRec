@@ -1,0 +1,8 @@
+# Core dependencies
+scikit-learn
+pandas
+opencv-python
+scipy
+torch
+Pillow
+mediapipe

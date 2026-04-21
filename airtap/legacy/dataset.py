@@ -1,10 +1,10 @@
-from datasets.kinetics import Kinetics
-from datasets.ucf101 import UCF101
-from datasets.jester import Jester
-from datasets.egogesture import EgoGesture
-from datasets.nv import NV
-from datasets.egogesture_online import EgoGestureOnline
-from datasets.nv_online import NVOnline
+from airtap.legacy.datasets.kinetics import Kinetics
+from airtap.legacy.datasets.ucf101 import UCF101
+from airtap.legacy.datasets.jester import Jester
+from airtap.legacy.datasets.egogesture import EgoGesture
+from airtap.legacy.datasets.nv import NV
+from airtap.legacy.datasets.egogesture_online import EgoGestureOnline
+from airtap.legacy.datasets.nv_online import NVOnline
 
 def get_training_set(opt, spatial_transform, temporal_transform,
                      target_transform):

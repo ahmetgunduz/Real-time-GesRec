@@ -3,6 +3,8 @@ annotation_Jester/*.json
 annotation_nvGesture/*.json
 annotation_EgoGesture/*.json
 
+tap_data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

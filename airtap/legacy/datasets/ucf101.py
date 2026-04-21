@@ -9,7 +9,7 @@ import copy
 import random
 from numpy.random import randint
 
-from utils import load_value_file
+from airtap.legacy.utils import load_value_file
 
 
 def pil_loader(path):

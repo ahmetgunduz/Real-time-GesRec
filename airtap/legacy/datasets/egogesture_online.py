@@ -1,8 +1,8 @@
 import torch
 import torch.utils.data as data
 from PIL import Image
-from spatial_transforms import *
-from temporal_transforms import *
+from airtap.legacy.spatial_transforms import *
+from airtap.legacy.temporal_transforms import *
 import os
 import math
 import functools
@@ -12,7 +12,6 @@ from numpy.random import randint
 import numpy as np
 import random
 
-from utils import load_value_file
 import pdb
 
 
@@ -23,6 +22,8 @@ def pil_loader(path, modality):
         with Image.open(f) as img:
             if modality == 'RGB':
                 return img.convert('RGB')
+            elif modality == 'Flow':
+                return img.convert('L')
             elif modality == 'Depth':
                 return img.convert('L') # 8-bit pixels, black and white check from https://pillow.readthedocs.io/en/3.0.x/handbook/concepts.html
 
@@ -49,7 +50,7 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
     video = []
     if modality == 'RGB':
         for i in frame_indices:
-            image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
+            image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
             if os.path.exists(image_path):
                 
                 video.append(image_loader(image_path, modality))
@@ -59,18 +60,18 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
     elif modality == 'Depth':
 
         for i in frame_indices:
-            image_path = os.path.join(video_dir_path.replace('color','depth'), '{:05d}.jpg'.format(i) )
+            image_path = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
             if os.path.exists(image_path):
                 video.append(image_loader(image_path, modality))
             else:
                 print(image_path, "------- Does not exist")
                 return video
     elif modality == 'RGB-D':
-        for i in frame_indices:
-            image_path = os.path.join(video_dir_path, '{:05d}.jpg'.format(i))
-            image_path_depth = os.path.join(video_dir_path.replace('color','depth'), '{:05d}.jpg'.format(i) )
-
+        for i in frame_indices: # index 35 is used to change img to flow
+            image_path = os.path.join(video_dir_path, '{:06d}.jpg'.format(i))
+            image_path_depth = os.path.join(video_dir_path.rsplit(os.sep,2)[0] , 'Depth','depth' + video_dir_path[-1], '{:06d}.jpg'.format(i) )
             
+
             image = image_loader(image_path, 'RGB')
             image_depth = image_loader(image_path_depth, 'Depth')
 
@@ -80,6 +81,7 @@ def video_loader(video_dir_path, frame_indices, modality, sample_duration, image
             else:
                 print(image_path, "------- Does not exist")
                 return video
+    
     return video
 
 def get_default_video_loader():
@@ -103,9 +105,10 @@ def get_class_labels(data):
 
 def get_annotation(data, whole_path):
     annotation = []
+    print("@@@@@@@@@@@@@@", whole_path)
 
     for key, value in data['database'].items():
-        if key.split('^')[0] == whole_path:
+        if key.split('_')[0] == whole_path:
             annotation.append(value['annotations'])
 
     return  annotation
@@ -114,7 +117,7 @@ def get_annotation(data, whole_path):
 def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_samples_for_each_video, stride_len):
     
     data = load_annotation_data(annotation_path)
-    whole_video_path = os.path.join(video_path,whole_path)
+    whole_video_path = os.path.join(video_path, whole_path)
     annotation = get_annotation(data, whole_path)
     class_to_idx = get_class_labels(data)
     idx_to_class = {}
@@ -122,11 +125,11 @@ def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_sa
         idx_to_class[label] = name
 
     dataset = []
-    print("[INFO]: Videot  is loading...")
+    print("[INFO]: Videot  is loading...", whole_video_path, whole_path)
     import glob
 
     n_frames = len(glob.glob(whole_video_path + '/*.jpg'))
-    
+
     if not os.path.exists(whole_video_path):
         print(whole_video_path , " does not exist")
     label_list = []
@@ -145,9 +148,10 @@ def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_sa
                 'video_id' : _ 
 
             }
-        ## Different strategies to set true label of overlaping frames
-        # counts = np.bincount(label_list[np.array(list(range(_    - int(sample_duration/4), _ )))])
-        sample['label'] = 0 #np.argmax(counts)
+        
+        # print(range(_    - int(sample_duration/8), _   ))
+        counts = np.bincount(label_list[np.array(list(range(_    - int(sample_duration/8), _   )))])
+        sample['label'] = np.argmax(counts)
         if n_samples_for_each_video == 1:
             sample['frame_indices'] = list(range(_ , _ + sample_duration))
             dataset.append(sample)
@@ -169,7 +173,7 @@ def make_dataset( annotation_path, video_path , whole_path,sample_duration, n_sa
 
 
 
-class NVOnline(data.Dataset):
+class EgoGestureOnline(data.Dataset):
     """
     Args:
         root (string): Root directory path.
@@ -198,7 +202,6 @@ class NVOnline(data.Dataset):
                  modality='RGB',
                  stride_len = None,
                  get_loader=get_default_video_loader):
-
         self.data, self.class_names = make_dataset(
          annotation_path, video_path, whole_path, sample_duration,n_samples_for_each_video, stride_len)
         
@@ -221,6 +224,7 @@ class NVOnline(data.Dataset):
 
         frame_indices = self.data[index]['frame_indices']
 
+
         if self.temporal_transform is not None:
             frame_indices = self.temporal_transform(frame_indices)
         
@@ -231,8 +235,14 @@ class NVOnline(data.Dataset):
             clip = [self.spatial_transform(img) for img in clip]
 
         im_dim = clip[0].size()[-2:]
-        clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
+        try:
+            clip = torch.cat(clip, 0).view((self.sample_duration, -1) + im_dim).permute(1, 0, 2, 3)
+        except Exception as e:
+            pdb.set_trace()
+            raise e
         
+        
+        # clip = torch.stack(clip, 0).permute(1, 0, 2, 3)
         target = self.data[index]
         if self.target_transform is not None:
             target = self.target_transform(target)
@@ -241,5 +251,38 @@ class NVOnline(data.Dataset):
 
     def __len__(self):
         return len(self.data)
+
+
+# from target_transforms import ClassLabel, VideoID
+# from target_transforms import Compose as TargetCompose
+
+
+# norm_method = Normalize([0, 0, 0], [1, 1, 1])
+
+
+# spatial_transform = Compose([
+#     #Scale(opt.sample_size),
+#     Scale(112),
+#     CenterCrop(112),
+#     ToTensor(), norm_method
+#     ])
+# temporal_transform = TemporalCenterCrop(8)
+# #temporal_transform = TemporalBeginCrop(opt.sample_duration)
+# #temporal_transform = TemporalEndCrop(opt.sample_duration)
+# target_transform = ClassLabel()
+
+
+# vl = VideoLoader(
+# annotation_path = '/usr/home/kop/MyRes3D-Ahmet/annotation_EgoGesture/egogesturebinary.json',
+# video_path = '/data2/EgoGesture/images',
+# whole_path = 'Subject01/Scene1/Color/rgb1',
+# n_samples_for_each_video=1,
+# spatial_transform=spatial_transform,
+# temporal_transform=None,
+# target_transform=target_transform,
+# sample_duration=8,
+# modality='RGB',
+# get_loader=get_default_video_loader)
+
 
 

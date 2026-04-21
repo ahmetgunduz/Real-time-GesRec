@@ -11,7 +11,7 @@ import numpy as np
 import random
 import cv2
 
-from utils import load_value_file
+from airtap.legacy.utils import load_value_file
 
 
 def pil_loader(path):
