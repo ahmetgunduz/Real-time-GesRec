@@ -1,8 +1,8 @@
 #!/bin/bash
 python3 online_test.py \
-	--root_path /Users/A.Gunduz/Desktop/git/Real-time-GesRec/\
+	--root_path /home/tarey/dev/Projects/Real-time-GesRec/\
 	--video_path /data2/EgoGesture/images \
-	--annotation_path annotation_EgoGesture/egogestureall.json \
+	--annotation_path annotation_Jester/jester.json \
 	--resume_path_det report/egogesture_resnetl_10_Depth_8_9939.pth \
 	--resume_path_clf report/egogesture_resnext_101_Depth_32_9403.pth  \
 	--result_path results \

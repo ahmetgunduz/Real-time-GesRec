@@ -37,6 +37,49 @@ def weighting_func(x):
 
 opt = parse_opts_online()
 
+def _select_device(opt):
+    """Prefer CUDA, otherwise default to CPU on macOS unless MPS is explicitly requested."""
+    if torch.cuda.is_available() and not opt.no_cuda:
+        print('Using device: cuda')
+        return torch.device('cuda')
+
+    mps_available = hasattr(torch.backends, 'mps') and torch.backends.mps.is_available()
+    use_mps = os.environ.get('REALTIME_GESREC_USE_MPS', '0') == '1'
+    if mps_available and use_mps:
+        os.environ.setdefault('PYTORCH_ENABLE_MPS_FALLBACK', '1')
+        print('Using device: mps (fallback enabled for unsupported ops)')
+        return torch.device('mps')
+
+    if mps_available:
+        print('MPS is available, but using CPU because some 3D ops used by this model are not implemented on MPS.')
+
+    print('Using device: cpu')
+    return torch.device('cpu')
+
+
+device = _select_device(opt)
+if device.type != 'cuda':
+    opt.no_cuda = True  # tell generate_model not to call .cuda() / DataParallel
+
+
+def _open_video_capture(video_source):
+    """Open a webcam or stream with a macOS-friendly backend when possible."""
+    if isinstance(video_source, int) and hasattr(cv2, 'CAP_AVFOUNDATION'):
+        cap = cv2.VideoCapture(video_source, cv2.CAP_AVFOUNDATION)
+        if cap.isOpened():
+            return cap
+
+    return cv2.VideoCapture(video_source)
+
+
+def _load_checkpoint(model, path):
+    """Load a checkpoint, stripping DataParallel 'module.' prefix when needed."""
+    ckpt = torch.load(path, map_location='cpu', weights_only=False)
+    state = ckpt['state_dict']
+    if not isinstance(model, torch.nn.DataParallel) and next(iter(state)).startswith('module.'):
+        state = {k[7:]: v for k, v in state.items()}
+    model.load_state_dict(state)
+
 
 def load_models(opt):
     opt.resume_path = opt.resume_path_det
@@ -73,13 +116,10 @@ def load_models(opt):
     torch.manual_seed(opt.manual_seed)
 
     detector, parameters = generate_model(opt)
-    detector = detector.cuda()
+    detector = detector.to(device)
     if opt.resume_path:
-        opt.resume_path = os.path.join(opt.root_path, opt.resume_path)
         print('loading checkpoint {}'.format(opt.resume_path))
-        checkpoint = torch.load(opt.resume_path)
-
-        detector.load_state_dict(checkpoint['state_dict'])
+        _load_checkpoint(detector, opt.resume_path)
 
     print('Model 1 \n', detector)
     pytorch_total_params = sum(p.numel() for p in detector.parameters() if
@@ -118,12 +158,10 @@ def load_models(opt):
 
     torch.manual_seed(opt.manual_seed)
     classifier, parameters = generate_model(opt)
-    classifier = classifier.cuda()
+    classifier = classifier.to(device)
     if opt.resume_path:
         print('loading checkpoint {}'.format(opt.resume_path))
-        checkpoint = torch.load(opt.resume_path)
-
-        classifier.load_state_dict(checkpoint['state_dict'])
+        _load_checkpoint(classifier, opt.resume_path)
 
     print('Model 2 \n', classifier)
     pytorch_total_params = sum(p.numel() for p in classifier.parameters() if
@@ -149,8 +187,38 @@ spatial_transform = Compose([
 ])
 
 opt.sample_duration = max(opt.sample_duration_clf, opt.sample_duration_det)
+
+# Load class names from categories.txt if it lives alongside the annotation file
+_ann_dir = os.path.dirname(opt.annotation_path) if opt.annotation_path else ''
+_cat_file = os.path.join(_ann_dir, 'categories.txt')
+class_names = {}
+if os.path.exists(_cat_file):
+    with open(_cat_file) as _f:
+        for _line in _f:
+            _parts = _line.strip().split(' ', 1)
+            if len(_parts) == 2:
+                class_names[int(_parts[0]) - 1] = _parts[1]  # annotations are 1-indexed
+
 fps = ""
-cap = cv2.VideoCapture(opt.video)
+
+# Support both webcam index ("0") and file paths.
+_video_src = int(opt.video) if str(opt.video).isdigit() else opt.video
+cap = _open_video_capture(_video_src)
+
+if not cap.isOpened():
+    raise RuntimeError('Could not open video source: {}. On macOS, try iPhone Continuity Camera, Camo, or an IP camera URL.'.format(opt.video))
+
+"""
+# On Linux the FFMPEG backend can't enumerate cameras; force V4L2 for indices.
+if str(opt.video).isdigit():
+    _video_src = int(opt.video)
+    cap = cv2.VideoCapture(_video_src, cv2.CAP_V4L2)
+    if not cap.isOpened():  # fall back (e.g. macOS / no V4L2)
+        cap = cv2.VideoCapture(_video_src)
+else:
+    cap = cv2.VideoCapture(opt.video)
+"""
+
 num_frame = 0
 clip = []
 active_index = 0
@@ -172,6 +240,11 @@ spatial_transform.randomize_parameters()
 while cap.isOpened():
     t1 = time.time()
     ret, frame = cap.read()
+    if not ret or frame is None:
+        if num_frame == 0:
+            raise RuntimeError('Video source opened but no frames were received from: {}'.format(opt.video))
+        break
+
     if num_frame == 0:
         cur_frame = cv2.resize(frame,(320,240))
         cur_frame = Image.fromarray(cv2.cvtColor(cur_frame,cv2.COLOR_BGR2RGB))
@@ -197,7 +270,7 @@ while cap.isOpened():
 
     ground_truth_array = np.zeros(opt.n_classes_clf + 1, )
     with torch.no_grad():
-        inputs = Variable(inputs)
+        inputs = inputs.to(device)
         inputs_det = inputs[:, :, -opt.sample_duration_det:, :, :]
         outputs_det = detector(inputs_det)
         outputs_det = F.softmax(outputs_det, dim=1)
@@ -219,8 +292,7 @@ while cap.isOpened():
         
         #### State of the detector is checked here as detector act as a switch for the classifier
         if prediction_det == 1:
-            inputs_clf = inputs[:, :, :, :, :]
-            inputs_clf = torch.Tensor(inputs_clf.numpy()[:,:,::1,:,:])
+            inputs_clf = inputs.clone()
             outputs_clf = classifier(inputs_clf)
             outputs_clf = F.softmax(outputs_clf, dim=1)
             outputs_clf = outputs_clf.cpu().numpy()[0].reshape(-1, )
@@ -312,9 +384,14 @@ while cap.isOpened():
     print('predicted classes: \t', predicted)
 
     cv2.putText(frame, fps, (0, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (38, 0, 255), 1, cv2.LINE_AA)
+    if results:
+        last_cls = int(results[-1][1])
+        cv2.putText(frame, class_names.get(last_cls, str(last_cls)),
+                    (0, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 200, 0), 2, cv2.LINE_AA)
     cv2.imshow("Result", frame)
 
     if cv2.waitKey(1)&0xFF == ord('q'):
         break
+cap.release()
 cv2.destroyAllWindows()
 
